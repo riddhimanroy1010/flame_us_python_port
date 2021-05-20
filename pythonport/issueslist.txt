@@ -1,0 +1,3 @@
+1. what does this line do: cbind(Type=rownames(field_values),stringsAsFactors = FALSE)
+2. where is the regex pattern matching from? where does field_dt$Type come from? field_dt[,"Size"] <- substr(field_dt$Type,0,as.numeric(regexpr(pattern="_",field_dt$Type))-1)
+3. what is the number at the end of the substr expressions
