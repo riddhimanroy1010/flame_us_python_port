@@ -92,6 +92,10 @@ class fleetClass():
                 out = pd.DataFrame()
                 out.concat(tmp_stock_dt)
                 return out
+    def get_list_dataframe(self):
+        return [self.get_data_frame('vint_stock'), self.get_data_frame('vint_scrap')]
+
+
 
 
             
