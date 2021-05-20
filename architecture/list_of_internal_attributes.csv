@@ -1,0 +1,3 @@
+Attribute_type,Attribute_list
+Internal,size;techno;technology;fuel_type;fun_name;year;cumulative_rate;model_year;scrappage_rate;age;vehicle;fleet;component;i_value;i_year;mat_i_mc_component;mat_mc_component;rel_mat_cont;rpd_mat;rpg_mat;weight_iteration;emission_matrix;ghg
+Model,fast_mode

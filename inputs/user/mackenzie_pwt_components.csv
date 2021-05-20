@@ -1,0 +1,11 @@
+Size,Technology,Component
+Car,"ICEV-G,FFV,ICEV-D,CNG","Engine,Fuel storage system"
+Car,HEV,"Engine,EV Battery,Traction Motor,Generator,Electronic Controller"
+Car,PHEV,"Engine,Traction Motor,Generator,Electronic Controller"
+Car,BEV,"Traction Motor,Electronic Controller"
+Car,FCV,"Fuel cell stack,Traction Motor,Electronic Controller"
+Light truck,"ICEV-G,FFV,ICEV-D,CNG","Engine,Fuel storage system"
+Light truck,HEV,"Engine,EV Battery,Traction Motor,Generator,Electronic Controller"
+Light truck,PHEV,"Engine,Traction Motor,Generator,Electronic Controller"
+Light truck,BEV,"Traction Motor,Electronic Controller"
+Light truck,FCV,"Fuel cell stack,Traction Motor,Electronic Controller"

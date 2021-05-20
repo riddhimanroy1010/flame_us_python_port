@@ -1,0 +1,1861 @@
+"Technology","Size","Year","Data_type","Aeo_case","Aeo_year","Unit","Value"
+"BEV100","Car",2020,"sales","REF",2021,"vehicle",2102
+"BEV300","Car",2020,"sales","REF",2021,"vehicle",113403
+"CNG","Car",2020,"sales","REF",2021,"vehicle",3709
+"FCV","Car",2020,"sales","REF",2021,"vehicle",182
+"FFV","Car",2020,"sales","REF",2021,"vehicle",84711
+"HEV","Car",2020,"sales","REF",2021,"vehicle",124642
+"ICEV-D","Car",2020,"sales","REF",2021,"vehicle",96
+"ICEV-G","Car",2020,"sales","REF",2021,"vehicle",4530612
+"PHEV20","Car",2020,"sales","REF",2021,"vehicle",21782
+"PHEV40","Car",2020,"sales","REF",2021,"vehicle",5689
+"BEV100","Light truck",2020,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2020,"sales","REF",2021,"vehicle",37232
+"CNG","Light truck",2020,"sales","REF",2021,"vehicle",9516
+"FCV","Light truck",2020,"sales","REF",2021,"vehicle",5
+"FFV","Light truck",2020,"sales","REF",2021,"vehicle",648889
+"HEV","Light truck",2020,"sales","REF",2021,"vehicle",216244
+"ICEV-D","Light truck",2020,"sales","REF",2021,"vehicle",49744
+"ICEV-G","Light truck",2020,"sales","REF",2021,"vehicle",6408522
+"PHEV20","Light truck",2020,"sales","REF",2021,"vehicle",3729
+"PHEV40","Light truck",2020,"sales","REF",2021,"vehicle",20690
+"BEV100","Car",2021,"sales","REF",2021,"vehicle",2162
+"BEV300","Car",2021,"sales","REF",2021,"vehicle",104687
+"CNG","Car",2021,"sales","REF",2021,"vehicle",3855
+"FCV","Car",2021,"sales","REF",2021,"vehicle",188
+"FFV","Car",2021,"sales","REF",2021,"vehicle",90697
+"HEV","Car",2021,"sales","REF",2021,"vehicle",140875
+"ICEV-D","Car",2021,"sales","REF",2021,"vehicle",95
+"ICEV-G","Car",2021,"sales","REF",2021,"vehicle",4867296
+"PHEV20","Car",2021,"sales","REF",2021,"vehicle",28945
+"PHEV40","Car",2021,"sales","REF",2021,"vehicle",5803
+"BEV100","Light truck",2021,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2021,"sales","REF",2021,"vehicle",44126
+"CNG","Light truck",2021,"sales","REF",2021,"vehicle",10714
+"FCV","Light truck",2021,"sales","REF",2021,"vehicle",7
+"FFV","Light truck",2021,"sales","REF",2021,"vehicle",663125
+"HEV","Light truck",2021,"sales","REF",2021,"vehicle",256559
+"ICEV-D","Light truck",2021,"sales","REF",2021,"vehicle",89708
+"ICEV-G","Light truck",2021,"sales","REF",2021,"vehicle",7185056
+"PHEV20","Light truck",2021,"sales","REF",2021,"vehicle",4120
+"PHEV40","Light truck",2021,"sales","REF",2021,"vehicle",24874
+"BEV100","Car",2022,"sales","REF",2021,"vehicle",2206
+"BEV300","Car",2022,"sales","REF",2021,"vehicle",113765
+"CNG","Car",2022,"sales","REF",2021,"vehicle",4291
+"FCV","Car",2022,"sales","REF",2021,"vehicle",221
+"FFV","Car",2022,"sales","REF",2021,"vehicle",98941
+"HEV","Car",2022,"sales","REF",2021,"vehicle",164036
+"ICEV-D","Car",2022,"sales","REF",2021,"vehicle",97
+"ICEV-G","Car",2022,"sales","REF",2021,"vehicle",5296187
+"PHEV20","Car",2022,"sales","REF",2021,"vehicle",34307
+"PHEV40","Car",2022,"sales","REF",2021,"vehicle",5297
+"BEV100","Light truck",2022,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2022,"sales","REF",2021,"vehicle",49922
+"CNG","Light truck",2022,"sales","REF",2021,"vehicle",11156
+"FCV","Light truck",2022,"sales","REF",2021,"vehicle",10
+"FFV","Light truck",2022,"sales","REF",2021,"vehicle",687061
+"HEV","Light truck",2022,"sales","REF",2021,"vehicle",273682
+"ICEV-D","Light truck",2022,"sales","REF",2021,"vehicle",120020
+"ICEV-G","Light truck",2022,"sales","REF",2021,"vehicle",7424701
+"PHEV20","Light truck",2022,"sales","REF",2021,"vehicle",4269
+"PHEV40","Light truck",2022,"sales","REF",2021,"vehicle",24775
+"BEV100","Car",2023,"sales","REF",2021,"vehicle",2151
+"BEV300","Car",2023,"sales","REF",2021,"vehicle",117133
+"CNG","Car",2023,"sales","REF",2021,"vehicle",4389
+"FCV","Car",2023,"sales","REF",2021,"vehicle",249
+"FFV","Car",2023,"sales","REF",2021,"vehicle",99642
+"HEV","Car",2023,"sales","REF",2021,"vehicle",175779
+"ICEV-D","Car",2023,"sales","REF",2021,"vehicle",92
+"ICEV-G","Car",2023,"sales","REF",2021,"vehicle",5324083
+"PHEV20","Car",2023,"sales","REF",2021,"vehicle",37975
+"PHEV40","Car",2023,"sales","REF",2021,"vehicle",4772
+"BEV100","Light truck",2023,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2023,"sales","REF",2021,"vehicle",55629
+"CNG","Light truck",2023,"sales","REF",2021,"vehicle",11269
+"FCV","Light truck",2023,"sales","REF",2021,"vehicle",13
+"FFV","Light truck",2023,"sales","REF",2021,"vehicle",691783
+"HEV","Light truck",2023,"sales","REF",2021,"vehicle",281265
+"ICEV-D","Light truck",2023,"sales","REF",2021,"vehicle",111959
+"ICEV-G","Light truck",2023,"sales","REF",2021,"vehicle",7469135
+"PHEV20","Light truck",2023,"sales","REF",2021,"vehicle",4382
+"PHEV40","Light truck",2023,"sales","REF",2021,"vehicle",22785
+"BEV100","Car",2024,"sales","REF",2021,"vehicle",2164
+"BEV300","Car",2024,"sales","REF",2021,"vehicle",123493
+"CNG","Car",2024,"sales","REF",2021,"vehicle",4492
+"FCV","Car",2024,"sales","REF",2021,"vehicle",285
+"FFV","Car",2024,"sales","REF",2021,"vehicle",100720
+"HEV","Car",2024,"sales","REF",2021,"vehicle",189136
+"ICEV-D","Car",2024,"sales","REF",2021,"vehicle",90
+"ICEV-G","Car",2024,"sales","REF",2021,"vehicle",5373395
+"PHEV20","Car",2024,"sales","REF",2021,"vehicle",43214
+"PHEV40","Car",2024,"sales","REF",2021,"vehicle",4533
+"BEV100","Light truck",2024,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2024,"sales","REF",2021,"vehicle",64402
+"CNG","Light truck",2024,"sales","REF",2021,"vehicle",11558
+"FCV","Light truck",2024,"sales","REF",2021,"vehicle",18
+"FFV","Light truck",2024,"sales","REF",2021,"vehicle",707401
+"HEV","Light truck",2024,"sales","REF",2021,"vehicle",293692
+"ICEV-D","Light truck",2024,"sales","REF",2021,"vehicle",109911
+"ICEV-G","Light truck",2024,"sales","REF",2021,"vehicle",7633510
+"PHEV20","Light truck",2024,"sales","REF",2021,"vehicle",4656
+"PHEV40","Light truck",2024,"sales","REF",2021,"vehicle",21191
+"BEV100","Car",2025,"sales","REF",2021,"vehicle",2255
+"BEV300","Car",2025,"sales","REF",2021,"vehicle",129412
+"CNG","Car",2025,"sales","REF",2021,"vehicle",4619
+"FCV","Car",2025,"sales","REF",2021,"vehicle",339
+"FFV","Car",2025,"sales","REF",2021,"vehicle",102758
+"HEV","Car",2025,"sales","REF",2021,"vehicle",203891
+"ICEV-D","Car",2025,"sales","REF",2021,"vehicle",91
+"ICEV-G","Car",2025,"sales","REF",2021,"vehicle",5477523
+"PHEV20","Car",2025,"sales","REF",2021,"vehicle",51153
+"PHEV40","Car",2025,"sales","REF",2021,"vehicle",4536
+"BEV100","Light truck",2025,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2025,"sales","REF",2021,"vehicle",71123
+"CNG","Light truck",2025,"sales","REF",2021,"vehicle",11828
+"FCV","Light truck",2025,"sales","REF",2021,"vehicle",25
+"FFV","Light truck",2025,"sales","REF",2021,"vehicle",719830
+"HEV","Light truck",2025,"sales","REF",2021,"vehicle",307147
+"ICEV-D","Light truck",2025,"sales","REF",2021,"vehicle",113089
+"ICEV-G","Light truck",2025,"sales","REF",2021,"vehicle",7761221
+"PHEV20","Light truck",2025,"sales","REF",2021,"vehicle",4779
+"PHEV40","Light truck",2025,"sales","REF",2021,"vehicle",38792
+"BEV100","Car",2026,"sales","REF",2021,"vehicle",2338
+"BEV300","Car",2026,"sales","REF",2021,"vehicle",137575
+"CNG","Car",2026,"sales","REF",2021,"vehicle",4628
+"FCV","Car",2026,"sales","REF",2021,"vehicle",388
+"FFV","Car",2026,"sales","REF",2021,"vehicle",102447
+"HEV","Car",2026,"sales","REF",2021,"vehicle",217139
+"ICEV-D","Car",2026,"sales","REF",2021,"vehicle",92
+"ICEV-G","Car",2026,"sales","REF",2021,"vehicle",5448625
+"PHEV20","Car",2026,"sales","REF",2021,"vehicle",58624
+"PHEV40","Car",2026,"sales","REF",2021,"vehicle",4639
+"BEV100","Light truck",2026,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2026,"sales","REF",2021,"vehicle",77445
+"CNG","Light truck",2026,"sales","REF",2021,"vehicle",11840
+"FCV","Light truck",2026,"sales","REF",2021,"vehicle",31
+"FFV","Light truck",2026,"sales","REF",2021,"vehicle",711645
+"HEV","Light truck",2026,"sales","REF",2021,"vehicle",357388
+"ICEV-D","Light truck",2026,"sales","REF",2021,"vehicle",110804
+"ICEV-G","Light truck",2026,"sales","REF",2021,"vehicle",7639660
+"PHEV20","Light truck",2026,"sales","REF",2021,"vehicle",4822
+"PHEV40","Light truck",2026,"sales","REF",2021,"vehicle",113801
+"BEV100","Car",2027,"sales","REF",2021,"vehicle",2415
+"BEV300","Car",2027,"sales","REF",2021,"vehicle",145954
+"CNG","Car",2027,"sales","REF",2021,"vehicle",4573
+"FCV","Car",2027,"sales","REF",2021,"vehicle",438
+"FFV","Car",2027,"sales","REF",2021,"vehicle",100887
+"HEV","Car",2027,"sales","REF",2021,"vehicle",228585
+"ICEV-D","Car",2027,"sales","REF",2021,"vehicle",90
+"ICEV-G","Car",2027,"sales","REF",2021,"vehicle",5351944
+"PHEV20","Car",2027,"sales","REF",2021,"vehicle",67048
+"PHEV40","Car",2027,"sales","REF",2021,"vehicle",4798
+"BEV100","Light truck",2027,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2027,"sales","REF",2021,"vehicle",84964
+"CNG","Light truck",2027,"sales","REF",2021,"vehicle",11727
+"FCV","Light truck",2027,"sales","REF",2021,"vehicle",39
+"FFV","Light truck",2027,"sales","REF",2021,"vehicle",700598
+"HEV","Light truck",2027,"sales","REF",2021,"vehicle",379949
+"ICEV-D","Light truck",2027,"sales","REF",2021,"vehicle",109545
+"ICEV-G","Light truck",2027,"sales","REF",2021,"vehicle",7503271
+"PHEV20","Light truck",2027,"sales","REF",2021,"vehicle",5345
+"PHEV40","Light truck",2027,"sales","REF",2021,"vehicle",132550
+"BEV100","Car",2028,"sales","REF",2021,"vehicle",2594
+"BEV300","Car",2028,"sales","REF",2021,"vehicle",162308
+"CNG","Car",2028,"sales","REF",2021,"vehicle",4645
+"FCV","Car",2028,"sales","REF",2021,"vehicle",506
+"FFV","Car",2028,"sales","REF",2021,"vehicle",102147
+"HEV","Car",2028,"sales","REF",2021,"vehicle",249042
+"ICEV-D","Car",2028,"sales","REF",2021,"vehicle",91
+"ICEV-G","Car",2028,"sales","REF",2021,"vehicle",5400588
+"PHEV20","Car",2028,"sales","REF",2021,"vehicle",80460
+"PHEV40","Car",2028,"sales","REF",2021,"vehicle",5235
+"BEV100","Light truck",2028,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2028,"sales","REF",2021,"vehicle",97457
+"CNG","Light truck",2028,"sales","REF",2021,"vehicle",11743
+"FCV","Light truck",2028,"sales","REF",2021,"vehicle",49
+"FFV","Light truck",2028,"sales","REF",2021,"vehicle",698672
+"HEV","Light truck",2028,"sales","REF",2021,"vehicle",394046
+"ICEV-D","Light truck",2028,"sales","REF",2021,"vehicle",112084
+"ICEV-G","Light truck",2028,"sales","REF",2021,"vehicle",7467114
+"PHEV20","Light truck",2028,"sales","REF",2021,"vehicle",6035
+"PHEV40","Light truck",2028,"sales","REF",2021,"vehicle",134485
+"BEV100","Car",2029,"sales","REF",2021,"vehicle",2775
+"BEV300","Car",2029,"sales","REF",2021,"vehicle",182770
+"CNG","Car",2029,"sales","REF",2021,"vehicle",4709
+"FCV","Car",2029,"sales","REF",2021,"vehicle",577
+"FFV","Car",2029,"sales","REF",2021,"vehicle",103075
+"HEV","Car",2029,"sales","REF",2021,"vehicle",265578
+"ICEV-D","Car",2029,"sales","REF",2021,"vehicle",92
+"ICEV-G","Car",2029,"sales","REF",2021,"vehicle",5432054
+"PHEV20","Car",2029,"sales","REF",2021,"vehicle",84511
+"PHEV40","Car",2029,"sales","REF",2021,"vehicle",5747
+"BEV100","Light truck",2029,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2029,"sales","REF",2021,"vehicle",111635
+"CNG","Light truck",2029,"sales","REF",2021,"vehicle",11746
+"FCV","Light truck",2029,"sales","REF",2021,"vehicle",60
+"FFV","Light truck",2029,"sales","REF",2021,"vehicle",696447
+"HEV","Light truck",2029,"sales","REF",2021,"vehicle",405300
+"ICEV-D","Light truck",2029,"sales","REF",2021,"vehicle",114391
+"ICEV-G","Light truck",2029,"sales","REF",2021,"vehicle",7429516
+"PHEV20","Light truck",2029,"sales","REF",2021,"vehicle",6769
+"PHEV40","Light truck",2029,"sales","REF",2021,"vehicle",134530
+"BEV100","Car",2030,"sales","REF",2021,"vehicle",3013
+"BEV300","Car",2030,"sales","REF",2021,"vehicle",210172
+"CNG","Car",2030,"sales","REF",2021,"vehicle",4792
+"FCV","Car",2030,"sales","REF",2021,"vehicle",655
+"FFV","Car",2030,"sales","REF",2021,"vehicle",104754
+"HEV","Car",2030,"sales","REF",2021,"vehicle",286566
+"ICEV-D","Car",2030,"sales","REF",2021,"vehicle",95
+"ICEV-G","Car",2030,"sales","REF",2021,"vehicle",5501202
+"PHEV20","Car",2030,"sales","REF",2021,"vehicle",89912
+"PHEV40","Car",2030,"sales","REF",2021,"vehicle",6553
+"BEV100","Light truck",2030,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2030,"sales","REF",2021,"vehicle",129919
+"CNG","Light truck",2030,"sales","REF",2021,"vehicle",11659
+"FCV","Light truck",2030,"sales","REF",2021,"vehicle",73
+"FFV","Light truck",2030,"sales","REF",2021,"vehicle",687256
+"HEV","Light truck",2030,"sales","REF",2021,"vehicle",419663
+"ICEV-D","Light truck",2030,"sales","REF",2021,"vehicle",117639
+"ICEV-G","Light truck",2030,"sales","REF",2021,"vehicle",7310624
+"PHEV20","Light truck",2030,"sales","REF",2021,"vehicle",7506
+"PHEV40","Light truck",2030,"sales","REF",2021,"vehicle",136688
+"BEV100","Car",2031,"sales","REF",2021,"vehicle",3204
+"BEV300","Car",2031,"sales","REF",2021,"vehicle",242571
+"CNG","Car",2031,"sales","REF",2021,"vehicle",4874
+"FCV","Car",2031,"sales","REF",2021,"vehicle",730
+"FFV","Car",2031,"sales","REF",2021,"vehicle",105628
+"HEV","Car",2031,"sales","REF",2021,"vehicle",303466
+"ICEV-D","Car",2031,"sales","REF",2021,"vehicle",96
+"ICEV-G","Car",2031,"sales","REF",2021,"vehicle",5523512
+"PHEV20","Car",2031,"sales","REF",2021,"vehicle",91540
+"PHEV40","Car",2031,"sales","REF",2021,"vehicle",7104
+"BEV100","Light truck",2031,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2031,"sales","REF",2021,"vehicle",149317
+"CNG","Light truck",2031,"sales","REF",2021,"vehicle",11694
+"FCV","Light truck",2031,"sales","REF",2021,"vehicle",87
+"FFV","Light truck",2031,"sales","REF",2021,"vehicle",686595
+"HEV","Light truck",2031,"sales","REF",2021,"vehicle",434449
+"ICEV-D","Light truck",2031,"sales","REF",2021,"vehicle",117848
+"ICEV-G","Light truck",2031,"sales","REF",2021,"vehicle",7288754
+"PHEV20","Light truck",2031,"sales","REF",2021,"vehicle",8309
+"PHEV40","Light truck",2031,"sales","REF",2021,"vehicle",139987
+"BEV100","Car",2032,"sales","REF",2021,"vehicle",3398
+"BEV300","Car",2032,"sales","REF",2021,"vehicle",275687
+"CNG","Car",2032,"sales","REF",2021,"vehicle",4915
+"FCV","Car",2032,"sales","REF",2021,"vehicle",799
+"FFV","Car",2032,"sales","REF",2021,"vehicle",106121
+"HEV","Car",2032,"sales","REF",2021,"vehicle",319845
+"ICEV-D","Car",2032,"sales","REF",2021,"vehicle",97
+"ICEV-G","Car",2032,"sales","REF",2021,"vehicle",5528805
+"PHEV20","Car",2032,"sales","REF",2021,"vehicle",94799
+"PHEV40","Car",2032,"sales","REF",2021,"vehicle",7617
+"BEV100","Light truck",2032,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2032,"sales","REF",2021,"vehicle",171422
+"CNG","Light truck",2032,"sales","REF",2021,"vehicle",11670
+"FCV","Light truck",2032,"sales","REF",2021,"vehicle",101
+"FFV","Light truck",2032,"sales","REF",2021,"vehicle",681366
+"HEV","Light truck",2032,"sales","REF",2021,"vehicle",448684
+"ICEV-D","Light truck",2032,"sales","REF",2021,"vehicle",119444
+"ICEV-G","Light truck",2032,"sales","REF",2021,"vehicle",7213597
+"PHEV20","Light truck",2032,"sales","REF",2021,"vehicle",9114
+"PHEV40","Light truck",2032,"sales","REF",2021,"vehicle",144208
+"BEV100","Car",2033,"sales","REF",2021,"vehicle",3567
+"BEV300","Car",2033,"sales","REF",2021,"vehicle",314518
+"CNG","Car",2033,"sales","REF",2021,"vehicle",4971
+"FCV","Car",2033,"sales","REF",2021,"vehicle",867
+"FFV","Car",2033,"sales","REF",2021,"vehicle",106670
+"HEV","Car",2033,"sales","REF",2021,"vehicle",336020
+"ICEV-D","Car",2033,"sales","REF",2021,"vehicle",98
+"ICEV-G","Car",2033,"sales","REF",2021,"vehicle",5533805
+"PHEV20","Car",2033,"sales","REF",2021,"vehicle",96257
+"PHEV40","Car",2033,"sales","REF",2021,"vehicle",8023
+"BEV100","Light truck",2033,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2033,"sales","REF",2021,"vehicle",194543
+"CNG","Light truck",2033,"sales","REF",2021,"vehicle",11707
+"FCV","Light truck",2033,"sales","REF",2021,"vehicle",117
+"FFV","Light truck",2033,"sales","REF",2021,"vehicle",679993
+"HEV","Light truck",2033,"sales","REF",2021,"vehicle",463218
+"ICEV-D","Light truck",2033,"sales","REF",2021,"vehicle",120515
+"ICEV-G","Light truck",2033,"sales","REF",2021,"vehicle",7185922
+"PHEV20","Light truck",2033,"sales","REF",2021,"vehicle",9934
+"PHEV40","Light truck",2033,"sales","REF",2021,"vehicle",148170
+"BEV100","Car",2034,"sales","REF",2021,"vehicle",3721
+"BEV300","Car",2034,"sales","REF",2021,"vehicle",354385
+"CNG","Car",2034,"sales","REF",2021,"vehicle",5016
+"FCV","Car",2034,"sales","REF",2021,"vehicle",929
+"FFV","Car",2034,"sales","REF",2021,"vehicle",107086
+"HEV","Car",2034,"sales","REF",2021,"vehicle",352073
+"ICEV-D","Car",2034,"sales","REF",2021,"vehicle",99
+"ICEV-G","Car",2034,"sales","REF",2021,"vehicle",5533335
+"PHEV20","Car",2034,"sales","REF",2021,"vehicle",97579
+"PHEV40","Car",2034,"sales","REF",2021,"vehicle",8400
+"BEV100","Light truck",2034,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2034,"sales","REF",2021,"vehicle",219318
+"CNG","Light truck",2034,"sales","REF",2021,"vehicle",11763
+"FCV","Light truck",2034,"sales","REF",2021,"vehicle",132
+"FFV","Light truck",2034,"sales","REF",2021,"vehicle",679829
+"HEV","Light truck",2034,"sales","REF",2021,"vehicle",478438
+"ICEV-D","Light truck",2034,"sales","REF",2021,"vehicle",122867
+"ICEV-G","Light truck",2034,"sales","REF",2021,"vehicle",7162274
+"PHEV20","Light truck",2034,"sales","REF",2021,"vehicle",10775
+"PHEV40","Light truck",2034,"sales","REF",2021,"vehicle",151886
+"BEV100","Car",2035,"sales","REF",2021,"vehicle",3821
+"BEV300","Car",2035,"sales","REF",2021,"vehicle",393703
+"CNG","Car",2035,"sales","REF",2021,"vehicle",5017
+"FCV","Car",2035,"sales","REF",2021,"vehicle",978
+"FFV","Car",2035,"sales","REF",2021,"vehicle",106488
+"HEV","Car",2035,"sales","REF",2021,"vehicle",364634
+"ICEV-D","Car",2035,"sales","REF",2021,"vehicle",98
+"ICEV-G","Car",2035,"sales","REF",2021,"vehicle",5479135
+"PHEV20","Car",2035,"sales","REF",2021,"vehicle",97311
+"PHEV40","Car",2035,"sales","REF",2021,"vehicle",8644
+"BEV100","Light truck",2035,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2035,"sales","REF",2021,"vehicle",243504
+"CNG","Light truck",2035,"sales","REF",2021,"vehicle",11747
+"FCV","Light truck",2035,"sales","REF",2021,"vehicle",147
+"FFV","Light truck",2035,"sales","REF",2021,"vehicle",675175
+"HEV","Light truck",2035,"sales","REF",2021,"vehicle",490154
+"ICEV-D","Light truck",2035,"sales","REF",2021,"vehicle",123446
+"ICEV-G","Light truck",2035,"sales","REF",2021,"vehicle",7095229
+"PHEV20","Light truck",2035,"sales","REF",2021,"vehicle",11544
+"PHEV40","Light truck",2035,"sales","REF",2021,"vehicle",154254
+"BEV100","Car",2036,"sales","REF",2021,"vehicle",3889
+"BEV300","Car",2036,"sales","REF",2021,"vehicle",432370
+"CNG","Car",2036,"sales","REF",2021,"vehicle",4998
+"FCV","Car",2036,"sales","REF",2021,"vehicle",1018
+"FFV","Car",2036,"sales","REF",2021,"vehicle",105500
+"HEV","Car",2036,"sales","REF",2021,"vehicle",375847
+"ICEV-D","Car",2036,"sales","REF",2021,"vehicle",98
+"ICEV-G","Car",2036,"sales","REF",2021,"vehicle",5404802
+"PHEV20","Car",2036,"sales","REF",2021,"vehicle",96471
+"PHEV40","Car",2036,"sales","REF",2021,"vehicle",8814
+"BEV100","Light truck",2036,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2036,"sales","REF",2021,"vehicle",267420
+"CNG","Light truck",2036,"sales","REF",2021,"vehicle",11692
+"FCV","Light truck",2036,"sales","REF",2021,"vehicle",160
+"FFV","Light truck",2036,"sales","REF",2021,"vehicle",668285
+"HEV","Light truck",2036,"sales","REF",2021,"vehicle",500326
+"ICEV-D","Light truck",2036,"sales","REF",2021,"vehicle",123928
+"ICEV-G","Light truck",2036,"sales","REF",2021,"vehicle",7005370
+"PHEV20","Light truck",2036,"sales","REF",2021,"vehicle",12374
+"PHEV40","Light truck",2036,"sales","REF",2021,"vehicle",155758
+"BEV100","Car",2037,"sales","REF",2021,"vehicle",3956
+"BEV300","Car",2037,"sales","REF",2021,"vehicle",473398
+"CNG","Car",2037,"sales","REF",2021,"vehicle",4998
+"FCV","Car",2037,"sales","REF",2021,"vehicle",1058
+"FFV","Car",2037,"sales","REF",2021,"vehicle",104878
+"HEV","Car",2037,"sales","REF",2021,"vehicle",388463
+"ICEV-D","Car",2037,"sales","REF",2021,"vehicle",97
+"ICEV-G","Car",2037,"sales","REF",2021,"vehicle",5350218
+"PHEV20","Car",2037,"sales","REF",2021,"vehicle",95697
+"PHEV40","Car",2037,"sales","REF",2021,"vehicle",8973
+"BEV100","Light truck",2037,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2037,"sales","REF",2021,"vehicle",292378
+"CNG","Light truck",2037,"sales","REF",2021,"vehicle",11679
+"FCV","Light truck",2037,"sales","REF",2021,"vehicle",173
+"FFV","Light truck",2037,"sales","REF",2021,"vehicle",663658
+"HEV","Light truck",2037,"sales","REF",2021,"vehicle",511729
+"ICEV-D","Light truck",2037,"sales","REF",2021,"vehicle",123312
+"ICEV-G","Light truck",2037,"sales","REF",2021,"vehicle",6941819
+"PHEV20","Light truck",2037,"sales","REF",2021,"vehicle",13379
+"PHEV40","Light truck",2037,"sales","REF",2021,"vehicle",157419
+"BEV100","Car",2038,"sales","REF",2021,"vehicle",4022
+"BEV300","Car",2038,"sales","REF",2021,"vehicle",517092
+"CNG","Car",2038,"sales","REF",2021,"vehicle",5013
+"FCV","Car",2038,"sales","REF",2021,"vehicle",1097
+"FFV","Car",2038,"sales","REF",2021,"vehicle",104585
+"HEV","Car",2038,"sales","REF",2021,"vehicle",402727
+"ICEV-D","Car",2038,"sales","REF",2021,"vehicle",97
+"ICEV-G","Car",2038,"sales","REF",2021,"vehicle",5311543
+"PHEV20","Car",2038,"sales","REF",2021,"vehicle",95193
+"PHEV40","Car",2038,"sales","REF",2021,"vehicle",9136
+"BEV100","Light truck",2038,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2038,"sales","REF",2021,"vehicle",318490
+"CNG","Light truck",2038,"sales","REF",2021,"vehicle",11691
+"FCV","Light truck",2038,"sales","REF",2021,"vehicle",186
+"FFV","Light truck",2038,"sales","REF",2021,"vehicle",660229
+"HEV","Light truck",2038,"sales","REF",2021,"vehicle",524183
+"ICEV-D","Light truck",2038,"sales","REF",2021,"vehicle",123934
+"ICEV-G","Light truck",2038,"sales","REF",2021,"vehicle",6888700
+"PHEV20","Light truck",2038,"sales","REF",2021,"vehicle",14542
+"PHEV40","Light truck",2038,"sales","REF",2021,"vehicle",159191
+"BEV100","Car",2039,"sales","REF",2021,"vehicle",4041
+"BEV300","Car",2039,"sales","REF",2021,"vehicle",556465
+"CNG","Car",2039,"sales","REF",2021,"vehicle",4992
+"FCV","Car",2039,"sales","REF",2021,"vehicle",1126
+"FFV","Car",2039,"sales","REF",2021,"vehicle",103514
+"HEV","Car",2039,"sales","REF",2021,"vehicle",413161
+"ICEV-D","Car",2039,"sales","REF",2021,"vehicle",96
+"ICEV-G","Car",2039,"sales","REF",2021,"vehicle",5234296
+"PHEV20","Car",2039,"sales","REF",2021,"vehicle",92922
+"PHEV40","Car",2039,"sales","REF",2021,"vehicle",9145
+"BEV100","Light truck",2039,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2039,"sales","REF",2021,"vehicle",342170
+"CNG","Light truck",2039,"sales","REF",2021,"vehicle",11689
+"FCV","Light truck",2039,"sales","REF",2021,"vehicle",198
+"FFV","Light truck",2039,"sales","REF",2021,"vehicle",656813
+"HEV","Light truck",2039,"sales","REF",2021,"vehicle",534285
+"ICEV-D","Light truck",2039,"sales","REF",2021,"vehicle",123687
+"ICEV-G","Light truck",2039,"sales","REF",2021,"vehicle",6839659
+"PHEV20","Light truck",2039,"sales","REF",2021,"vehicle",15809
+"PHEV40","Light truck",2039,"sales","REF",2021,"vehicle",159814
+"BEV100","Car",2040,"sales","REF",2021,"vehicle",4077
+"BEV300","Car",2040,"sales","REF",2021,"vehicle",596431
+"CNG","Car",2040,"sales","REF",2021,"vehicle",4985
+"FCV","Car",2040,"sales","REF",2021,"vehicle",1156
+"FFV","Car",2040,"sales","REF",2021,"vehicle",102875
+"HEV","Car",2040,"sales","REF",2021,"vehicle",426689
+"ICEV-D","Car",2040,"sales","REF",2021,"vehicle",94
+"ICEV-G","Car",2040,"sales","REF",2021,"vehicle",5179924
+"PHEV20","Car",2040,"sales","REF",2021,"vehicle",92208
+"PHEV40","Car",2040,"sales","REF",2021,"vehicle",9232
+"BEV100","Light truck",2040,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2040,"sales","REF",2021,"vehicle",367156
+"CNG","Light truck",2040,"sales","REF",2021,"vehicle",11670
+"FCV","Light truck",2040,"sales","REF",2021,"vehicle",209
+"FFV","Light truck",2040,"sales","REF",2021,"vehicle",651254
+"HEV","Light truck",2040,"sales","REF",2021,"vehicle",545191
+"ICEV-D","Light truck",2040,"sales","REF",2021,"vehicle",123064
+"ICEV-G","Light truck",2040,"sales","REF",2021,"vehicle",6765972
+"PHEV20","Light truck",2040,"sales","REF",2021,"vehicle",17268
+"PHEV40","Light truck",2040,"sales","REF",2021,"vehicle",160447
+"BEV100","Car",2041,"sales","REF",2021,"vehicle",4110
+"BEV300","Car",2041,"sales","REF",2021,"vehicle",632956
+"CNG","Car",2041,"sales","REF",2021,"vehicle",5015
+"FCV","Car",2041,"sales","REF",2021,"vehicle",1193
+"FFV","Car",2041,"sales","REF",2021,"vehicle",102831
+"HEV","Car",2041,"sales","REF",2021,"vehicle",444741
+"ICEV-D","Car",2041,"sales","REF",2021,"vehicle",94
+"ICEV-G","Car",2041,"sales","REF",2021,"vehicle",5155314
+"PHEV20","Car",2041,"sales","REF",2021,"vehicle",90322
+"PHEV40","Car",2041,"sales","REF",2021,"vehicle",9246
+"BEV100","Light truck",2041,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2041,"sales","REF",2021,"vehicle",387110
+"CNG","Light truck",2041,"sales","REF",2021,"vehicle",11717
+"FCV","Light truck",2041,"sales","REF",2021,"vehicle",221
+"FFV","Light truck",2041,"sales","REF",2021,"vehicle",650315
+"HEV","Light truck",2041,"sales","REF",2021,"vehicle",557540
+"ICEV-D","Light truck",2041,"sales","REF",2021,"vehicle",123145
+"ICEV-G","Light truck",2041,"sales","REF",2021,"vehicle",6744354
+"PHEV20","Light truck",2041,"sales","REF",2021,"vehicle",18958
+"PHEV40","Light truck",2041,"sales","REF",2021,"vehicle",160774
+"BEV100","Car",2042,"sales","REF",2021,"vehicle",4145
+"BEV300","Car",2042,"sales","REF",2021,"vehicle",667304
+"CNG","Car",2042,"sales","REF",2021,"vehicle",5043
+"FCV","Car",2042,"sales","REF",2021,"vehicle",1229
+"FFV","Car",2042,"sales","REF",2021,"vehicle",102817
+"HEV","Car",2042,"sales","REF",2021,"vehicle",461139
+"ICEV-D","Car",2042,"sales","REF",2021,"vehicle",94
+"ICEV-G","Car",2042,"sales","REF",2021,"vehicle",5135754
+"PHEV20","Car",2042,"sales","REF",2021,"vehicle",88352
+"PHEV40","Car",2042,"sales","REF",2021,"vehicle",9239
+"BEV100","Light truck",2042,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2042,"sales","REF",2021,"vehicle",406992
+"CNG","Light truck",2042,"sales","REF",2021,"vehicle",11806
+"FCV","Light truck",2042,"sales","REF",2021,"vehicle",233
+"FFV","Light truck",2042,"sales","REF",2021,"vehicle",651754
+"HEV","Light truck",2042,"sales","REF",2021,"vehicle",571433
+"ICEV-D","Light truck",2042,"sales","REF",2021,"vehicle",123713
+"ICEV-G","Light truck",2042,"sales","REF",2021,"vehicle",6748469
+"PHEV20","Light truck",2042,"sales","REF",2021,"vehicle",20939
+"PHEV40","Light truck",2042,"sales","REF",2021,"vehicle",161117
+"BEV100","Car",2043,"sales","REF",2021,"vehicle",4142
+"BEV300","Car",2043,"sales","REF",2021,"vehicle",696665
+"CNG","Car",2043,"sales","REF",2021,"vehicle",5025
+"FCV","Car",2043,"sales","REF",2021,"vehicle",1253
+"FFV","Car",2043,"sales","REF",2021,"vehicle",101877
+"HEV","Car",2043,"sales","REF",2021,"vehicle",473842
+"ICEV-D","Car",2043,"sales","REF",2021,"vehicle",92
+"ICEV-G","Car",2043,"sales","REF",2021,"vehicle",5069750
+"PHEV20","Car",2043,"sales","REF",2021,"vehicle",85744
+"PHEV40","Car",2043,"sales","REF",2021,"vehicle",9153
+"BEV100","Light truck",2043,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2043,"sales","REF",2021,"vehicle",424428
+"CNG","Light truck",2043,"sales","REF",2021,"vehicle",11804
+"FCV","Light truck",2043,"sales","REF",2021,"vehicle",243
+"FFV","Light truck",2043,"sales","REF",2021,"vehicle",648144
+"HEV","Light truck",2043,"sales","REF",2021,"vehicle",581238
+"ICEV-D","Light truck",2043,"sales","REF",2021,"vehicle",122120
+"ICEV-G","Light truck",2043,"sales","REF",2021,"vehicle",6700851
+"PHEV20","Light truck",2043,"sales","REF",2021,"vehicle",23056
+"PHEV40","Light truck",2043,"sales","REF",2021,"vehicle",160284
+"BEV100","Car",2044,"sales","REF",2021,"vehicle",4143
+"BEV300","Car",2044,"sales","REF",2021,"vehicle",727272
+"CNG","Car",2044,"sales","REF",2021,"vehicle",5020
+"FCV","Car",2044,"sales","REF",2021,"vehicle",1281
+"FFV","Car",2044,"sales","REF",2021,"vehicle",101219
+"HEV","Car",2044,"sales","REF",2021,"vehicle",487941
+"ICEV-D","Car",2044,"sales","REF",2021,"vehicle",92
+"ICEV-G","Car",2044,"sales","REF",2021,"vehicle",5018383
+"PHEV20","Car",2044,"sales","REF",2021,"vehicle",83058
+"PHEV40","Car",2044,"sales","REF",2021,"vehicle",9061
+"BEV100","Light truck",2044,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2044,"sales","REF",2021,"vehicle",443074
+"CNG","Light truck",2044,"sales","REF",2021,"vehicle",11863
+"FCV","Light truck",2044,"sales","REF",2021,"vehicle",255
+"FFV","Light truck",2044,"sales","REF",2021,"vehicle",647927
+"HEV","Light truck",2044,"sales","REF",2021,"vehicle",593518
+"ICEV-D","Light truck",2044,"sales","REF",2021,"vehicle",122760
+"ICEV-G","Light truck",2044,"sales","REF",2021,"vehicle",6688710
+"PHEV20","Light truck",2044,"sales","REF",2021,"vehicle",25580
+"PHEV40","Light truck",2044,"sales","REF",2021,"vehicle",159799
+"BEV100","Car",2045,"sales","REF",2021,"vehicle",4160
+"BEV300","Car",2045,"sales","REF",2021,"vehicle",760051
+"CNG","Car",2045,"sales","REF",2021,"vehicle",5036
+"FCV","Car",2045,"sales","REF",2021,"vehicle",1315
+"FFV","Car",2045,"sales","REF",2021,"vehicle",101028
+"HEV","Car",2045,"sales","REF",2021,"vehicle",504388
+"ICEV-D","Car",2045,"sales","REF",2021,"vehicle",90
+"ICEV-G","Car",2045,"sales","REF",2021,"vehicle",4990969
+"PHEV20","Car",2045,"sales","REF",2021,"vehicle",80520
+"PHEV40","Car",2045,"sales","REF",2021,"vehicle",8985
+"BEV100","Light truck",2045,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2045,"sales","REF",2021,"vehicle",464630
+"CNG","Light truck",2045,"sales","REF",2021,"vehicle",12025
+"FCV","Light truck",2045,"sales","REF",2021,"vehicle",268
+"FFV","Light truck",2045,"sales","REF",2021,"vehicle",653584
+"HEV","Light truck",2045,"sales","REF",2021,"vehicle",610524
+"ICEV-D","Light truck",2045,"sales","REF",2021,"vehicle",122474
+"ICEV-G","Light truck",2045,"sales","REF",2021,"vehicle",6739075
+"PHEV20","Light truck",2045,"sales","REF",2021,"vehicle",28748
+"PHEV40","Light truck",2045,"sales","REF",2021,"vehicle",160213
+"BEV100","Car",2046,"sales","REF",2021,"vehicle",4180
+"BEV300","Car",2046,"sales","REF",2021,"vehicle",794622
+"CNG","Car",2046,"sales","REF",2021,"vehicle",5047
+"FCV","Car",2046,"sales","REF",2021,"vehicle",1347
+"FFV","Car",2046,"sales","REF",2021,"vehicle",100738
+"HEV","Car",2046,"sales","REF",2021,"vehicle",522378
+"ICEV-D","Car",2046,"sales","REF",2021,"vehicle",89
+"ICEV-G","Car",2046,"sales","REF",2021,"vehicle",4957329
+"PHEV20","Car",2046,"sales","REF",2021,"vehicle",78944
+"PHEV40","Car",2046,"sales","REF",2021,"vehicle",8966
+"BEV100","Light truck",2046,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2046,"sales","REF",2021,"vehicle",487229
+"CNG","Light truck",2046,"sales","REF",2021,"vehicle",12103
+"FCV","Light truck",2046,"sales","REF",2021,"vehicle",280
+"FFV","Light truck",2046,"sales","REF",2021,"vehicle",653074
+"HEV","Light truck",2046,"sales","REF",2021,"vehicle",625593
+"ICEV-D","Light truck",2046,"sales","REF",2021,"vehicle",123046
+"ICEV-G","Light truck",2046,"sales","REF",2021,"vehicle",6720875
+"PHEV20","Light truck",2046,"sales","REF",2021,"vehicle",32390
+"PHEV40","Light truck",2046,"sales","REF",2021,"vehicle",160214
+"BEV100","Car",2047,"sales","REF",2021,"vehicle",4176
+"BEV300","Car",2047,"sales","REF",2021,"vehicle",830568
+"CNG","Car",2047,"sales","REF",2021,"vehicle",5046
+"FCV","Car",2047,"sales","REF",2021,"vehicle",1377
+"FFV","Car",2047,"sales","REF",2021,"vehicle",100063
+"HEV","Car",2047,"sales","REF",2021,"vehicle",538023
+"ICEV-D","Car",2047,"sales","REF",2021,"vehicle",88
+"ICEV-G","Car",2047,"sales","REF",2021,"vehicle",4902340
+"PHEV20","Car",2047,"sales","REF",2021,"vehicle",76118
+"PHEV40","Car",2047,"sales","REF",2021,"vehicle",8860
+"BEV100","Light truck",2047,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2047,"sales","REF",2021,"vehicle",508162
+"CNG","Light truck",2047,"sales","REF",2021,"vehicle",12167
+"FCV","Light truck",2047,"sales","REF",2021,"vehicle",291
+"FFV","Light truck",2047,"sales","REF",2021,"vehicle",652774
+"HEV","Light truck",2047,"sales","REF",2021,"vehicle",638917
+"ICEV-D","Light truck",2047,"sales","REF",2021,"vehicle",121727
+"ICEV-G","Light truck",2047,"sales","REF",2021,"vehicle",6707844
+"PHEV20","Light truck",2047,"sales","REF",2021,"vehicle",36532
+"PHEV40","Light truck",2047,"sales","REF",2021,"vehicle",159499
+"BEV100","Car",2048,"sales","REF",2021,"vehicle",4169
+"BEV300","Car",2048,"sales","REF",2021,"vehicle",863967
+"CNG","Car",2048,"sales","REF",2021,"vehicle",5033
+"FCV","Car",2048,"sales","REF",2021,"vehicle",1404
+"FFV","Car",2048,"sales","REF",2021,"vehicle",99266
+"HEV","Car",2048,"sales","REF",2021,"vehicle",553645
+"ICEV-D","Car",2048,"sales","REF",2021,"vehicle",87
+"ICEV-G","Car",2048,"sales","REF",2021,"vehicle",4842546
+"PHEV20","Car",2048,"sales","REF",2021,"vehicle",73600
+"PHEV40","Car",2048,"sales","REF",2021,"vehicle",8759
+"BEV100","Light truck",2048,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2048,"sales","REF",2021,"vehicle",530101
+"CNG","Light truck",2048,"sales","REF",2021,"vehicle",12236
+"FCV","Light truck",2048,"sales","REF",2021,"vehicle",302
+"FFV","Light truck",2048,"sales","REF",2021,"vehicle",651837
+"HEV","Light truck",2048,"sales","REF",2021,"vehicle",652749
+"ICEV-D","Light truck",2048,"sales","REF",2021,"vehicle",123278
+"ICEV-G","Light truck",2048,"sales","REF",2021,"vehicle",6686332
+"PHEV20","Light truck",2048,"sales","REF",2021,"vehicle",41343
+"PHEV40","Light truck",2048,"sales","REF",2021,"vehicle",158724
+"BEV100","Car",2049,"sales","REF",2021,"vehicle",4129
+"BEV300","Car",2049,"sales","REF",2021,"vehicle",892251
+"CNG","Car",2049,"sales","REF",2021,"vehicle",4985
+"FCV","Car",2049,"sales","REF",2021,"vehicle",1421
+"FFV","Car",2049,"sales","REF",2021,"vehicle",97735
+"HEV","Car",2049,"sales","REF",2021,"vehicle",564758
+"ICEV-D","Car",2049,"sales","REF",2021,"vehicle",85
+"ICEV-G","Car",2049,"sales","REF",2021,"vehicle",4746433
+"PHEV20","Car",2049,"sales","REF",2021,"vehicle",70239
+"PHEV40","Car",2049,"sales","REF",2021,"vehicle",8575
+"BEV100","Light truck",2049,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2049,"sales","REF",2021,"vehicle",549153
+"CNG","Light truck",2049,"sales","REF",2021,"vehicle",12249
+"FCV","Light truck",2049,"sales","REF",2021,"vehicle",312
+"FFV","Light truck",2049,"sales","REF",2021,"vehicle",648635
+"HEV","Light truck",2049,"sales","REF",2021,"vehicle",663158
+"ICEV-D","Light truck",2049,"sales","REF",2021,"vehicle",120612
+"ICEV-G","Light truck",2049,"sales","REF",2021,"vehicle",6643910
+"PHEV20","Light truck",2049,"sales","REF",2021,"vehicle",46651
+"PHEV40","Light truck",2049,"sales","REF",2021,"vehicle",156914
+"BEV100","Car",2050,"sales","REF",2021,"vehicle",4087
+"BEV300","Car",2050,"sales","REF",2021,"vehicle",918785
+"CNG","Car",2050,"sales","REF",2021,"vehicle",4931
+"FCV","Car",2050,"sales","REF",2021,"vehicle",1435
+"FFV","Car",2050,"sales","REF",2021,"vehicle",96153
+"HEV","Car",2050,"sales","REF",2021,"vehicle",575785
+"ICEV-D","Car",2050,"sales","REF",2021,"vehicle",83
+"ICEV-G","Car",2050,"sales","REF",2021,"vehicle",4648758
+"PHEV20","Car",2050,"sales","REF",2021,"vehicle",67172
+"PHEV40","Car",2050,"sales","REF",2021,"vehicle",8400
+"BEV100","Light truck",2050,"sales","REF",2021,"vehicle",0
+"BEV300","Light truck",2050,"sales","REF",2021,"vehicle",568592
+"CNG","Light truck",2050,"sales","REF",2021,"vehicle",12254
+"FCV","Light truck",2050,"sales","REF",2021,"vehicle",320
+"FFV","Light truck",2050,"sales","REF",2021,"vehicle",644456
+"HEV","Light truck",2050,"sales","REF",2021,"vehicle",673537
+"ICEV-D","Light truck",2050,"sales","REF",2021,"vehicle",119847
+"ICEV-G","Light truck",2050,"sales","REF",2021,"vehicle",6590101
+"PHEV20","Light truck",2050,"sales","REF",2021,"vehicle",52716
+"PHEV40","Light truck",2050,"sales","REF",2021,"vehicle",154915
+"BEV100","Car",2020,"sales","HOP",2021,"vehicle",2453
+"BEV300","Car",2020,"sales","HOP",2021,"vehicle",134196
+"CNG","Car",2020,"sales","HOP",2021,"vehicle",4045
+"FCV","Car",2020,"sales","HOP",2021,"vehicle",198
+"FFV","Car",2020,"sales","HOP",2021,"vehicle",91266
+"HEV","Car",2020,"sales","HOP",2021,"vehicle",138295
+"ICEV-D","Car",2020,"sales","HOP",2021,"vehicle",129
+"ICEV-G","Car",2020,"sales","HOP",2021,"vehicle",4870702
+"PHEV20","Car",2020,"sales","HOP",2021,"vehicle",25339
+"PHEV40","Car",2020,"sales","HOP",2021,"vehicle",7186
+"BEV100","Light truck",2020,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2020,"sales","HOP",2021,"vehicle",40436
+"CNG","Light truck",2020,"sales","HOP",2021,"vehicle",9073
+"FCV","Light truck",2020,"sales","HOP",2021,"vehicle",4
+"FFV","Light truck",2020,"sales","HOP",2021,"vehicle",613591
+"HEV","Light truck",2020,"sales","HOP",2021,"vehicle",215335
+"ICEV-D","Light truck",2020,"sales","HOP",2021,"vehicle",67019
+"ICEV-G","Light truck",2020,"sales","HOP",2021,"vehicle",6036541
+"PHEV20","Light truck",2020,"sales","HOP",2021,"vehicle",3700
+"PHEV40","Light truck",2020,"sales","HOP",2021,"vehicle",21944
+"BEV100","Car",2021,"sales","HOP",2021,"vehicle",2622
+"BEV300","Car",2021,"sales","HOP",2021,"vehicle",131247
+"CNG","Car",2021,"sales","HOP",2021,"vehicle",4278
+"FCV","Car",2021,"sales","HOP",2021,"vehicle",207
+"FFV","Car",2021,"sales","HOP",2021,"vehicle",99143
+"HEV","Car",2021,"sales","HOP",2021,"vehicle",163064
+"ICEV-D","Car",2021,"sales","HOP",2021,"vehicle",111
+"ICEV-G","Car",2021,"sales","HOP",2021,"vehicle",5298271
+"PHEV20","Car",2021,"sales","HOP",2021,"vehicle",36106
+"PHEV40","Car",2021,"sales","HOP",2021,"vehicle",7962
+"BEV100","Light truck",2021,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2021,"sales","HOP",2021,"vehicle",48890
+"CNG","Light truck",2021,"sales","HOP",2021,"vehicle",9638
+"FCV","Light truck",2021,"sales","HOP",2021,"vehicle",6
+"FFV","Light truck",2021,"sales","HOP",2021,"vehicle",591123
+"HEV","Light truck",2021,"sales","HOP",2021,"vehicle",247602
+"ICEV-D","Light truck",2021,"sales","HOP",2021,"vehicle",90199
+"ICEV-G","Light truck",2021,"sales","HOP",2021,"vehicle",6370470
+"PHEV20","Light truck",2021,"sales","HOP",2021,"vehicle",3947
+"PHEV40","Light truck",2021,"sales","HOP",2021,"vehicle",26665
+"BEV100","Car",2022,"sales","HOP",2021,"vehicle",2757
+"BEV300","Car",2022,"sales","HOP",2021,"vehicle",153939
+"CNG","Car",2022,"sales","HOP",2021,"vehicle",4996
+"FCV","Car",2022,"sales","HOP",2021,"vehicle",251
+"FFV","Car",2022,"sales","HOP",2021,"vehicle",112034
+"HEV","Car",2022,"sales","HOP",2021,"vehicle",198931
+"ICEV-D","Car",2022,"sales","HOP",2021,"vehicle",114
+"ICEV-G","Car",2022,"sales","HOP",2021,"vehicle",5961699
+"PHEV20","Car",2022,"sales","HOP",2021,"vehicle",44740
+"PHEV40","Car",2022,"sales","HOP",2021,"vehicle",7480
+"BEV100","Light truck",2022,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2022,"sales","HOP",2021,"vehicle",56881
+"CNG","Light truck",2022,"sales","HOP",2021,"vehicle",9858
+"FCV","Light truck",2022,"sales","HOP",2021,"vehicle",9
+"FFV","Light truck",2022,"sales","HOP",2021,"vehicle",600833
+"HEV","Light truck",2022,"sales","HOP",2021,"vehicle",262402
+"ICEV-D","Light truck",2022,"sales","HOP",2021,"vehicle",109798
+"ICEV-G","Light truck",2022,"sales","HOP",2021,"vehicle",6452665
+"PHEV20","Light truck",2022,"sales","HOP",2021,"vehicle",4024
+"PHEV40","Light truck",2022,"sales","HOP",2021,"vehicle",27371
+"BEV100","Car",2023,"sales","HOP",2021,"vehicle",2813
+"BEV300","Car",2023,"sales","HOP",2021,"vehicle",168158
+"CNG","Car",2023,"sales","HOP",2021,"vehicle",5401
+"FCV","Car",2023,"sales","HOP",2021,"vehicle",296
+"FFV","Car",2023,"sales","HOP",2021,"vehicle",118095
+"HEV","Car",2023,"sales","HOP",2021,"vehicle",225844
+"ICEV-D","Car",2023,"sales","HOP",2021,"vehicle",115
+"ICEV-G","Car",2023,"sales","HOP",2021,"vehicle",6268634
+"PHEV20","Car",2023,"sales","HOP",2021,"vehicle",53171
+"PHEV40","Car",2023,"sales","HOP",2021,"vehicle",7086
+"BEV100","Light truck",2023,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2023,"sales","HOP",2021,"vehicle",65893
+"CNG","Light truck",2023,"sales","HOP",2021,"vehicle",10038
+"FCV","Light truck",2023,"sales","HOP",2021,"vehicle",12
+"FFV","Light truck",2023,"sales","HOP",2021,"vehicle",607005
+"HEV","Light truck",2023,"sales","HOP",2021,"vehicle",274809
+"ICEV-D","Light truck",2023,"sales","HOP",2021,"vehicle",105232
+"ICEV-G","Light truck",2023,"sales","HOP",2021,"vehicle",6506596
+"PHEV20","Light truck",2023,"sales","HOP",2021,"vehicle",4165
+"PHEV40","Light truck",2023,"sales","HOP",2021,"vehicle",26259
+"BEV100","Car",2024,"sales","HOP",2021,"vehicle",2819
+"BEV300","Car",2024,"sales","HOP",2021,"vehicle",181920
+"CNG","Car",2024,"sales","HOP",2021,"vehicle",5610
+"FCV","Car",2024,"sales","HOP",2021,"vehicle",340
+"FFV","Car",2024,"sales","HOP",2021,"vehicle",119754
+"HEV","Car",2024,"sales","HOP",2021,"vehicle",247580
+"ICEV-D","Car",2024,"sales","HOP",2021,"vehicle",114
+"ICEV-G","Car",2024,"sales","HOP",2021,"vehicle",6337616
+"PHEV20","Car",2024,"sales","HOP",2021,"vehicle",61384
+"PHEV40","Car",2024,"sales","HOP",2021,"vehicle",6756
+"BEV100","Light truck",2024,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2024,"sales","HOP",2021,"vehicle",75647
+"CNG","Light truck",2024,"sales","HOP",2021,"vehicle",9967
+"FCV","Light truck",2024,"sales","HOP",2021,"vehicle",16
+"FFV","Light truck",2024,"sales","HOP",2021,"vehicle",598324
+"HEV","Light truck",2024,"sales","HOP",2021,"vehicle",279913
+"ICEV-D","Light truck",2024,"sales","HOP",2021,"vehicle",102073
+"ICEV-G","Light truck",2024,"sales","HOP",2021,"vehicle",6398503
+"PHEV20","Light truck",2024,"sales","HOP",2021,"vehicle",4285
+"PHEV40","Light truck",2024,"sales","HOP",2021,"vehicle",24325
+"BEV100","Car",2025,"sales","HOP",2021,"vehicle",2931
+"BEV300","Car",2025,"sales","HOP",2021,"vehicle",198048
+"CNG","Car",2025,"sales","HOP",2021,"vehicle",5857
+"FCV","Car",2025,"sales","HOP",2021,"vehicle",408
+"FFV","Car",2025,"sales","HOP",2021,"vehicle",122959
+"HEV","Car",2025,"sales","HOP",2021,"vehicle",269116
+"ICEV-D","Car",2025,"sales","HOP",2021,"vehicle",117
+"ICEV-G","Car",2025,"sales","HOP",2021,"vehicle",6497935
+"PHEV20","Car",2025,"sales","HOP",2021,"vehicle",74601
+"PHEV40","Car",2025,"sales","HOP",2021,"vehicle",6688
+"BEV100","Light truck",2025,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2025,"sales","HOP",2021,"vehicle",83447
+"CNG","Light truck",2025,"sales","HOP",2021,"vehicle",10072
+"FCV","Light truck",2025,"sales","HOP",2021,"vehicle",21
+"FFV","Light truck",2025,"sales","HOP",2021,"vehicle",598574
+"HEV","Light truck",2025,"sales","HOP",2021,"vehicle",293425
+"ICEV-D","Light truck",2025,"sales","HOP",2021,"vehicle",101789
+"ICEV-G","Light truck",2025,"sales","HOP",2021,"vehicle",6386718
+"PHEV20","Light truck",2025,"sales","HOP",2021,"vehicle",4269
+"PHEV40","Light truck",2025,"sales","HOP",2021,"vehicle",44948
+"BEV100","Car",2026,"sales","HOP",2021,"vehicle",3046
+"BEV300","Car",2026,"sales","HOP",2021,"vehicle",215674
+"CNG","Car",2026,"sales","HOP",2021,"vehicle",5973
+"FCV","Car",2026,"sales","HOP",2021,"vehicle",474
+"FFV","Car",2026,"sales","HOP",2021,"vehicle",124085
+"HEV","Car",2026,"sales","HOP",2021,"vehicle",290863
+"ICEV-D","Car",2026,"sales","HOP",2021,"vehicle",118
+"ICEV-G","Car",2026,"sales","HOP",2021,"vehicle",6536959
+"PHEV20","Car",2026,"sales","HOP",2021,"vehicle",86938
+"PHEV40","Car",2026,"sales","HOP",2021,"vehicle",6835
+"BEV100","Light truck",2026,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2026,"sales","HOP",2021,"vehicle",89821
+"CNG","Light truck",2026,"sales","HOP",2021,"vehicle",10107
+"FCV","Light truck",2026,"sales","HOP",2021,"vehicle",27
+"FFV","Light truck",2026,"sales","HOP",2021,"vehicle",589799
+"HEV","Light truck",2026,"sales","HOP",2021,"vehicle",348886
+"ICEV-D","Light truck",2026,"sales","HOP",2021,"vehicle",98274
+"ICEV-G","Light truck",2026,"sales","HOP",2021,"vehicle",6255737
+"PHEV20","Light truck",2026,"sales","HOP",2021,"vehicle",4237
+"PHEV40","Light truck",2026,"sales","HOP",2021,"vehicle",123211
+"BEV100","Car",2027,"sales","HOP",2021,"vehicle",3150
+"BEV300","Car",2027,"sales","HOP",2021,"vehicle",233407
+"CNG","Car",2027,"sales","HOP",2021,"vehicle",5947
+"FCV","Car",2027,"sales","HOP",2021,"vehicle",539
+"FFV","Car",2027,"sales","HOP",2021,"vehicle",122623
+"HEV","Car",2027,"sales","HOP",2021,"vehicle",309510
+"ICEV-D","Car",2027,"sales","HOP",2021,"vehicle",115
+"ICEV-G","Car",2027,"sales","HOP",2021,"vehicle",6436975
+"PHEV20","Car",2027,"sales","HOP",2021,"vehicle",101547
+"PHEV40","Car",2027,"sales","HOP",2021,"vehicle",7103
+"BEV100","Light truck",2027,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2027,"sales","HOP",2021,"vehicle",98130
+"CNG","Light truck",2027,"sales","HOP",2021,"vehicle",9899
+"FCV","Light truck",2027,"sales","HOP",2021,"vehicle",34
+"FFV","Light truck",2027,"sales","HOP",2021,"vehicle",572028
+"HEV","Light truck",2027,"sales","HOP",2021,"vehicle",367856
+"ICEV-D","Light truck",2027,"sales","HOP",2021,"vehicle",94565
+"ICEV-G","Light truck",2027,"sales","HOP",2021,"vehicle",6047073
+"PHEV20","Light truck",2027,"sales","HOP",2021,"vehicle",4644
+"PHEV40","Light truck",2027,"sales","HOP",2021,"vehicle",140791
+"BEV100","Car",2028,"sales","HOP",2021,"vehicle",3352
+"BEV300","Car",2028,"sales","HOP",2021,"vehicle",260721
+"CNG","Car",2028,"sales","HOP",2021,"vehicle",6050
+"FCV","Car",2028,"sales","HOP",2021,"vehicle",620
+"FFV","Car",2028,"sales","HOP",2021,"vehicle",123558
+"HEV","Car",2028,"sales","HOP",2021,"vehicle",337025
+"ICEV-D","Car",2028,"sales","HOP",2021,"vehicle",116
+"ICEV-G","Car",2028,"sales","HOP",2021,"vehicle",6457526
+"PHEV20","Car",2028,"sales","HOP",2021,"vehicle",121743
+"PHEV40","Car",2028,"sales","HOP",2021,"vehicle",7652
+"BEV100","Light truck",2028,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2028,"sales","HOP",2021,"vehicle",111471
+"CNG","Light truck",2028,"sales","HOP",2021,"vehicle",9892
+"FCV","Light truck",2028,"sales","HOP",2021,"vehicle",42
+"FFV","Light truck",2028,"sales","HOP",2021,"vehicle",567619
+"HEV","Light truck",2028,"sales","HOP",2021,"vehicle",378463
+"ICEV-D","Light truck",2028,"sales","HOP",2021,"vehicle",95702
+"ICEV-G","Light truck",2028,"sales","HOP",2021,"vehicle",5985043
+"PHEV20","Light truck",2028,"sales","HOP",2021,"vehicle",5222
+"PHEV40","Light truck",2028,"sales","HOP",2021,"vehicle",142392
+"BEV100","Car",2029,"sales","HOP",2021,"vehicle",3548
+"BEV300","Car",2029,"sales","HOP",2021,"vehicle",292813
+"CNG","Car",2029,"sales","HOP",2021,"vehicle",6094
+"FCV","Car",2029,"sales","HOP",2021,"vehicle",701
+"FFV","Car",2029,"sales","HOP",2021,"vehicle",123526
+"HEV","Car",2029,"sales","HOP",2021,"vehicle",356697
+"ICEV-D","Car",2029,"sales","HOP",2021,"vehicle",116
+"ICEV-G","Car",2029,"sales","HOP",2021,"vehicle",6429747
+"PHEV20","Car",2029,"sales","HOP",2021,"vehicle",128041
+"PHEV40","Car",2029,"sales","HOP",2021,"vehicle",8382
+"BEV100","Light truck",2029,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2029,"sales","HOP",2021,"vehicle",126951
+"CNG","Light truck",2029,"sales","HOP",2021,"vehicle",9814
+"FCV","Light truck",2029,"sales","HOP",2021,"vehicle",51
+"FFV","Light truck",2029,"sales","HOP",2021,"vehicle",559442
+"HEV","Light truck",2029,"sales","HOP",2021,"vehicle",385740
+"ICEV-D","Light truck",2029,"sales","HOP",2021,"vehicle",95176
+"ICEV-G","Light truck",2029,"sales","HOP",2021,"vehicle",5884238
+"PHEV20","Light truck",2029,"sales","HOP",2021,"vehicle",5816
+"PHEV40","Light truck",2029,"sales","HOP",2021,"vehicle",142056
+"BEV100","Car",2030,"sales","HOP",2021,"vehicle",3789
+"BEV300","Car",2030,"sales","HOP",2021,"vehicle",335856
+"CNG","Car",2030,"sales","HOP",2021,"vehicle",6130
+"FCV","Car",2030,"sales","HOP",2021,"vehicle",786
+"FFV","Car",2030,"sales","HOP",2021,"vehicle",123575
+"HEV","Car",2030,"sales","HOP",2021,"vehicle",378585
+"ICEV-D","Car",2030,"sales","HOP",2021,"vehicle",118
+"ICEV-G","Car",2030,"sales","HOP",2021,"vehicle",6400189
+"PHEV20","Car",2030,"sales","HOP",2021,"vehicle",134104
+"PHEV40","Car",2030,"sales","HOP",2021,"vehicle",9497
+"BEV100","Light truck",2030,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2030,"sales","HOP",2021,"vehicle",147151
+"CNG","Light truck",2030,"sales","HOP",2021,"vehicle",9688
+"FCV","Light truck",2030,"sales","HOP",2021,"vehicle",62
+"FFV","Light truck",2030,"sales","HOP",2021,"vehicle",547047
+"HEV","Light truck",2030,"sales","HOP",2021,"vehicle",395269
+"ICEV-D","Light truck",2030,"sales","HOP",2021,"vehicle",96978
+"ICEV-G","Light truck",2030,"sales","HOP",2021,"vehicle",5732877
+"PHEV20","Light truck",2030,"sales","HOP",2021,"vehicle",6416
+"PHEV40","Light truck",2030,"sales","HOP",2021,"vehicle",143497
+"BEV100","Car",2031,"sales","HOP",2021,"vehicle",3974
+"BEV300","Car",2031,"sales","HOP",2021,"vehicle",382537
+"CNG","Car",2031,"sales","HOP",2021,"vehicle",6176
+"FCV","Car",2031,"sales","HOP",2021,"vehicle",868
+"FFV","Car",2031,"sales","HOP",2021,"vehicle",123388
+"HEV","Car",2031,"sales","HOP",2021,"vehicle",395237
+"ICEV-D","Car",2031,"sales","HOP",2021,"vehicle",117
+"ICEV-G","Car",2031,"sales","HOP",2021,"vehicle",6359150
+"PHEV20","Car",2031,"sales","HOP",2021,"vehicle",135217
+"PHEV40","Car",2031,"sales","HOP",2021,"vehicle",10168
+"BEV100","Light truck",2031,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2031,"sales","HOP",2021,"vehicle",168287
+"CNG","Light truck",2031,"sales","HOP",2021,"vehicle",9711
+"FCV","Light truck",2031,"sales","HOP",2021,"vehicle",73
+"FFV","Light truck",2031,"sales","HOP",2021,"vehicle",545753
+"HEV","Light truck",2031,"sales","HOP",2021,"vehicle",406751
+"ICEV-D","Light truck",2031,"sales","HOP",2021,"vehicle",95099
+"ICEV-G","Light truck",2031,"sales","HOP",2021,"vehicle",5706184
+"PHEV20","Light truck",2031,"sales","HOP",2021,"vehicle",7107
+"PHEV40","Light truck",2031,"sales","HOP",2021,"vehicle",146183
+"BEV100","Car",2032,"sales","HOP",2021,"vehicle",4138
+"BEV300","Car",2032,"sales","HOP",2021,"vehicle",428093
+"CNG","Car",2032,"sales","HOP",2021,"vehicle",6130
+"FCV","Car",2032,"sales","HOP",2021,"vehicle",936
+"FFV","Car",2032,"sales","HOP",2021,"vehicle",121736
+"HEV","Car",2032,"sales","HOP",2021,"vehicle",408519
+"ICEV-D","Car",2032,"sales","HOP",2021,"vehicle",113
+"ICEV-G","Car",2032,"sales","HOP",2021,"vehicle",6244061
+"PHEV20","Car",2032,"sales","HOP",2021,"vehicle",137749
+"PHEV40","Car",2032,"sales","HOP",2021,"vehicle",10715
+"BEV100","Light truck",2032,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2032,"sales","HOP",2021,"vehicle",191551
+"CNG","Light truck",2032,"sales","HOP",2021,"vehicle",9637
+"FCV","Light truck",2032,"sales","HOP",2021,"vehicle",85
+"FFV","Light truck",2032,"sales","HOP",2021,"vehicle",537190
+"HEV","Light truck",2032,"sales","HOP",2021,"vehicle",415793
+"ICEV-D","Light truck",2032,"sales","HOP",2021,"vehicle",92655
+"ICEV-G","Light truck",2032,"sales","HOP",2021,"vehicle",5598520
+"PHEV20","Light truck",2032,"sales","HOP",2021,"vehicle",7768
+"PHEV40","Light truck",2032,"sales","HOP",2021,"vehicle",148755
+"BEV100","Car",2033,"sales","HOP",2021,"vehicle",4288
+"BEV300","Car",2033,"sales","HOP",2021,"vehicle",483659
+"CNG","Car",2033,"sales","HOP",2021,"vehicle",6131
+"FCV","Car",2033,"sales","HOP",2021,"vehicle",1004
+"FFV","Car",2033,"sales","HOP",2021,"vehicle",120758
+"HEV","Car",2033,"sales","HOP",2021,"vehicle",422886
+"ICEV-D","Car",2033,"sales","HOP",2021,"vehicle",110
+"ICEV-G","Car",2033,"sales","HOP",2021,"vehicle",6161175
+"PHEV20","Car",2033,"sales","HOP",2021,"vehicle",138769
+"PHEV40","Car",2033,"sales","HOP",2021,"vehicle",11159
+"BEV100","Light truck",2033,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2033,"sales","HOP",2021,"vehicle",216584
+"CNG","Light truck",2033,"sales","HOP",2021,"vehicle",9628
+"FCV","Light truck",2033,"sales","HOP",2021,"vehicle",97
+"FFV","Light truck",2033,"sales","HOP",2021,"vehicle",532848
+"HEV","Light truck",2033,"sales","HOP",2021,"vehicle",426572
+"ICEV-D","Light truck",2033,"sales","HOP",2021,"vehicle",89652
+"ICEV-G","Light truck",2033,"sales","HOP",2021,"vehicle",5538370
+"PHEV20","Light truck",2033,"sales","HOP",2021,"vehicle",8459
+"PHEV40","Light truck",2033,"sales","HOP",2021,"vehicle",151595
+"BEV100","Car",2034,"sales","HOP",2021,"vehicle",4443
+"BEV300","Car",2034,"sales","HOP",2021,"vehicle",544463
+"CNG","Car",2034,"sales","HOP",2021,"vehicle",6157
+"FCV","Car",2034,"sales","HOP",2021,"vehicle",1071
+"FFV","Car",2034,"sales","HOP",2021,"vehicle",120376
+"HEV","Car",2034,"sales","HOP",2021,"vehicle",438865
+"ICEV-D","Car",2034,"sales","HOP",2021,"vehicle",107
+"ICEV-G","Car",2034,"sales","HOP",2021,"vehicle",6111451
+"PHEV20","Car",2034,"sales","HOP",2021,"vehicle",139876
+"PHEV40","Car",2034,"sales","HOP",2021,"vehicle",11611
+"BEV100","Light truck",2034,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2034,"sales","HOP",2021,"vehicle",244801
+"CNG","Light truck",2034,"sales","HOP",2021,"vehicle",9698
+"FCV","Light truck",2034,"sales","HOP",2021,"vehicle",110
+"FFV","Light truck",2034,"sales","HOP",2021,"vehicle",532481
+"HEV","Light truck",2034,"sales","HOP",2021,"vehicle",440607
+"ICEV-D","Light truck",2034,"sales","HOP",2021,"vehicle",88984
+"ICEV-G","Light truck",2034,"sales","HOP",2021,"vehicle",5517676
+"PHEV20","Light truck",2034,"sales","HOP",2021,"vehicle",9281
+"PHEV40","Light truck",2034,"sales","HOP",2021,"vehicle",155115
+"BEV100","Car",2035,"sales","HOP",2021,"vehicle",4533
+"BEV300","Car",2035,"sales","HOP",2021,"vehicle",604176
+"CNG","Car",2035,"sales","HOP",2021,"vehicle",6125
+"FCV","Car",2035,"sales","HOP",2021,"vehicle",1119
+"FFV","Car",2035,"sales","HOP",2021,"vehicle",118499
+"HEV","Car",2035,"sales","HOP",2021,"vehicle",450498
+"ICEV-D","Car",2035,"sales","HOP",2021,"vehicle",107
+"ICEV-G","Car",2035,"sales","HOP",2021,"vehicle",5981969
+"PHEV20","Car",2035,"sales","HOP",2021,"vehicle",139785
+"PHEV40","Car",2035,"sales","HOP",2021,"vehicle",11949
+"BEV100","Light truck",2035,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2035,"sales","HOP",2021,"vehicle",272133
+"CNG","Light truck",2035,"sales","HOP",2021,"vehicle",9633
+"FCV","Light truck",2035,"sales","HOP",2021,"vehicle",122
+"FFV","Light truck",2035,"sales","HOP",2021,"vehicle",522309
+"HEV","Light truck",2035,"sales","HOP",2021,"vehicle",448174
+"ICEV-D","Light truck",2035,"sales","HOP",2021,"vehicle",89979
+"ICEV-G","Light truck",2035,"sales","HOP",2021,"vehicle",5394561
+"PHEV20","Light truck",2035,"sales","HOP",2021,"vehicle",10079
+"PHEV40","Light truck",2035,"sales","HOP",2021,"vehicle",156342
+"BEV100","Car",2036,"sales","HOP",2021,"vehicle",4570
+"BEV300","Car",2036,"sales","HOP",2021,"vehicle",662510
+"CNG","Car",2036,"sales","HOP",2021,"vehicle",6067
+"FCV","Car",2036,"sales","HOP",2021,"vehicle",1157
+"FFV","Car",2036,"sales","HOP",2021,"vehicle",116190
+"HEV","Car",2036,"sales","HOP",2021,"vehicle",458446
+"ICEV-D","Car",2036,"sales","HOP",2021,"vehicle",102
+"ICEV-G","Car",2036,"sales","HOP",2021,"vehicle",5831705
+"PHEV20","Car",2036,"sales","HOP",2021,"vehicle",137191
+"PHEV40","Car",2036,"sales","HOP",2021,"vehicle",12065
+"BEV100","Light truck",2036,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2036,"sales","HOP",2021,"vehicle",297805
+"CNG","Light truck",2036,"sales","HOP",2021,"vehicle",9545
+"FCV","Light truck",2036,"sales","HOP",2021,"vehicle",132
+"FFV","Light truck",2036,"sales","HOP",2021,"vehicle",513097
+"HEV","Light truck",2036,"sales","HOP",2021,"vehicle",452873
+"ICEV-D","Light truck",2036,"sales","HOP",2021,"vehicle",86304
+"ICEV-G","Light truck",2036,"sales","HOP",2021,"vehicle",5282722
+"PHEV20","Light truck",2036,"sales","HOP",2021,"vehicle",10930
+"PHEV40","Light truck",2036,"sales","HOP",2021,"vehicle",156489
+"BEV100","Car",2037,"sales","HOP",2021,"vehicle",4621
+"BEV300","Car",2037,"sales","HOP",2021,"vehicle",722725
+"CNG","Car",2037,"sales","HOP",2021,"vehicle",6035
+"FCV","Car",2037,"sales","HOP",2021,"vehicle",1196
+"FFV","Car",2037,"sales","HOP",2021,"vehicle",114644
+"HEV","Car",2037,"sales","HOP",2021,"vehicle",469315
+"ICEV-D","Car",2037,"sales","HOP",2021,"vehicle",100
+"ICEV-G","Car",2037,"sales","HOP",2021,"vehicle",5721501
+"PHEV20","Car",2037,"sales","HOP",2021,"vehicle",135833
+"PHEV40","Car",2037,"sales","HOP",2021,"vehicle",12209
+"BEV100","Light truck",2037,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2037,"sales","HOP",2021,"vehicle",326162
+"CNG","Light truck",2037,"sales","HOP",2021,"vehicle",9534
+"FCV","Light truck",2037,"sales","HOP",2021,"vehicle",144
+"FFV","Light truck",2037,"sales","HOP",2021,"vehicle",507646
+"HEV","Light truck",2037,"sales","HOP",2021,"vehicle",461138
+"ICEV-D","Light truck",2037,"sales","HOP",2021,"vehicle",85242
+"ICEV-G","Light truck",2037,"sales","HOP",2021,"vehicle",5211339
+"PHEV20","Light truck",2037,"sales","HOP",2021,"vehicle",11965
+"PHEV40","Light truck",2037,"sales","HOP",2021,"vehicle",157623
+"BEV100","Car",2038,"sales","HOP",2021,"vehicle",4656
+"BEV300","Car",2038,"sales","HOP",2021,"vehicle",781672
+"CNG","Car",2038,"sales","HOP",2021,"vehicle",6007
+"FCV","Car",2038,"sales","HOP",2021,"vehicle",1233
+"FFV","Car",2038,"sales","HOP",2021,"vehicle",113354
+"HEV","Car",2038,"sales","HOP",2021,"vehicle",479835
+"ICEV-D","Car",2038,"sales","HOP",2021,"vehicle",96
+"ICEV-G","Car",2038,"sales","HOP",2021,"vehicle",5626338
+"PHEV20","Car",2038,"sales","HOP",2021,"vehicle",133313
+"PHEV40","Car",2038,"sales","HOP",2021,"vehicle",12246
+"BEV100","Light truck",2038,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2038,"sales","HOP",2021,"vehicle",354209
+"CNG","Light truck",2038,"sales","HOP",2021,"vehicle",9564
+"FCV","Light truck",2038,"sales","HOP",2021,"vehicle",155
+"FFV","Light truck",2038,"sales","HOP",2021,"vehicle",505813
+"HEV","Light truck",2038,"sales","HOP",2021,"vehicle",470218
+"ICEV-D","Light truck",2038,"sales","HOP",2021,"vehicle",82511
+"ICEV-G","Light truck",2038,"sales","HOP",2021,"vehicle",5180229
+"PHEV20","Light truck",2038,"sales","HOP",2021,"vehicle",13166
+"PHEV40","Light truck",2038,"sales","HOP",2021,"vehicle",158605
+"BEV100","Car",2039,"sales","HOP",2021,"vehicle",4663
+"BEV300","Car",2039,"sales","HOP",2021,"vehicle",834524
+"CNG","Car",2039,"sales","HOP",2021,"vehicle",5950
+"FCV","Car",2039,"sales","HOP",2021,"vehicle",1261
+"FFV","Car",2039,"sales","HOP",2021,"vehicle",111647
+"HEV","Car",2039,"sales","HOP",2021,"vehicle",488511
+"ICEV-D","Car",2039,"sales","HOP",2021,"vehicle",92
+"ICEV-G","Car",2039,"sales","HOP",2021,"vehicle",5513155
+"PHEV20","Car",2039,"sales","HOP",2021,"vehicle",130112
+"PHEV40","Car",2039,"sales","HOP",2021,"vehicle",12212
+"BEV100","Light truck",2039,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2039,"sales","HOP",2021,"vehicle",381241
+"CNG","Light truck",2039,"sales","HOP",2021,"vehicle",9572
+"FCV","Light truck",2039,"sales","HOP",2021,"vehicle",165
+"FFV","Light truck",2039,"sales","HOP",2021,"vehicle",502562
+"HEV","Light truck",2039,"sales","HOP",2021,"vehicle",478057
+"ICEV-D","Light truck",2039,"sales","HOP",2021,"vehicle",80750
+"ICEV-G","Light truck",2039,"sales","HOP",2021,"vehicle",5135242
+"PHEV20","Light truck",2039,"sales","HOP",2021,"vehicle",14487
+"PHEV40","Light truck",2039,"sales","HOP",2021,"vehicle",158880
+"BEV100","Car",2040,"sales","HOP",2021,"vehicle",4645
+"BEV300","Car",2040,"sales","HOP",2021,"vehicle",884394
+"CNG","Car",2040,"sales","HOP",2021,"vehicle",5876
+"FCV","Car",2040,"sales","HOP",2021,"vehicle",1280
+"FFV","Car",2040,"sales","HOP",2021,"vehicle",109440
+"HEV","Car",2040,"sales","HOP",2021,"vehicle",495695
+"ICEV-D","Car",2040,"sales","HOP",2021,"vehicle",88
+"ICEV-G","Car",2040,"sales","HOP",2021,"vehicle",5374108
+"PHEV20","Car",2040,"sales","HOP",2021,"vehicle",127058
+"PHEV40","Car",2040,"sales","HOP",2021,"vehicle",12152
+"BEV100","Light truck",2040,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2040,"sales","HOP",2021,"vehicle",406222
+"CNG","Light truck",2040,"sales","HOP",2021,"vehicle",9514
+"FCV","Light truck",2040,"sales","HOP",2021,"vehicle",174
+"FFV","Light truck",2040,"sales","HOP",2021,"vehicle",494511
+"HEV","Light truck",2040,"sales","HOP",2021,"vehicle",482335
+"ICEV-D","Light truck",2040,"sales","HOP",2021,"vehicle",78366
+"ICEV-G","Light truck",2040,"sales","HOP",2021,"vehicle",5039641
+"PHEV20","Light truck",2040,"sales","HOP",2021,"vehicle",15882
+"PHEV40","Light truck",2040,"sales","HOP",2021,"vehicle",157959
+"BEV100","Car",2041,"sales","HOP",2021,"vehicle",4610
+"BEV300","Car",2041,"sales","HOP",2021,"vehicle",921771
+"CNG","Car",2041,"sales","HOP",2021,"vehicle",5831
+"FCV","Car",2041,"sales","HOP",2021,"vehicle",1304
+"FFV","Car",2041,"sales","HOP",2021,"vehicle",107905
+"HEV","Car",2041,"sales","HOP",2021,"vehicle",507790
+"ICEV-D","Car",2041,"sales","HOP",2021,"vehicle",87
+"ICEV-G","Car",2041,"sales","HOP",2021,"vehicle",5272963
+"PHEV20","Car",2041,"sales","HOP",2021,"vehicle",122744
+"PHEV40","Car",2041,"sales","HOP",2021,"vehicle",11953
+"BEV100","Light truck",2041,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2041,"sales","HOP",2021,"vehicle",424048
+"CNG","Light truck",2041,"sales","HOP",2021,"vehicle",9505
+"FCV","Light truck",2041,"sales","HOP",2021,"vehicle",184
+"FFV","Light truck",2041,"sales","HOP",2021,"vehicle",490644
+"HEV","Light truck",2041,"sales","HOP",2021,"vehicle",487986
+"ICEV-D","Light truck",2041,"sales","HOP",2021,"vehicle",78234
+"ICEV-G","Light truck",2041,"sales","HOP",2021,"vehicle",4990895
+"PHEV20","Light truck",2041,"sales","HOP",2021,"vehicle",17478
+"PHEV40","Light truck",2041,"sales","HOP",2021,"vehicle",156654
+"BEV100","Car",2042,"sales","HOP",2021,"vehicle",4670
+"BEV300","Car",2042,"sales","HOP",2021,"vehicle",973988
+"CNG","Car",2042,"sales","HOP",2021,"vehicle",5886
+"FCV","Car",2042,"sales","HOP",2021,"vehicle",1349
+"FFV","Car",2042,"sales","HOP",2021,"vehicle",108127
+"HEV","Car",2042,"sales","HOP",2021,"vehicle",526875
+"ICEV-D","Car",2042,"sales","HOP",2021,"vehicle",86
+"ICEV-G","Car",2042,"sales","HOP",2021,"vehicle",5260014
+"PHEV20","Car",2042,"sales","HOP",2021,"vehicle",121228
+"PHEV40","Car",2042,"sales","HOP",2021,"vehicle",11995
+"BEV100","Light truck",2042,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2042,"sales","HOP",2021,"vehicle",448826
+"CNG","Light truck",2042,"sales","HOP",2021,"vehicle",9643
+"FCV","Light truck",2042,"sales","HOP",2021,"vehicle",196
+"FFV","Light truck",2042,"sales","HOP",2021,"vehicle",493040
+"HEV","Light truck",2042,"sales","HOP",2021,"vehicle",501373
+"ICEV-D","Light truck",2042,"sales","HOP",2021,"vehicle",78824
+"ICEV-G","Light truck",2042,"sales","HOP",2021,"vehicle",5004748
+"PHEV20","Light truck",2042,"sales","HOP",2021,"vehicle",19579
+"PHEV40","Light truck",2042,"sales","HOP",2021,"vehicle",157702
+"BEV100","Car",2043,"sales","HOP",2021,"vehicle",4655
+"BEV300","Car",2043,"sales","HOP",2021,"vehicle",1014725
+"CNG","Car",2043,"sales","HOP",2021,"vehicle",5857
+"FCV","Car",2043,"sales","HOP",2021,"vehicle",1375
+"FFV","Car",2043,"sales","HOP",2021,"vehicle",106770
+"HEV","Car",2043,"sales","HOP",2021,"vehicle",538118
+"ICEV-D","Car",2043,"sales","HOP",2021,"vehicle",84
+"ICEV-G","Car",2043,"sales","HOP",2021,"vehicle",5169087
+"PHEV20","Car",2043,"sales","HOP",2021,"vehicle",117391
+"PHEV40","Car",2043,"sales","HOP",2021,"vehicle",11825
+"BEV100","Light truck",2043,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2043,"sales","HOP",2021,"vehicle",467772
+"CNG","Light truck",2043,"sales","HOP",2021,"vehicle",9655
+"FCV","Light truck",2043,"sales","HOP",2021,"vehicle",206
+"FFV","Light truck",2043,"sales","HOP",2021,"vehicle",489314
+"HEV","Light truck",2043,"sales","HOP",2021,"vehicle",507986
+"ICEV-D","Light truck",2043,"sales","HOP",2021,"vehicle",77848
+"ICEV-G","Light truck",2043,"sales","HOP",2021,"vehicle",4957219
+"PHEV20","Light truck",2043,"sales","HOP",2021,"vehicle",21709
+"PHEV40","Light truck",2043,"sales","HOP",2021,"vehicle",156573
+"BEV100","Car",2044,"sales","HOP",2021,"vehicle",4637
+"BEV300","Car",2044,"sales","HOP",2021,"vehicle",1054426
+"CNG","Car",2044,"sales","HOP",2021,"vehicle",5829
+"FCV","Car",2044,"sales","HOP",2021,"vehicle",1400
+"FFV","Car",2044,"sales","HOP",2021,"vehicle",105446
+"HEV","Car",2044,"sales","HOP",2021,"vehicle",549898
+"ICEV-D","Car",2044,"sales","HOP",2021,"vehicle",82
+"ICEV-G","Car",2044,"sales","HOP",2021,"vehicle",5080327
+"PHEV20","Car",2044,"sales","HOP",2021,"vehicle",113655
+"PHEV40","Car",2044,"sales","HOP",2021,"vehicle",11650
+"BEV100","Light truck",2044,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2044,"sales","HOP",2021,"vehicle",487108
+"CNG","Light truck",2044,"sales","HOP",2021,"vehicle",9682
+"FCV","Light truck",2044,"sales","HOP",2021,"vehicle",216
+"FFV","Light truck",2044,"sales","HOP",2021,"vehicle",485870
+"HEV","Light truck",2044,"sales","HOP",2021,"vehicle",515120
+"ICEV-D","Light truck",2044,"sales","HOP",2021,"vehicle",77132
+"ICEV-G","Light truck",2044,"sales","HOP",2021,"vehicle",4912431
+"PHEV20","Light truck",2044,"sales","HOP",2021,"vehicle",24158
+"PHEV40","Light truck",2044,"sales","HOP",2021,"vehicle",155418
+"BEV100","Car",2045,"sales","HOP",2021,"vehicle",4661
+"BEV300","Car",2045,"sales","HOP",2021,"vehicle",1107093
+"CNG","Car",2045,"sales","HOP",2021,"vehicle",5856
+"FCV","Car",2045,"sales","HOP",2021,"vehicle",1438
+"FFV","Car",2045,"sales","HOP",2021,"vehicle",105023
+"HEV","Car",2045,"sales","HOP",2021,"vehicle",567409
+"ICEV-D","Car",2045,"sales","HOP",2021,"vehicle",81
+"ICEV-G","Car",2045,"sales","HOP",2021,"vehicle",5032860
+"PHEV20","Car",2045,"sales","HOP",2021,"vehicle",111255
+"PHEV40","Car",2045,"sales","HOP",2021,"vehicle",11604
+"BEV100","Light truck",2045,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2045,"sales","HOP",2021,"vehicle",511928
+"CNG","Light truck",2045,"sales","HOP",2021,"vehicle",9783
+"FCV","Light truck",2045,"sales","HOP",2021,"vehicle",228
+"FFV","Light truck",2045,"sales","HOP",2021,"vehicle",485208
+"HEV","Light truck",2045,"sales","HOP",2021,"vehicle",526340
+"ICEV-D","Light truck",2045,"sales","HOP",2021,"vehicle",77117
+"ICEV-G","Light truck",2045,"sales","HOP",2021,"vehicle",4894427
+"PHEV20","Light truck",2045,"sales","HOP",2021,"vehicle",27221
+"PHEV40","Light truck",2045,"sales","HOP",2021,"vehicle",155504
+"BEV100","Car",2046,"sales","HOP",2021,"vehicle",4643
+"BEV300","Car",2046,"sales","HOP",2021,"vehicle",1152301
+"CNG","Car",2046,"sales","HOP",2021,"vehicle",5837
+"FCV","Car",2046,"sales","HOP",2021,"vehicle",1466
+"FFV","Car",2046,"sales","HOP",2021,"vehicle",103754
+"HEV","Car",2046,"sales","HOP",2021,"vehicle",580388
+"ICEV-D","Car",2046,"sales","HOP",2021,"vehicle",79
+"ICEV-G","Car",2046,"sales","HOP",2021,"vehicle",4944148
+"PHEV20","Car",2046,"sales","HOP",2021,"vehicle",107583
+"PHEV40","Car",2046,"sales","HOP",2021,"vehicle",11433
+"BEV100","Light truck",2046,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2046,"sales","HOP",2021,"vehicle",532919
+"CNG","Light truck",2046,"sales","HOP",2021,"vehicle",9813
+"FCV","Light truck",2046,"sales","HOP",2021,"vehicle",239
+"FFV","Light truck",2046,"sales","HOP",2021,"vehicle",480992
+"HEV","Light truck",2046,"sales","HOP",2021,"vehicle",533389
+"ICEV-D","Light truck",2046,"sales","HOP",2021,"vehicle",76221
+"ICEV-G","Light truck",2046,"sales","HOP",2021,"vehicle",4841282
+"PHEV20","Light truck",2046,"sales","HOP",2021,"vehicle",30555
+"PHEV40","Light truck",2046,"sales","HOP",2021,"vehicle",154192
+"BEV100","Car",2047,"sales","HOP",2021,"vehicle",4637
+"BEV300","Car",2047,"sales","HOP",2021,"vehicle",1201227
+"CNG","Car",2047,"sales","HOP",2021,"vehicle",5832
+"FCV","Car",2047,"sales","HOP",2021,"vehicle",1498
+"FFV","Car",2047,"sales","HOP",2021,"vehicle",102766
+"HEV","Car",2047,"sales","HOP",2021,"vehicle",595320
+"ICEV-D","Car",2047,"sales","HOP",2021,"vehicle",78
+"ICEV-G","Car",2047,"sales","HOP",2021,"vehicle",4868667
+"PHEV20","Car",2047,"sales","HOP",2021,"vehicle",104299
+"PHEV40","Car",2047,"sales","HOP",2021,"vehicle",11294
+"BEV100","Light truck",2047,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2047,"sales","HOP",2021,"vehicle",555980
+"CNG","Light truck",2047,"sales","HOP",2021,"vehicle",9869
+"FCV","Light truck",2047,"sales","HOP",2021,"vehicle",250
+"FFV","Light truck",2047,"sales","HOP",2021,"vehicle",477848
+"HEV","Light truck",2047,"sales","HOP",2021,"vehicle",541937
+"ICEV-D","Light truck",2047,"sales","HOP",2021,"vehicle",75900
+"ICEV-G","Light truck",2047,"sales","HOP",2021,"vehicle",4798245
+"PHEV20","Light truck",2047,"sales","HOP",2021,"vehicle",34472
+"PHEV40","Light truck",2047,"sales","HOP",2021,"vehicle",153166
+"BEV100","Car",2048,"sales","HOP",2021,"vehicle",4627
+"BEV300","Car",2048,"sales","HOP",2021,"vehicle",1252895
+"CNG","Car",2048,"sales","HOP",2021,"vehicle",5822
+"FCV","Car",2048,"sales","HOP",2021,"vehicle",1527
+"FFV","Car",2048,"sales","HOP",2021,"vehicle",101528
+"HEV","Car",2048,"sales","HOP",2021,"vehicle",609623
+"ICEV-D","Car",2048,"sales","HOP",2021,"vehicle",76
+"ICEV-G","Car",2048,"sales","HOP",2021,"vehicle",4778472
+"PHEV20","Car",2048,"sales","HOP",2021,"vehicle",101268
+"PHEV40","Car",2048,"sales","HOP",2021,"vehicle",11176
+"BEV100","Light truck",2048,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2048,"sales","HOP",2021,"vehicle",579589
+"CNG","Light truck",2048,"sales","HOP",2021,"vehicle",9902
+"FCV","Light truck",2048,"sales","HOP",2021,"vehicle",261
+"FFV","Light truck",2048,"sales","HOP",2021,"vehicle",472055
+"HEV","Light truck",2048,"sales","HOP",2021,"vehicle",548922
+"ICEV-D","Light truck",2048,"sales","HOP",2021,"vehicle",74831
+"ICEV-G","Light truck",2048,"sales","HOP",2021,"vehicle",4726551
+"PHEV20","Light truck",2048,"sales","HOP",2021,"vehicle",38861
+"PHEV40","Light truck",2048,"sales","HOP",2021,"vehicle",151725
+"BEV100","Car",2049,"sales","HOP",2021,"vehicle",4591
+"BEV300","Car",2049,"sales","HOP",2021,"vehicle",1298211
+"CNG","Car",2049,"sales","HOP",2021,"vehicle",5787
+"FCV","Car",2049,"sales","HOP",2021,"vehicle",1553
+"FFV","Car",2049,"sales","HOP",2021,"vehicle",100032
+"HEV","Car",2049,"sales","HOP",2021,"vehicle",620779
+"ICEV-D","Car",2049,"sales","HOP",2021,"vehicle",74
+"ICEV-G","Car",2049,"sales","HOP",2021,"vehicle",4678184
+"PHEV20","Car",2049,"sales","HOP",2021,"vehicle",96944
+"PHEV40","Car",2049,"sales","HOP",2021,"vehicle",10934
+"BEV100","Light truck",2049,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2049,"sales","HOP",2021,"vehicle",600577
+"CNG","Light truck",2049,"sales","HOP",2021,"vehicle",9918
+"FCV","Light truck",2049,"sales","HOP",2021,"vehicle",271
+"FFV","Light truck",2049,"sales","HOP",2021,"vehicle",467612
+"HEV","Light truck",2049,"sales","HOP",2021,"vehicle",555128
+"ICEV-D","Light truck",2049,"sales","HOP",2021,"vehicle",73389
+"ICEV-G","Light truck",2049,"sales","HOP",2021,"vehicle",4670934
+"PHEV20","Light truck",2049,"sales","HOP",2021,"vehicle",43753
+"PHEV40","Light truck",2049,"sales","HOP",2021,"vehicle",149786
+"BEV100","Car",2050,"sales","HOP",2021,"vehicle",4532
+"BEV300","Car",2050,"sales","HOP",2021,"vehicle",1334852
+"CNG","Car",2050,"sales","HOP",2021,"vehicle",5713
+"FCV","Car",2050,"sales","HOP",2021,"vehicle",1565
+"FFV","Car",2050,"sales","HOP",2021,"vehicle",97830
+"HEV","Car",2050,"sales","HOP",2021,"vehicle",628593
+"ICEV-D","Car",2050,"sales","HOP",2021,"vehicle",72
+"ICEV-G","Car",2050,"sales","HOP",2021,"vehicle",4545015
+"PHEV20","Car",2050,"sales","HOP",2021,"vehicle",92888
+"PHEV40","Car",2050,"sales","HOP",2021,"vehicle",10685
+"BEV100","Light truck",2050,"sales","HOP",2021,"vehicle",0
+"BEV300","Light truck",2050,"sales","HOP",2021,"vehicle",618629
+"CNG","Light truck",2050,"sales","HOP",2021,"vehicle",9876
+"FCV","Light truck",2050,"sales","HOP",2021,"vehicle",279
+"FFV","Light truck",2050,"sales","HOP",2021,"vehicle",458451
+"HEV","Light truck",2050,"sales","HOP",2021,"vehicle",557477
+"ICEV-D","Light truck",2050,"sales","HOP",2021,"vehicle",71986
+"ICEV-G","Light truck",2050,"sales","HOP",2021,"vehicle",4566536
+"PHEV20","Light truck",2050,"sales","HOP",2021,"vehicle",48973
+"PHEV40","Light truck",2050,"sales","HOP",2021,"vehicle",146736
+"BEV100","Car",2020,"sales","LOP",2021,"vehicle",2160
+"BEV300","Car",2020,"sales","LOP",2021,"vehicle",111596
+"CNG","Car",2020,"sales","LOP",2021,"vehicle",3725
+"FCV","Car",2020,"sales","LOP",2021,"vehicle",182
+"FFV","Car",2020,"sales","LOP",2021,"vehicle",85526
+"HEV","Car",2020,"sales","LOP",2021,"vehicle",125804
+"ICEV-D","Car",2020,"sales","LOP",2021,"vehicle",97
+"ICEV-G","Car",2020,"sales","LOP",2021,"vehicle",4578886
+"PHEV20","Car",2020,"sales","LOP",2021,"vehicle",22508
+"PHEV40","Car",2020,"sales","LOP",2021,"vehicle",5915
+"BEV100","Light truck",2020,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2020,"sales","LOP",2021,"vehicle",36861
+"CNG","Light truck",2020,"sales","LOP",2021,"vehicle",9458
+"FCV","Light truck",2020,"sales","LOP",2021,"vehicle",5
+"FFV","Light truck",2020,"sales","LOP",2021,"vehicle",644577
+"HEV","Light truck",2020,"sales","LOP",2021,"vehicle",216151
+"ICEV-D","Light truck",2020,"sales","LOP",2021,"vehicle",51195
+"ICEV-G","Light truck",2020,"sales","LOP",2021,"vehicle",6362576
+"PHEV20","Light truck",2020,"sales","LOP",2021,"vehicle",3714
+"PHEV40","Light truck",2020,"sales","LOP",2021,"vehicle",20582
+"BEV100","Car",2021,"sales","LOP",2021,"vehicle",2053
+"BEV300","Car",2021,"sales","LOP",2021,"vehicle",102919
+"CNG","Car",2021,"sales","LOP",2021,"vehicle",3873
+"FCV","Car",2021,"sales","LOP",2021,"vehicle",188
+"FFV","Car",2021,"sales","LOP",2021,"vehicle",90575
+"HEV","Car",2021,"sales","LOP",2021,"vehicle",138894
+"ICEV-D","Car",2021,"sales","LOP",2021,"vehicle",102
+"ICEV-G","Car",2021,"sales","LOP",2021,"vehicle",4857665
+"PHEV20","Car",2021,"sales","LOP",2021,"vehicle",27130
+"PHEV40","Car",2021,"sales","LOP",2021,"vehicle",5242
+"BEV100","Light truck",2021,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2021,"sales","LOP",2021,"vehicle",43442
+"CNG","Light truck",2021,"sales","LOP",2021,"vehicle",11236
+"FCV","Light truck",2021,"sales","LOP",2021,"vehicle",8
+"FFV","Light truck",2021,"sales","LOP",2021,"vehicle",695618
+"HEV","Light truck",2021,"sales","LOP",2021,"vehicle",261662
+"ICEV-D","Light truck",2021,"sales","LOP",2021,"vehicle",100299
+"ICEV-G","Light truck",2021,"sales","LOP",2021,"vehicle",7546764
+"PHEV20","Light truck",2021,"sales","LOP",2021,"vehicle",4212
+"PHEV40","Light truck",2021,"sales","LOP",2021,"vehicle",24987
+"BEV100","Car",2022,"sales","LOP",2021,"vehicle",2016
+"BEV300","Car",2022,"sales","LOP",2021,"vehicle",103168
+"CNG","Car",2022,"sales","LOP",2021,"vehicle",4100
+"FCV","Car",2022,"sales","LOP",2021,"vehicle",211
+"FFV","Car",2022,"sales","LOP",2021,"vehicle",94810
+"HEV","Car",2022,"sales","LOP",2021,"vehicle",152882
+"ICEV-D","Car",2022,"sales","LOP",2021,"vehicle",95
+"ICEV-G","Car",2022,"sales","LOP",2021,"vehicle",5082712
+"PHEV20","Car",2022,"sales","LOP",2021,"vehicle",30297
+"PHEV40","Car",2022,"sales","LOP",2021,"vehicle",4549
+"BEV100","Light truck",2022,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2022,"sales","LOP",2021,"vehicle",48534
+"CNG","Light truck",2022,"sales","LOP",2021,"vehicle",12190
+"FCV","Light truck",2022,"sales","LOP",2021,"vehicle",11
+"FFV","Light truck",2022,"sales","LOP",2021,"vehicle",752895
+"HEV","Light truck",2022,"sales","LOP",2021,"vehicle",286419
+"ICEV-D","Light truck",2022,"sales","LOP",2021,"vehicle",135052
+"ICEV-G","Light truck",2022,"sales","LOP",2021,"vehicle",8157289
+"PHEV20","Light truck",2022,"sales","LOP",2021,"vehicle",4510
+"PHEV40","Light truck",2022,"sales","LOP",2021,"vehicle",24570
+"BEV100","Car",2023,"sales","LOP",2021,"vehicle",1866
+"BEV300","Car",2023,"sales","LOP",2021,"vehicle",97044
+"CNG","Car",2023,"sales","LOP",2021,"vehicle",3910
+"FCV","Car",2023,"sales","LOP",2021,"vehicle",225
+"FFV","Car",2023,"sales","LOP",2021,"vehicle",89910
+"HEV","Car",2023,"sales","LOP",2021,"vehicle",153241
+"ICEV-D","Car",2023,"sales","LOP",2021,"vehicle",84
+"ICEV-G","Car",2023,"sales","LOP",2021,"vehicle",4819151
+"PHEV20","Car",2023,"sales","LOP",2021,"vehicle",31883
+"PHEV40","Car",2023,"sales","LOP",2021,"vehicle",3908
+"BEV100","Light truck",2023,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2023,"sales","LOP",2021,"vehicle",52348
+"CNG","Light truck",2023,"sales","LOP",2021,"vehicle",12126
+"FCV","Light truck",2023,"sales","LOP",2021,"vehicle",14
+"FFV","Light truck",2023,"sales","LOP",2021,"vehicle",747528
+"HEV","Light truck",2023,"sales","LOP",2021,"vehicle",289408
+"ICEV-D","Light truck",2023,"sales","LOP",2021,"vehicle",124745
+"ICEV-G","Light truck",2023,"sales","LOP",2021,"vehicle",8095134
+"PHEV20","Light truck",2023,"sales","LOP",2021,"vehicle",4566
+"PHEV40","Light truck",2023,"sales","LOP",2021,"vehicle",21695
+"BEV100","Car",2024,"sales","LOP",2021,"vehicle",1854
+"BEV300","Car",2024,"sales","LOP",2021,"vehicle",99088
+"CNG","Car",2024,"sales","LOP",2021,"vehicle",3909
+"FCV","Car",2024,"sales","LOP",2021,"vehicle",252
+"FFV","Car",2024,"sales","LOP",2021,"vehicle",89098
+"HEV","Car",2024,"sales","LOP",2021,"vehicle",160898
+"ICEV-D","Car",2024,"sales","LOP",2021,"vehicle",82
+"ICEV-G","Car",2024,"sales","LOP",2021,"vehicle",4769874
+"PHEV20","Car",2024,"sales","LOP",2021,"vehicle",35147
+"PHEV40","Car",2024,"sales","LOP",2021,"vehicle",3664
+"BEV100","Light truck",2024,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2024,"sales","LOP",2021,"vehicle",61325
+"CNG","Light truck",2024,"sales","LOP",2021,"vehicle",12421
+"FCV","Light truck",2024,"sales","LOP",2021,"vehicle",19
+"FFV","Light truck",2024,"sales","LOP",2021,"vehicle",763914
+"HEV","Light truck",2024,"sales","LOP",2021,"vehicle",300383
+"ICEV-D","Light truck",2024,"sales","LOP",2021,"vehicle",127253
+"ICEV-G","Light truck",2024,"sales","LOP",2021,"vehicle",8265604
+"PHEV20","Light truck",2024,"sales","LOP",2021,"vehicle",4838
+"PHEV40","Light truck",2024,"sales","LOP",2021,"vehicle",18957
+"BEV100","Car",2025,"sales","LOP",2021,"vehicle",1952
+"BEV300","Car",2025,"sales","LOP",2021,"vehicle",104659
+"CNG","Car",2025,"sales","LOP",2021,"vehicle",4039
+"FCV","Car",2025,"sales","LOP",2021,"vehicle",300
+"FFV","Car",2025,"sales","LOP",2021,"vehicle",91395
+"HEV","Car",2025,"sales","LOP",2021,"vehicle",175413
+"ICEV-D","Car",2025,"sales","LOP",2021,"vehicle",84
+"ICEV-G","Car",2025,"sales","LOP",2021,"vehicle",4886865
+"PHEV20","Car",2025,"sales","LOP",2021,"vehicle",41673
+"PHEV40","Car",2025,"sales","LOP",2021,"vehicle",3723
+"BEV100","Light truck",2025,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2025,"sales","LOP",2021,"vehicle",69502
+"CNG","Light truck",2025,"sales","LOP",2021,"vehicle",13065
+"FCV","Light truck",2025,"sales","LOP",2021,"vehicle",27
+"FFV","Light truck",2025,"sales","LOP",2021,"vehicle",799667
+"HEV","Light truck",2025,"sales","LOP",2021,"vehicle",327049
+"ICEV-D","Light truck",2025,"sales","LOP",2021,"vehicle",134509
+"ICEV-G","Light truck",2025,"sales","LOP",2021,"vehicle",8642244
+"PHEV20","Light truck",2025,"sales","LOP",2021,"vehicle",5194
+"PHEV40","Light truck",2025,"sales","LOP",2021,"vehicle",38356
+"BEV100","Car",2026,"sales","LOP",2021,"vehicle",2024
+"BEV300","Car",2026,"sales","LOP",2021,"vehicle",110107
+"CNG","Car",2026,"sales","LOP",2021,"vehicle",4033
+"FCV","Car",2026,"sales","LOP",2021,"vehicle",343
+"FFV","Car",2026,"sales","LOP",2021,"vehicle",90865
+"HEV","Car",2026,"sales","LOP",2021,"vehicle",184691
+"ICEV-D","Car",2026,"sales","LOP",2021,"vehicle",83
+"ICEV-G","Car",2026,"sales","LOP",2021,"vehicle",4851312
+"PHEV20","Car",2026,"sales","LOP",2021,"vehicle",47088
+"PHEV40","Car",2026,"sales","LOP",2021,"vehicle",3798
+"BEV100","Light truck",2026,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2026,"sales","LOP",2021,"vehicle",77393
+"CNG","Light truck",2026,"sales","LOP",2021,"vehicle",13295
+"FCV","Light truck",2026,"sales","LOP",2021,"vehicle",35
+"FFV","Light truck",2026,"sales","LOP",2021,"vehicle",805297
+"HEV","Light truck",2026,"sales","LOP",2021,"vehicle",378408
+"ICEV-D","Light truck",2026,"sales","LOP",2021,"vehicle",135012
+"ICEV-G","Light truck",2026,"sales","LOP",2021,"vehicle",8673156
+"PHEV20","Light truck",2026,"sales","LOP",2021,"vehicle",5347
+"PHEV40","Light truck",2026,"sales","LOP",2021,"vehicle",114154
+"BEV100","Car",2027,"sales","LOP",2021,"vehicle",2080
+"BEV300","Car",2027,"sales","LOP",2021,"vehicle",115304
+"CNG","Car",2027,"sales","LOP",2021,"vehicle",3946
+"FCV","Car",2027,"sales","LOP",2021,"vehicle",384
+"FFV","Car",2027,"sales","LOP",2021,"vehicle",88765
+"HEV","Car",2027,"sales","LOP",2021,"vehicle",192405
+"ICEV-D","Car",2027,"sales","LOP",2021,"vehicle",80
+"ICEV-G","Car",2027,"sales","LOP",2021,"vehicle",4728770
+"PHEV20","Car",2027,"sales","LOP",2021,"vehicle",53318
+"PHEV40","Car",2027,"sales","LOP",2021,"vehicle",3916
+"BEV100","Light truck",2027,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2027,"sales","LOP",2021,"vehicle",85145
+"CNG","Light truck",2027,"sales","LOP",2021,"vehicle",13193
+"FCV","Light truck",2027,"sales","LOP",2021,"vehicle",44
+"FFV","Light truck",2027,"sales","LOP",2021,"vehicle",794970
+"HEV","Light truck",2027,"sales","LOP",2021,"vehicle",402419
+"ICEV-D","Light truck",2027,"sales","LOP",2021,"vehicle",133091
+"ICEV-G","Light truck",2027,"sales","LOP",2021,"vehicle",8542031
+"PHEV20","Light truck",2027,"sales","LOP",2021,"vehicle",5934
+"PHEV40","Light truck",2027,"sales","LOP",2021,"vehicle",133811
+"BEV100","Car",2028,"sales","LOP",2021,"vehicle",2196
+"BEV300","Car",2028,"sales","LOP",2021,"vehicle",125619
+"CNG","Car",2028,"sales","LOP",2021,"vehicle",3945
+"FCV","Car",2028,"sales","LOP",2021,"vehicle",436
+"FFV","Car",2028,"sales","LOP",2021,"vehicle",88484
+"HEV","Car",2028,"sales","LOP",2021,"vehicle",205081
+"ICEV-D","Car",2028,"sales","LOP",2021,"vehicle",80
+"ICEV-G","Car",2028,"sales","LOP",2021,"vehicle",4700045
+"PHEV20","Car",2028,"sales","LOP",2021,"vehicle",61861
+"PHEV40","Car",2028,"sales","LOP",2021,"vehicle",4184
+"BEV100","Light truck",2028,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2028,"sales","LOP",2021,"vehicle",97392
+"CNG","Light truck",2028,"sales","LOP",2021,"vehicle",13314
+"FCV","Light truck",2028,"sales","LOP",2021,"vehicle",55
+"FFV","Light truck",2028,"sales","LOP",2021,"vehicle",800561
+"HEV","Light truck",2028,"sales","LOP",2021,"vehicle",417948
+"ICEV-D","Light truck",2028,"sales","LOP",2021,"vehicle",136585
+"ICEV-G","Light truck",2028,"sales","LOP",2021,"vehicle",8588623
+"PHEV20","Light truck",2028,"sales","LOP",2021,"vehicle",6740
+"PHEV40","Light truck",2028,"sales","LOP",2021,"vehicle",135568
+"BEV100","Car",2029,"sales","LOP",2021,"vehicle",2339
+"BEV300","Car",2029,"sales","LOP",2021,"vehicle",139545
+"CNG","Car",2029,"sales","LOP",2021,"vehicle",3965
+"FCV","Car",2029,"sales","LOP",2021,"vehicle",494
+"FFV","Car",2029,"sales","LOP",2021,"vehicle",88773
+"HEV","Car",2029,"sales","LOP",2021,"vehicle",216717
+"ICEV-D","Car",2029,"sales","LOP",2021,"vehicle",80
+"ICEV-G","Car",2029,"sales","LOP",2021,"vehicle",4703981
+"PHEV20","Car",2029,"sales","LOP",2021,"vehicle",64134
+"PHEV40","Car",2029,"sales","LOP",2021,"vehicle",4563
+"BEV100","Light truck",2029,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2029,"sales","LOP",2021,"vehicle",112858
+"CNG","Light truck",2029,"sales","LOP",2021,"vehicle",13503
+"FCV","Light truck",2029,"sales","LOP",2021,"vehicle",69
+"FFV","Light truck",2029,"sales","LOP",2021,"vehicle",810462
+"HEV","Light truck",2029,"sales","LOP",2021,"vehicle",434891
+"ICEV-D","Light truck",2029,"sales","LOP",2021,"vehicle",139588
+"ICEV-G","Light truck",2029,"sales","LOP",2021,"vehicle",8680379
+"PHEV20","Light truck",2029,"sales","LOP",2021,"vehicle",7663
+"PHEV40","Light truck",2029,"sales","LOP",2021,"vehicle",136536
+"BEV100","Car",2030,"sales","LOP",2021,"vehicle",2527
+"BEV300","Car",2030,"sales","LOP",2021,"vehicle",157878
+"CNG","Car",2030,"sales","LOP",2021,"vehicle",4010
+"FCV","Car",2030,"sales","LOP",2021,"vehicle",558
+"FFV","Car",2030,"sales","LOP",2021,"vehicle",89884
+"HEV","Car",2030,"sales","LOP",2021,"vehicle",232029
+"ICEV-D","Car",2030,"sales","LOP",2021,"vehicle",81
+"ICEV-G","Car",2030,"sales","LOP",2021,"vehicle",4750217
+"PHEV20","Car",2030,"sales","LOP",2021,"vehicle",67292
+"PHEV40","Car",2030,"sales","LOP",2021,"vehicle",5131
+"BEV100","Light truck",2030,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2030,"sales","LOP",2021,"vehicle",131296
+"CNG","Light truck",2030,"sales","LOP",2021,"vehicle",13541
+"FCV","Light truck",2030,"sales","LOP",2021,"vehicle",83
+"FFV","Light truck",2030,"sales","LOP",2021,"vehicle",809919
+"HEV","Light truck",2030,"sales","LOP",2021,"vehicle",453253
+"ICEV-D","Light truck",2030,"sales","LOP",2021,"vehicle",144697
+"ICEV-G","Light truck",2030,"sales","LOP",2021,"vehicle",8652318
+"PHEV20","Light truck",2030,"sales","LOP",2021,"vehicle",8569
+"PHEV40","Light truck",2030,"sales","LOP",2021,"vehicle",138930
+"BEV100","Car",2031,"sales","LOP",2021,"vehicle",2685
+"BEV300","Car",2031,"sales","LOP",2021,"vehicle",180697
+"CNG","Car",2031,"sales","LOP",2021,"vehicle",4060
+"FCV","Car",2031,"sales","LOP",2021,"vehicle",620
+"FFV","Car",2031,"sales","LOP",2021,"vehicle",90438
+"HEV","Car",2031,"sales","LOP",2021,"vehicle",245242
+"ICEV-D","Car",2031,"sales","LOP",2021,"vehicle",82
+"ICEV-G","Car",2031,"sales","LOP",2021,"vehicle",4761997
+"PHEV20","Car",2031,"sales","LOP",2021,"vehicle",68257
+"PHEV40","Car",2031,"sales","LOP",2021,"vehicle",5549
+"BEV100","Light truck",2031,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2031,"sales","LOP",2021,"vehicle",151276
+"CNG","Light truck",2031,"sales","LOP",2021,"vehicle",13647
+"FCV","Light truck",2031,"sales","LOP",2021,"vehicle",100
+"FFV","Light truck",2031,"sales","LOP",2021,"vehicle",813866
+"HEV","Light truck",2031,"sales","LOP",2021,"vehicle",471906
+"ICEV-D","Light truck",2031,"sales","LOP",2021,"vehicle",146634
+"ICEV-G","Light truck",2031,"sales","LOP",2021,"vehicle",8676273
+"PHEV20","Light truck",2031,"sales","LOP",2021,"vehicle",9526
+"PHEV40","Light truck",2031,"sales","LOP",2021,"vehicle",142556
+"BEV100","Car",2032,"sales","LOP",2021,"vehicle",2843
+"BEV300","Car",2032,"sales","LOP",2021,"vehicle",204109
+"CNG","Car",2032,"sales","LOP",2021,"vehicle",4084
+"FCV","Car",2032,"sales","LOP",2021,"vehicle",677
+"FFV","Car",2032,"sales","LOP",2021,"vehicle",90777
+"HEV","Car",2032,"sales","LOP",2021,"vehicle",257914
+"ICEV-D","Car",2032,"sales","LOP",2021,"vehicle",82
+"ICEV-G","Car",2032,"sales","LOP",2021,"vehicle",4764901
+"PHEV20","Car",2032,"sales","LOP",2021,"vehicle",70238
+"PHEV40","Car",2032,"sales","LOP",2021,"vehicle",5922
+"BEV100","Light truck",2032,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2032,"sales","LOP",2021,"vehicle",173316
+"CNG","Light truck",2032,"sales","LOP",2021,"vehicle",13661
+"FCV","Light truck",2032,"sales","LOP",2021,"vehicle",117
+"FFV","Light truck",2032,"sales","LOP",2021,"vehicle",811623
+"HEV","Light truck",2032,"sales","LOP",2021,"vehicle",488798
+"ICEV-D","Light truck",2032,"sales","LOP",2021,"vehicle",148942
+"ICEV-G","Light truck",2032,"sales","LOP",2021,"vehicle",8630354
+"PHEV20","Light truck",2032,"sales","LOP",2021,"vehicle",10463
+"PHEV40","Light truck",2032,"sales","LOP",2021,"vehicle",146784
+"BEV100","Car",2033,"sales","LOP",2021,"vehicle",2991
+"BEV300","Car",2033,"sales","LOP",2021,"vehicle",232515
+"CNG","Car",2033,"sales","LOP",2021,"vehicle",4133
+"FCV","Car",2033,"sales","LOP",2021,"vehicle",735
+"FFV","Car",2033,"sales","LOP",2021,"vehicle",91417
+"HEV","Car",2033,"sales","LOP",2021,"vehicle",271581
+"ICEV-D","Car",2033,"sales","LOP",2021,"vehicle",83
+"ICEV-G","Car",2033,"sales","LOP",2021,"vehicle",4780771
+"PHEV20","Car",2033,"sales","LOP",2021,"vehicle",71370
+"PHEV40","Car",2033,"sales","LOP",2021,"vehicle",6254
+"BEV100","Light truck",2033,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2033,"sales","LOP",2021,"vehicle",196913
+"CNG","Light truck",2033,"sales","LOP",2021,"vehicle",13739
+"FCV","Light truck",2033,"sales","LOP",2021,"vehicle",134
+"FFV","Light truck",2033,"sales","LOP",2021,"vehicle",813216
+"HEV","Light truck",2033,"sales","LOP",2021,"vehicle",507051
+"ICEV-D","Light truck",2033,"sales","LOP",2021,"vehicle",152721
+"ICEV-G","Light truck",2033,"sales","LOP",2021,"vehicle",8625870
+"PHEV20","Light truck",2033,"sales","LOP",2021,"vehicle",11423
+"PHEV40","Light truck",2033,"sales","LOP",2021,"vehicle",151257
+"BEV100","Car",2034,"sales","LOP",2021,"vehicle",3125
+"BEV300","Car",2034,"sales","LOP",2021,"vehicle",262017
+"CNG","Car",2034,"sales","LOP",2021,"vehicle",4177
+"FCV","Car",2034,"sales","LOP",2021,"vehicle",789
+"FFV","Car",2034,"sales","LOP",2021,"vehicle",91981
+"HEV","Car",2034,"sales","LOP",2021,"vehicle",284954
+"ICEV-D","Car",2034,"sales","LOP",2021,"vehicle",84
+"ICEV-G","Car",2034,"sales","LOP",2021,"vehicle",4793390
+"PHEV20","Car",2034,"sales","LOP",2021,"vehicle",72043
+"PHEV40","Car",2034,"sales","LOP",2021,"vehicle",6545
+"BEV100","Light truck",2034,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2034,"sales","LOP",2021,"vehicle",222233
+"CNG","Light truck",2034,"sales","LOP",2021,"vehicle",13874
+"FCV","Light truck",2034,"sales","LOP",2021,"vehicle",153
+"FFV","Light truck",2034,"sales","LOP",2021,"vehicle",817491
+"HEV","Light truck",2034,"sales","LOP",2021,"vehicle",526712
+"ICEV-D","Light truck",2034,"sales","LOP",2021,"vehicle",155969
+"ICEV-G","Light truck",2034,"sales","LOP",2021,"vehicle",8658548
+"PHEV20","Light truck",2034,"sales","LOP",2021,"vehicle",12427
+"PHEV40","Light truck",2034,"sales","LOP",2021,"vehicle",155648
+"BEV100","Car",2035,"sales","LOP",2021,"vehicle",3221
+"BEV300","Car",2035,"sales","LOP",2021,"vehicle",290473
+"CNG","Car",2035,"sales","LOP",2021,"vehicle",4184
+"FCV","Car",2035,"sales","LOP",2021,"vehicle",831
+"FFV","Car",2035,"sales","LOP",2021,"vehicle",91791
+"HEV","Car",2035,"sales","LOP",2021,"vehicle",296247
+"ICEV-D","Car",2035,"sales","LOP",2021,"vehicle",83
+"ICEV-G","Car",2035,"sales","LOP",2021,"vehicle",4766927
+"PHEV20","Car",2035,"sales","LOP",2021,"vehicle",72048
+"PHEV40","Car",2035,"sales","LOP",2021,"vehicle",6756
+"BEV100","Light truck",2035,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2035,"sales","LOP",2021,"vehicle",247221
+"CNG","Light truck",2035,"sales","LOP",2021,"vehicle",13910
+"FCV","Light truck",2035,"sales","LOP",2021,"vehicle",170
+"FFV","Light truck",2035,"sales","LOP",2021,"vehicle",816321
+"HEV","Light truck",2035,"sales","LOP",2021,"vehicle",542733
+"ICEV-D","Light truck",2035,"sales","LOP",2021,"vehicle",157471
+"ICEV-G","Light truck",2035,"sales","LOP",2021,"vehicle",8627048
+"PHEV20","Light truck",2035,"sales","LOP",2021,"vehicle",13352
+"PHEV40","Light truck",2035,"sales","LOP",2021,"vehicle",158633
+"BEV100","Car",2036,"sales","LOP",2021,"vehicle",3277
+"BEV300","Car",2036,"sales","LOP",2021,"vehicle",318407
+"CNG","Car",2036,"sales","LOP",2021,"vehicle",4166
+"FCV","Car",2036,"sales","LOP",2021,"vehicle",864
+"FFV","Car",2036,"sales","LOP",2021,"vehicle",90960
+"HEV","Car",2036,"sales","LOP",2021,"vehicle",305331
+"ICEV-D","Car",2036,"sales","LOP",2021,"vehicle",82
+"ICEV-G","Car",2036,"sales","LOP",2021,"vehicle",4706543
+"PHEV20","Car",2036,"sales","LOP",2021,"vehicle",71041
+"PHEV40","Car",2036,"sales","LOP",2021,"vehicle",6873
+"BEV100","Light truck",2036,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2036,"sales","LOP",2021,"vehicle",271443
+"CNG","Light truck",2036,"sales","LOP",2021,"vehicle",13898
+"FCV","Light truck",2036,"sales","LOP",2021,"vehicle",186
+"FFV","Light truck",2036,"sales","LOP",2021,"vehicle",812405
+"HEV","Light truck",2036,"sales","LOP",2021,"vehicle",555796
+"ICEV-D","Light truck",2036,"sales","LOP",2021,"vehicle",157499
+"ICEV-G","Light truck",2036,"sales","LOP",2021,"vehicle",8570290
+"PHEV20","Light truck",2036,"sales","LOP",2021,"vehicle",14231
+"PHEV40","Light truck",2036,"sales","LOP",2021,"vehicle",160611
+"BEV100","Car",2037,"sales","LOP",2021,"vehicle",3331
+"BEV300","Car",2037,"sales","LOP",2021,"vehicle",346697
+"CNG","Car",2037,"sales","LOP",2021,"vehicle",4156
+"FCV","Car",2037,"sales","LOP",2021,"vehicle",896
+"FFV","Car",2037,"sales","LOP",2021,"vehicle",90393
+"HEV","Car",2037,"sales","LOP",2021,"vehicle",315536
+"ICEV-D","Car",2037,"sales","LOP",2021,"vehicle",82
+"ICEV-G","Car",2037,"sales","LOP",2021,"vehicle",4660800
+"PHEV20","Car",2037,"sales","LOP",2021,"vehicle",70390
+"PHEV40","Car",2037,"sales","LOP",2021,"vehicle",6988
+"BEV100","Light truck",2037,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2037,"sales","LOP",2021,"vehicle",296292
+"CNG","Light truck",2037,"sales","LOP",2021,"vehicle",13894
+"FCV","Light truck",2037,"sales","LOP",2021,"vehicle",201
+"FFV","Light truck",2037,"sales","LOP",2021,"vehicle",808824
+"HEV","Light truck",2037,"sales","LOP",2021,"vehicle",569298
+"ICEV-D","Light truck",2037,"sales","LOP",2021,"vehicle",158408
+"ICEV-G","Light truck",2037,"sales","LOP",2021,"vehicle",8513214
+"PHEV20","Light truck",2037,"sales","LOP",2021,"vehicle",15255
+"PHEV40","Light truck",2037,"sales","LOP",2021,"vehicle",162400
+"BEV100","Car",2038,"sales","LOP",2021,"vehicle",3378
+"BEV300","Car",2038,"sales","LOP",2021,"vehicle",377126
+"CNG","Car",2038,"sales","LOP",2021,"vehicle",4162
+"FCV","Car",2038,"sales","LOP",2021,"vehicle",926
+"FFV","Car",2038,"sales","LOP",2021,"vehicle",90057
+"HEV","Car",2038,"sales","LOP",2021,"vehicle",326439
+"ICEV-D","Car",2038,"sales","LOP",2021,"vehicle",82
+"ICEV-G","Car",2038,"sales","LOP",2021,"vehicle",4626263
+"PHEV20","Car",2038,"sales","LOP",2021,"vehicle",69292
+"PHEV40","Car",2038,"sales","LOP",2021,"vehicle",7070
+"BEV100","Light truck",2038,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2038,"sales","LOP",2021,"vehicle",322218
+"CNG","Light truck",2038,"sales","LOP",2021,"vehicle",13979
+"FCV","Light truck",2038,"sales","LOP",2021,"vehicle",216
+"FFV","Light truck",2038,"sales","LOP",2021,"vehicle",810749
+"HEV","Light truck",2038,"sales","LOP",2021,"vehicle",585327
+"ICEV-D","Light truck",2038,"sales","LOP",2021,"vehicle",160506
+"ICEV-G","Light truck",2038,"sales","LOP",2021,"vehicle",8516092
+"PHEV20","Light truck",2038,"sales","LOP",2021,"vehicle",16518
+"PHEV40","Light truck",2038,"sales","LOP",2021,"vehicle",164542
+"BEV100","Car",2039,"sales","LOP",2021,"vehicle",3406
+"BEV300","Car",2039,"sales","LOP",2021,"vehicle",404917
+"CNG","Car",2039,"sales","LOP",2021,"vehicle",4149
+"FCV","Car",2039,"sales","LOP",2021,"vehicle",951
+"FFV","Car",2039,"sales","LOP",2021,"vehicle",89398
+"HEV","Car",2039,"sales","LOP",2021,"vehicle",336428
+"ICEV-D","Car",2039,"sales","LOP",2021,"vehicle",81
+"ICEV-G","Car",2039,"sales","LOP",2021,"vehicle",4576514
+"PHEV20","Car",2039,"sales","LOP",2021,"vehicle",68177
+"PHEV40","Car",2039,"sales","LOP",2021,"vehicle",7114
+"BEV100","Light truck",2039,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2039,"sales","LOP",2021,"vehicle",347015
+"CNG","Light truck",2039,"sales","LOP",2021,"vehicle",14005
+"FCV","Light truck",2039,"sales","LOP",2021,"vehicle",229
+"FFV","Light truck",2039,"sales","LOP",2021,"vehicle",808750
+"HEV","Light truck",2039,"sales","LOP",2021,"vehicle",599145
+"ICEV-D","Light truck",2039,"sales","LOP",2021,"vehicle",160505
+"ICEV-G","Light truck",2039,"sales","LOP",2021,"vehicle",8479895
+"PHEV20","Light truck",2039,"sales","LOP",2021,"vehicle",17882
+"PHEV40","Light truck",2039,"sales","LOP",2021,"vehicle",165637
+"BEV100","Car",2040,"sales","LOP",2021,"vehicle",3406
+"BEV300","Car",2040,"sales","LOP",2021,"vehicle",431025
+"CNG","Car",2040,"sales","LOP",2021,"vehicle",4121
+"FCV","Car",2040,"sales","LOP",2021,"vehicle",969
+"FFV","Car",2040,"sales","LOP",2021,"vehicle",88321
+"HEV","Car",2040,"sales","LOP",2021,"vehicle",344703
+"ICEV-D","Car",2040,"sales","LOP",2021,"vehicle",79
+"ICEV-G","Car",2040,"sales","LOP",2021,"vehicle",4504886
+"PHEV20","Car",2040,"sales","LOP",2021,"vehicle",66229
+"PHEV40","Car",2040,"sales","LOP",2021,"vehicle",7080
+"BEV100","Light truck",2040,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2040,"sales","LOP",2021,"vehicle",370198
+"CNG","Light truck",2040,"sales","LOP",2021,"vehicle",14029
+"FCV","Light truck",2040,"sales","LOP",2021,"vehicle",242
+"FFV","Light truck",2040,"sales","LOP",2021,"vehicle",806963
+"HEV","Light truck",2040,"sales","LOP",2021,"vehicle",611647
+"ICEV-D","Light truck",2040,"sales","LOP",2021,"vehicle",159810
+"ICEV-G","Light truck",2040,"sales","LOP",2021,"vehicle",8448775
+"PHEV20","Light truck",2040,"sales","LOP",2021,"vehicle",19404
+"PHEV40","Light truck",2040,"sales","LOP",2021,"vehicle",166041
+"BEV100","Car",2041,"sales","LOP",2021,"vehicle",3415
+"BEV300","Car",2041,"sales","LOP",2021,"vehicle",450688
+"CNG","Car",2041,"sales","LOP",2021,"vehicle",4112
+"FCV","Car",2041,"sales","LOP",2021,"vehicle",991
+"FFV","Car",2041,"sales","LOP",2021,"vehicle",87805
+"HEV","Car",2041,"sales","LOP",2021,"vehicle",356849
+"ICEV-D","Car",2041,"sales","LOP",2021,"vehicle",78
+"ICEV-G","Car",2041,"sales","LOP",2021,"vehicle",4465430
+"PHEV20","Car",2041,"sales","LOP",2021,"vehicle",64238
+"PHEV40","Car",2041,"sales","LOP",2021,"vehicle",7035
+"BEV100","Light truck",2041,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2041,"sales","LOP",2021,"vehicle",390106
+"CNG","Light truck",2041,"sales","LOP",2021,"vehicle",14166
+"FCV","Light truck",2041,"sales","LOP",2021,"vehicle",255
+"FFV","Light truck",2041,"sales","LOP",2021,"vehicle",812168
+"HEV","Light truck",2041,"sales","LOP",2021,"vehicle",628386
+"ICEV-D","Light truck",2041,"sales","LOP",2021,"vehicle",161136
+"ICEV-G","Light truck",2041,"sales","LOP",2021,"vehicle",8492941
+"PHEV20","Light truck",2041,"sales","LOP",2021,"vehicle",21244
+"PHEV40","Light truck",2041,"sales","LOP",2021,"vehicle",166362
+"BEV100","Car",2042,"sales","LOP",2021,"vehicle",3415
+"BEV300","Car",2042,"sales","LOP",2021,"vehicle",468450
+"CNG","Car",2042,"sales","LOP",2021,"vehicle",4092
+"FCV","Car",2042,"sales","LOP",2021,"vehicle",1009
+"FFV","Car",2042,"sales","LOP",2021,"vehicle",87061
+"HEV","Car",2042,"sales","LOP",2021,"vehicle",366952
+"ICEV-D","Car",2042,"sales","LOP",2021,"vehicle",78
+"ICEV-G","Car",2042,"sales","LOP",2021,"vehicle",4415656
+"PHEV20","Car",2042,"sales","LOP",2021,"vehicle",62287
+"PHEV40","Car",2042,"sales","LOP",2021,"vehicle",6973
+"BEV100","Light truck",2042,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2042,"sales","LOP",2021,"vehicle",407919
+"CNG","Light truck",2042,"sales","LOP",2021,"vehicle",14222
+"FCV","Light truck",2042,"sales","LOP",2021,"vehicle",267
+"FFV","Light truck",2042,"sales","LOP",2021,"vehicle",812258
+"HEV","Light truck",2042,"sales","LOP",2021,"vehicle",642382
+"ICEV-D","Light truck",2042,"sales","LOP",2021,"vehicle",162802
+"ICEV-G","Light truck",2042,"sales","LOP",2021,"vehicle",8482583
+"PHEV20","Light truck",2042,"sales","LOP",2021,"vehicle",23219
+"PHEV40","Light truck",2042,"sales","LOP",2021,"vehicle",165925
+"BEV100","Car",2043,"sales","LOP",2021,"vehicle",3397
+"BEV300","Car",2043,"sales","LOP",2021,"vehicle",485987
+"CNG","Car",2043,"sales","LOP",2021,"vehicle",4059
+"FCV","Car",2043,"sales","LOP",2021,"vehicle",1024
+"FFV","Car",2043,"sales","LOP",2021,"vehicle",85975
+"HEV","Car",2043,"sales","LOP",2021,"vehicle",375853
+"ICEV-D","Car",2043,"sales","LOP",2021,"vehicle",76
+"ICEV-G","Car",2043,"sales","LOP",2021,"vehicle",4347524
+"PHEV20","Car",2043,"sales","LOP",2021,"vehicle",59987
+"PHEV40","Car",2043,"sales","LOP",2021,"vehicle",6876
+"BEV100","Light truck",2043,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2043,"sales","LOP",2021,"vehicle",424601
+"CNG","Light truck",2043,"sales","LOP",2021,"vehicle",14228
+"FCV","Light truck",2043,"sales","LOP",2021,"vehicle",278
+"FFV","Light truck",2043,"sales","LOP",2021,"vehicle",809532
+"HEV","Light truck",2043,"sales","LOP",2021,"vehicle",654212
+"ICEV-D","Light truck",2043,"sales","LOP",2021,"vehicle",162116
+"ICEV-G","Light truck",2043,"sales","LOP",2021,"vehicle",8443603
+"PHEV20","Light truck",2043,"sales","LOP",2021,"vehicle",25397
+"PHEV40","Light truck",2043,"sales","LOP",2021,"vehicle",164933
+"BEV100","Car",2044,"sales","LOP",2021,"vehicle",3397
+"BEV300","Car",2044,"sales","LOP",2021,"vehicle",506169
+"CNG","Car",2044,"sales","LOP",2021,"vehicle",4050
+"FCV","Car",2044,"sales","LOP",2021,"vehicle",1043
+"FFV","Car",2044,"sales","LOP",2021,"vehicle",85415
+"HEV","Car",2044,"sales","LOP",2021,"vehicle",387337
+"ICEV-D","Car",2044,"sales","LOP",2021,"vehicle",75
+"ICEV-G","Car",2044,"sales","LOP",2021,"vehicle",4306248
+"PHEV20","Car",2044,"sales","LOP",2021,"vehicle",58104
+"PHEV40","Car",2044,"sales","LOP",2021,"vehicle",6816
+"BEV100","Light truck",2044,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2044,"sales","LOP",2021,"vehicle",444218
+"CNG","Light truck",2044,"sales","LOP",2021,"vehicle",14324
+"FCV","Light truck",2044,"sales","LOP",2021,"vehicle",290
+"FFV","Light truck",2044,"sales","LOP",2021,"vehicle",811794
+"HEV","Light truck",2044,"sales","LOP",2021,"vehicle",670462
+"ICEV-D","Light truck",2044,"sales","LOP",2021,"vehicle",162558
+"ICEV-G","Light truck",2044,"sales","LOP",2021,"vehicle",8456623
+"PHEV20","Light truck",2044,"sales","LOP",2021,"vehicle",28082
+"PHEV40","Light truck",2044,"sales","LOP",2021,"vehicle",164835
+"BEV100","Car",2045,"sales","LOP",2021,"vehicle",3407
+"BEV300","Car",2045,"sales","LOP",2021,"vehicle",528389
+"CNG","Car",2045,"sales","LOP",2021,"vehicle",4057
+"FCV","Car",2045,"sales","LOP",2021,"vehicle",1067
+"FFV","Car",2045,"sales","LOP",2021,"vehicle",85166
+"HEV","Car",2045,"sales","LOP",2021,"vehicle",400682
+"ICEV-D","Car",2045,"sales","LOP",2021,"vehicle",75
+"ICEV-G","Car",2045,"sales","LOP",2021,"vehicle",4280545
+"PHEV20","Car",2045,"sales","LOP",2021,"vehicle",56354
+"PHEV40","Car",2045,"sales","LOP",2021,"vehicle",6771
+"BEV100","Light truck",2045,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2045,"sales","LOP",2021,"vehicle",465508
+"CNG","Light truck",2045,"sales","LOP",2021,"vehicle",14475
+"FCV","Light truck",2045,"sales","LOP",2021,"vehicle",302
+"FFV","Light truck",2045,"sales","LOP",2021,"vehicle",816952
+"HEV","Light truck",2045,"sales","LOP",2021,"vehicle",689490
+"ICEV-D","Light truck",2045,"sales","LOP",2021,"vehicle",164643
+"ICEV-G","Light truck",2045,"sales","LOP",2021,"vehicle",8499661
+"PHEV20","Light truck",2045,"sales","LOP",2021,"vehicle",31382
+"PHEV40","Light truck",2045,"sales","LOP",2021,"vehicle",165031
+"BEV100","Car",2046,"sales","LOP",2021,"vehicle",3401
+"BEV300","Car",2046,"sales","LOP",2021,"vehicle",548926
+"CNG","Car",2046,"sales","LOP",2021,"vehicle",4045
+"FCV","Car",2046,"sales","LOP",2021,"vehicle",1086
+"FFV","Car",2046,"sales","LOP",2021,"vehicle",84521
+"HEV","Car",2046,"sales","LOP",2021,"vehicle",412652
+"ICEV-D","Car",2046,"sales","LOP",2021,"vehicle",74
+"ICEV-G","Car",2046,"sales","LOP",2021,"vehicle",4234585
+"PHEV20","Car",2046,"sales","LOP",2021,"vehicle",54450
+"PHEV40","Car",2046,"sales","LOP",2021,"vehicle",6699
+"BEV100","Light truck",2046,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2046,"sales","LOP",2021,"vehicle",485434
+"CNG","Light truck",2046,"sales","LOP",2021,"vehicle",14551
+"FCV","Light truck",2046,"sales","LOP",2021,"vehicle",313
+"FFV","Light truck",2046,"sales","LOP",2021,"vehicle",817650
+"HEV","Light truck",2046,"sales","LOP",2021,"vehicle",705615
+"ICEV-D","Light truck",2046,"sales","LOP",2021,"vehicle",164686
+"ICEV-G","Light truck",2046,"sales","LOP",2021,"vehicle",8495883
+"PHEV20","Light truck",2046,"sales","LOP",2021,"vehicle",35129
+"PHEV40","Light truck",2046,"sales","LOP",2021,"vehicle",164391
+"BEV100","Car",2047,"sales","LOP",2021,"vehicle",3390
+"BEV300","Car",2047,"sales","LOP",2021,"vehicle",569966
+"CNG","Car",2047,"sales","LOP",2021,"vehicle",4029
+"FCV","Car",2047,"sales","LOP",2021,"vehicle",1104
+"FFV","Car",2047,"sales","LOP",2021,"vehicle",83789
+"HEV","Car",2047,"sales","LOP",2021,"vehicle",424576
+"ICEV-D","Car",2047,"sales","LOP",2021,"vehicle",73
+"ICEV-G","Car",2047,"sales","LOP",2021,"vehicle",4183665
+"PHEV20","Car",2047,"sales","LOP",2021,"vehicle",52520
+"PHEV40","Car",2047,"sales","LOP",2021,"vehicle",6620
+"BEV100","Light truck",2047,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2047,"sales","LOP",2021,"vehicle",505328
+"CNG","Light truck",2047,"sales","LOP",2021,"vehicle",14601
+"FCV","Light truck",2047,"sales","LOP",2021,"vehicle",324
+"FFV","Light truck",2047,"sales","LOP",2021,"vehicle",816519
+"HEV","Light truck",2047,"sales","LOP",2021,"vehicle",720847
+"ICEV-D","Light truck",2047,"sales","LOP",2021,"vehicle",166540
+"ICEV-G","Light truck",2047,"sales","LOP",2021,"vehicle",8472092
+"PHEV20","Light truck",2047,"sales","LOP",2021,"vehicle",39455
+"PHEV40","Light truck",2047,"sales","LOP",2021,"vehicle",163425
+"BEV100","Car",2048,"sales","LOP",2021,"vehicle",3381
+"BEV300","Car",2048,"sales","LOP",2021,"vehicle",592214
+"CNG","Car",2048,"sales","LOP",2021,"vehicle",4016
+"FCV","Car",2048,"sales","LOP",2021,"vehicle",1123
+"FFV","Car",2048,"sales","LOP",2021,"vehicle",83090
+"HEV","Car",2048,"sales","LOP",2021,"vehicle",437084
+"ICEV-D","Car",2048,"sales","LOP",2021,"vehicle",72
+"ICEV-G","Car",2048,"sales","LOP",2021,"vehicle",4133903
+"PHEV20","Car",2048,"sales","LOP",2021,"vehicle",50662
+"PHEV40","Car",2048,"sales","LOP",2021,"vehicle",6546
+"BEV100","Light truck",2048,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2048,"sales","LOP",2021,"vehicle",526028
+"CNG","Light truck",2048,"sales","LOP",2021,"vehicle",14648
+"FCV","Light truck",2048,"sales","LOP",2021,"vehicle",334
+"FFV","Light truck",2048,"sales","LOP",2021,"vehicle",815164
+"HEV","Light truck",2048,"sales","LOP",2021,"vehicle",736405
+"ICEV-D","Light truck",2048,"sales","LOP",2021,"vehicle",165729
+"ICEV-G","Light truck",2048,"sales","LOP",2021,"vehicle",8446150
+"PHEV20","Light truck",2048,"sales","LOP",2021,"vehicle",44500
+"PHEV40","Light truck",2048,"sales","LOP",2021,"vehicle",162368
+"BEV100","Car",2049,"sales","LOP",2021,"vehicle",3363
+"BEV300","Car",2049,"sales","LOP",2021,"vehicle",614390
+"CNG","Car",2049,"sales","LOP",2021,"vehicle",3997
+"FCV","Car",2049,"sales","LOP",2021,"vehicle",1140
+"FFV","Car",2049,"sales","LOP",2021,"vehicle",82221
+"HEV","Car",2049,"sales","LOP",2021,"vehicle",448693
+"ICEV-D","Car",2049,"sales","LOP",2021,"vehicle",70
+"ICEV-G","Car",2049,"sales","LOP",2021,"vehicle",4075048
+"PHEV20","Car",2049,"sales","LOP",2021,"vehicle",48551
+"PHEV40","Car",2049,"sales","LOP",2021,"vehicle",6449
+"BEV100","Light truck",2049,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2049,"sales","LOP",2021,"vehicle",547260
+"CNG","Light truck",2049,"sales","LOP",2021,"vehicle",14720
+"FCV","Light truck",2049,"sales","LOP",2021,"vehicle",344
+"FFV","Light truck",2049,"sales","LOP",2021,"vehicle",815361
+"HEV","Light truck",2049,"sales","LOP",2021,"vehicle",752647
+"ICEV-D","Light truck",2049,"sales","LOP",2021,"vehicle",164409
+"ICEV-G","Light truck",2049,"sales","LOP",2021,"vehicle",8438039
+"PHEV20","Light truck",2049,"sales","LOP",2021,"vehicle",50380
+"PHEV40","Light truck",2049,"sales","LOP",2021,"vehicle",161223
+"BEV100","Car",2050,"sales","LOP",2021,"vehicle",3354
+"BEV300","Car",2050,"sales","LOP",2021,"vehicle",637113
+"CNG","Car",2050,"sales","LOP",2021,"vehicle",3983
+"FCV","Car",2050,"sales","LOP",2021,"vehicle",1158
+"FFV","Car",2050,"sales","LOP",2021,"vehicle",81518
+"HEV","Car",2050,"sales","LOP",2021,"vehicle",461822
+"ICEV-D","Car",2050,"sales","LOP",2021,"vehicle",69
+"ICEV-G","Car",2050,"sales","LOP",2021,"vehicle",4025074
+"PHEV20","Car",2050,"sales","LOP",2021,"vehicle",46920
+"PHEV40","Car",2050,"sales","LOP",2021,"vehicle",6383
+"BEV100","Light truck",2050,"sales","LOP",2021,"vehicle",0
+"BEV300","Light truck",2050,"sales","LOP",2021,"vehicle",569848
+"CNG","Light truck",2050,"sales","LOP",2021,"vehicle",14773
+"FCV","Light truck",2050,"sales","LOP",2021,"vehicle",354
+"FFV","Light truck",2050,"sales","LOP",2021,"vehicle",813568
+"HEV","Light truck",2050,"sales","LOP",2021,"vehicle",769331
+"ICEV-D","Light truck",2050,"sales","LOP",2021,"vehicle",164529
+"ICEV-G","Light truck",2050,"sales","LOP",2021,"vehicle",8406148
+"PHEV20","Light truck",2050,"sales","LOP",2021,"vehicle",57209
+"PHEV40","Light truck",2050,"sales","LOP",2021,"vehicle",160007

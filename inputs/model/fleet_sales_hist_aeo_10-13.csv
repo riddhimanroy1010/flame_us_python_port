@@ -1,0 +1,77 @@
+"Technology","Size","Year","Data_type","Value","Unit","Aeo_year"
+"BEV100","Car",2007,"sales",75.128,"vehicle",2010
+"CNG","Car",2007,"sales",9193.033,"vehicle",2010
+"FCV","Car",2007,"sales",0,"vehicle",2010
+"FFV","Car",2007,"sales",260770.02,"vehicle",2010
+"HEV","Car",2007,"sales",283944,"vehicle",2010
+"ICEV-D","Car",2007,"sales",8105.304,"vehicle",2010
+"ICEV-G","Car",2007,"sales",7142541.992,"vehicle",2010
+"PHEV20","Car",2007,"sales",0,"vehicle",2010
+"PHEV40","Car",2007,"sales",0,"vehicle",2010
+"BEV100","Light truck",2007,"sales",78.798,"vehicle",2010
+"CNG","Light truck",2007,"sales",10441.674,"vehicle",2010
+"FCV","Light truck",2007,"sales",0,"vehicle",2010
+"FFV","Light truck",2007,"sales",939648.621,"vehicle",2010
+"HEV","Light truck",2007,"sales",70648.88,"vehicle",2010
+"ICEV-D","Light truck",2007,"sales",1516.399,"vehicle",2010
+"ICEV-G","Light truck",2007,"sales",6451744.141,"vehicle",2010
+"PHEV20","Light truck",2007,"sales",0,"vehicle",2010
+"PHEV40","Light truck",2007,"sales",0,"vehicle",2010
+"BEV100","Car",2008,"sales",64.423,"vehicle",2010
+"CNG","Car",2008,"sales",3903.917,"vehicle",2010
+"FCV","Car",2008,"sales",0,"vehicle",2010
+"FFV","Car",2008,"sales",406223.358,"vehicle",2010
+"HEV","Car",2008,"sales",250843.109,"vehicle",2010
+"ICEV-D","Car",2008,"sales",7486.101,"vehicle",2010
+"ICEV-G","Car",2008,"sales",5945575.684,"vehicle",2010
+"PHEV20","Car",2008,"sales",0,"vehicle",2010
+"PHEV40","Car",2008,"sales",0,"vehicle",2010
+"BEV100","Light truck",2008,"sales",55.959,"vehicle",2010
+"CNG","Light truck",2008,"sales",5103.332,"vehicle",2010
+"FCV","Light truck",2008,"sales",0,"vehicle",2010
+"FFV","Light truck",2008,"sales",823702.942,"vehicle",2010
+"HEV","Light truck",2008,"sales",63857.33,"vehicle",2010
+"ICEV-D","Light truck",2008,"sales",977.614,"vehicle",2010
+"ICEV-G","Light truck",2008,"sales",4936566.895,"vehicle",2010
+"PHEV20","Light truck",2008,"sales",0,"vehicle",2010
+"PHEV40","Light truck",2008,"sales",0,"vehicle",2010
+"BEV100","Car",2009,"sales",129.222,"vehicle",2010
+"BEV300","Car",2009,"sales",0,"vehicle",2010
+"CNG","Car",2009,"sales",8183.409,"vehicle",2010
+"FCV","Car",2009,"sales",0,"vehicle",2010
+"FFV","Car",2009,"sales",276390.472,"vehicle",2010
+"HEV","Car",2009,"sales",250428.65,"vehicle",2010
+"ICEV-D","Car",2009,"sales",187959.763,"vehicle",2010
+"ICEV-G","Car",2009,"sales",4388493.652,"vehicle",2010
+"PHEV20","Car",2009,"sales",0,"vehicle",2010
+"PHEV40","Car",2009,"sales",0,"vehicle",2010
+"BEV100","Light truck",2009,"sales",379.696,"vehicle",2010
+"BEV300","Light truck",2009,"sales",0,"vehicle",2010
+"CNG","Light truck",2009,"sales",55791.521,"vehicle",2010
+"FCV","Light truck",2009,"sales",0,"vehicle",2010
+"FFV","Light truck",2009,"sales",575468.567,"vehicle",2010
+"HEV","Light truck",2009,"sales",54065.884,"vehicle",2010
+"ICEV-D","Light truck",2009,"sales",11328.048,"vehicle",2010
+"ICEV-G","Light truck",2009,"sales",4036155.273,"vehicle",2010
+"PHEV20","Light truck",2009,"sales",0,"vehicle",2010
+"PHEV40","Light truck",2009,"sales",0,"vehicle",2010
+"BEV100","Car",2010,"sales",754.658,"vehicle",2010
+"BEV300","Car",2010,"sales",0,"vehicle",2010
+"CNG","Car",2010,"sales",8725.51,"vehicle",2010
+"FCV","Car",2010,"sales",0,"vehicle",2010
+"FFV","Car",2010,"sales",180544.418,"vehicle",2010
+"HEV","Car",2010,"sales",231147.202,"vehicle",2010
+"ICEV-D","Car",2010,"sales",133404.938,"vehicle",2010
+"ICEV-G","Car",2010,"sales",5127681.152,"vehicle",2010
+"PHEV20","Car",2010,"sales",0,"vehicle",2010
+"PHEV40","Car",2010,"sales",0,"vehicle",2010
+"BEV100","Light truck",2010,"sales",1028.742,"vehicle",2010
+"BEV300","Light truck",2010,"sales",0,"vehicle",2010
+"CNG","Light truck",2010,"sales",34662.227,"vehicle",2010
+"FCV","Light truck",2010,"sales",0,"vehicle",2010
+"FFV","Light truck",2010,"sales",771310.425,"vehicle",2010
+"HEV","Light truck",2010,"sales",43526.543,"vehicle",2010
+"ICEV-D","Light truck",2010,"sales",19178.688,"vehicle",2010
+"ICEV-G","Light truck",2010,"sales",4312548.34,"vehicle",2010
+"PHEV20","Light truck",2010,"sales",0,"vehicle",2010
+"PHEV40","Light truck",2010,"sales",0,"vehicle",2010

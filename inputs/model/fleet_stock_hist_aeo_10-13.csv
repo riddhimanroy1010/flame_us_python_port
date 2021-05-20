@@ -1,0 +1,77 @@
+"Technology","Size","Year","Data_type","Value","Unit","Aeo_year"
+"BEV100","Car",2007,"stock",26537,"vehicle",2010
+"CNG","Car",2007,"stock",45744,"vehicle",2010
+"FCV","Car",2007,"stock",0,"vehicle",2010
+"FFV","Car",2007,"stock",994150,"vehicle",2010
+"HEV","Car",2007,"stock",721621,"vehicle",2010
+"ICEV-D","Car",2007,"stock",508493,"vehicle",2010
+"ICEV-G","Car",2007,"stock",132547897,"vehicle",2010
+"PHEV20","Car",2007,"stock",0,"vehicle",2010
+"PHEV40","Car",2007,"stock",0,"vehicle",2010
+"BEV100","Light truck",2007,"stock",1555,"vehicle",2010
+"CNG","Light truck",2007,"stock",158217,"vehicle",2010
+"FCV","Light truck",2007,"stock",0,"vehicle",2010
+"FFV","Light truck",2007,"stock",5048713,"vehicle",2010
+"HEV","Light truck",2007,"stock",164434,"vehicle",2010
+"ICEV-D","Light truck",2007,"stock",2858493,"vehicle",2010
+"ICEV-G","Light truck",2007,"stock",87584335,"vehicle",2010
+"PHEV20","Light truck",2007,"stock",0,"vehicle",2010
+"PHEV40","Light truck",2007,"stock",0,"vehicle",2010
+"BEV100","Car",2008,"stock",25404,"vehicle",2010
+"CNG","Car",2008,"stock",46116,"vehicle",2010
+"FCV","Car",2008,"stock",0,"vehicle",2010
+"FFV","Car",2008,"stock",1389435,"vehicle",2010
+"HEV","Car",2008,"stock",970597,"vehicle",2010
+"ICEV-D","Car",2008,"stock",481615,"vehicle",2010
+"ICEV-G","Car",2008,"stock",131058441,"vehicle",2010
+"PHEV20","Car",2008,"stock",0,"vehicle",2010
+"PHEV40","Car",2008,"stock",0,"vehicle",2010
+"BEV100","Light truck",2008,"stock",1419,"vehicle",2010
+"CNG","Light truck",2008,"stock",150971,"vehicle",2010
+"FCV","Light truck",2008,"stock",0,"vehicle",2010
+"FFV","Light truck",2008,"stock",5776325,"vehicle",2010
+"HEV","Light truck",2008,"stock",228292,"vehicle",2010
+"ICEV-D","Light truck",2008,"stock",2725837,"vehicle",2010
+"ICEV-G","Light truck",2008,"stock",88519081,"vehicle",2010
+"PHEV20","Light truck",2008,"stock",0,"vehicle",2010
+"PHEV40","Light truck",2008,"stock",0,"vehicle",2010
+"BEV100","Car",2009,"stock",9082,"vehicle",2010
+"BEV300","Car",2009,"stock",0,"vehicle",2010
+"CNG","Car",2009,"stock",134856,"vehicle",2010
+"FCV","Car",2009,"stock",0,"vehicle",2010
+"FFV","Car",2009,"stock",1713485,"vehicle",2010
+"HEV","Car",2009,"stock",1321458,"vehicle",2010
+"ICEV-D","Car",2009,"stock",615337,"vehicle",2010
+"ICEV-G","Car",2009,"stock",128119736,"vehicle",2010
+"PHEV20","Car",2009,"stock",0,"vehicle",2010
+"PHEV40","Car",2009,"stock",0,"vehicle",2010
+"BEV100","Light truck",2009,"stock",11358,"vehicle",2010
+"BEV300","Light truck",2009,"stock",0,"vehicle",2010
+"CNG","Light truck",2009,"stock",649583,"vehicle",2010
+"FCV","Light truck",2009,"stock",0,"vehicle",2010
+"FFV","Light truck",2009,"stock",6152886,"vehicle",2010
+"HEV","Light truck",2009,"stock",319882,"vehicle",2010
+"ICEV-D","Light truck",2009,"stock",70615,"vehicle",2010
+"ICEV-G","Light truck",2009,"stock",87956383,"vehicle",2010
+"PHEV20","Light truck",2009,"stock",0,"vehicle",2010
+"PHEV40","Light truck",2009,"stock",0,"vehicle",2010
+"BEV100","Car",2010,"stock",9556,"vehicle",2010
+"BEV300","Car",2010,"stock",0,"vehicle",2010
+"CNG","Car",2010,"stock",136970,"vehicle",2010
+"FCV","Car",2010,"stock",0,"vehicle",2010
+"FFV","Car",2010,"stock",1869017,"vehicle",2010
+"HEV","Car",2010,"stock",1531345,"vehicle",2010
+"ICEV-D","Car",2010,"stock",702393,"vehicle",2010
+"ICEV-G","Car",2010,"stock",125644875,"vehicle",2010
+"PHEV20","Car",2010,"stock",0,"vehicle",2010
+"PHEV40","Car",2010,"stock",0,"vehicle",2010
+"BEV100","Light truck",2010,"stock",12004,"vehicle",2010
+"BEV300","Light truck",2010,"stock",0,"vehicle",2010
+"CNG","Light truck",2010,"stock",647083,"vehicle",2010
+"FCV","Light truck",2010,"stock",0,"vehicle",2010
+"FFV","Light truck",2010,"stock",6697750,"vehicle",2010
+"HEV","Light truck",2010,"stock",358920,"vehicle",2010
+"ICEV-D","Light truck",2010,"stock",86537,"vehicle",2010
+"ICEV-G","Light truck",2010,"stock",87164413,"vehicle",2010
+"PHEV20","Light truck",2010,"stock",0,"vehicle",2010
+"PHEV40","Light truck",2010,"stock",0,"vehicle",2010

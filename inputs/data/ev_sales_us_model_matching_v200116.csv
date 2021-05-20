@@ -1,0 +1,57 @@
+Vehicle,Type,Make,2011,2012,2013,2014,2015,2016,2017,2018,2019
+Audi A3 Plug In,PHEV,Audi,A3 e-tron,A3 e-tron,A3 e-tron,A3 e-tron,A3 e-tron,A3 e-tron,A3 e-tron,A3 e-tron,A3 e-tron
+Audi e-Tron,BEV,Audi,e-tron,e-tron,e-tron,e-tron,e-tron,e-tron,e-tron,e-tron,e-tron
+BMW Active E,BEV,BMW,Active E,Active E,Active E,Active E,Active E,Active E,Active E,Active E,Active E
+BMW i3,BEV,BMW,i3 BEV,i3 BEV,i3 BEV,i3 BEV,i3 BEV,i3 BEV,i3 BEV,i3 BEV,i3 BEV
+BMW i8,PHEV,BMW,i8,i8,i8,i8,i8,i8,i8,i8,i8
+BMW X5,PHEV,BMW,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e,X5 xDrive40e
+BMW 3 Series Plug In,PHEV,BMW,330e,330e,330e,330e,330e,330e,330e,330e,330e
+BMW 5 Series Plug In,PHEV,BMW,530e,530e,530e,530e,530e,530e,530e,530e,530e
+BMW 7 Series Plug In,PHEV,BMW,740e xDrive,740e xDrive,740e xDrive,740e xDrive,740e xDrive,740e xDrive,740e xDrive,740e xDrive,740e xDrive
+Cadillac CT6,PHEV,Cadillac,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In,CT6 Plug-In
+Cadillac ELR,PHEV,Cadillac,ELR,ELR,ELR,ELR,ELR,ELR,ELR,ELR,ELR
+Chevrolet Bolt,BEV,Chevrolet,Bolt EV,Bolt EV,Bolt EV,Bolt EV,Bolt EV,Bolt EV,Bolt EV,Bolt EV,Bolt EV
+Chevrolet Spark,BEV,Chevrolet,Spark EV,Spark EV,Spark EV,Spark EV,Spark EV,Spark EV,Spark EV,Spark EV,Spark EV
+Chevrolet Volt,PHEV,Chevrolet,Volt,Volt,Volt,Volt,Volt,Volt,Volt,Volt,Volt
+Chrysler Pacifica,PHEV,Chrysler,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid,Pacifica Hybrid
+Fiat 500E,BEV,Fiat,500e,500e,500e,500e,500e,500e,500e,500e,500e
+Ford C-MAX Energi,PHEV,Ford,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid,C-MAX Energi Plug-in Hybrid
+Ford Focus EV,BEV,Ford,Focus Electric,Focus Electric,Focus Electric,Focus Electric,Focus Electric,Focus Electric,Focus Electric,Focus Electric,Focus Electric
+Ford Fusion Energi,PHEV,Ford,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid,Fusion Energi Plug-in Hybrid
+Jaguar I-Pace,BEV,Jaguar,I-Pace,I-Pace,I-Pace,I-Pace,I-Pace,I-Pace,I-Pace,I-Pace,I-Pace
+Honda Accord,PHEV,Honda,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid,Accord Plug-in Hybrid
+Honda Clarity BEV,BEV,Honda,Clarity EV,Clarity EV,Clarity EV,Clarity EV,Clarity EV,Clarity EV,Clarity EV,Clarity EV,Clarity EV
+Honda Clarity Plug-in,PHEV,Honda,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid,Clarity Plug-in Hybrid
+Honda Fit EV,BEV,Honda,Fit EV,Fit EV,Fit EV,Fit EV,Fit EV,Fit EV,Fit EV,Fit EV,Fit EV
+Hyundai Kona,BEV,Hyundai,Kona Electric,Kona Electric,Kona Electric,Kona Electric,Kona Electric,Kona Electric,Kona Electric,Kona Electric,Kona Electric
+Hyundai Sonata Plug-in,PHEV,Hyundai,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid,Sonata Plug-in Hybrid
+Hyundai Ioniq EV,BEV,Hyundai,Ioniq Electric,Ioniq Electric,Ioniq Electric,Ioniq Electric,Ioniq Electric,Ioniq Electric,Ioniq Electric,Ioniq Electric,Ioniq Electric
+Hyundai Ioniq Plug-in,PHEV,Hyundai,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid,Ioniq Plug-in Hybrid
+Kia Niro Plug-in,PHEV,Kia,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid,Niro Plug-in Hybrid
+Kia Niro EV,BEV,Kia,Niro Electric,Niro Electric,Niro Electric,Niro Electric,Niro Electric,Niro Electric,Niro Electric,Niro Electric,Niro Electric
+Kia Optima Plug-in,PHEV,Kia,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid,Optima Plug-in Hybrid
+Kia Soul EV,BEV,Kia,Soul Electric,Soul Electric,Soul Electric,Soul Electric,Soul Electric,Soul Electric,Soul Electric,Soul Electric,Soul Electric
+Mercedes B-Class Electric,BEV,Mercedes-Benz,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive,B-Class Electric Drive
+Mercedes C350We Plug-in Hybrid,PHEV,Mercedes-Benz,C350e,C350e,C350e,C350e,C350e,C350e,C350e,C350e,C350e
+Mercedes GLC 350e,PHEV,Mercedes-Benz,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic,GLC350e 4matic
+Mercedes GLE 550e Hybrid,PHEV,Mercedes-Benz,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic,GLE550e 4matic
+Mercedes S550 Plug In,PHEV,Mercedes-Benz,S550e,S550e,S550e,S550e,S550e,S550e,S550e,S550e,S550e
+Mini Cooper Countryman Plug In,PHEV,MINI,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4,Cooper SE Countryman All4
+Mitsubishi i-MiEV,BEV,Mitsubishi,i-MiEV,i-MiEV,i-MiEV,i-MiEV,i-MiEV,i-MiEV,i-MiEV,i-MiEV,i-MiEV
+Mitsubishi Outlander,PHEV,Mitsubishi,Outlander PHEV,Outlander PHEV,Outlander PHEV,Outlander PHEV,Outlander PHEV,Outlander PHEV,Outlander PHEV,Outlander PHEV,Outlander PHEV
+Nissan LEAF,BEV,Nissan,Leaf,Leaf,Leaf,Leaf,Leaf,Leaf,Leaf,Leaf,Leaf
+Porsche Cayenne S E-Hybrid,PHEV,Porsche,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid,Cayenne S e-Hybrid
+Porsche Panamera S E-Hybrid,PHEV,Porsche,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid,Panamera S E-Hybrid
+Porsche Taycan,BEV,Porsche,Taycan Turbo,Taycan Turbo,Taycan Turbo,Taycan Turbo,Taycan Turbo,Taycan Turbo,Taycan Turbo,Taycan Turbo,Taycan Turbo
+Smart ED,BEV,smart,EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe),EQ fortwo (coupe)
+Smart for Two EV,BEV,smart,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe,fortwo electric drive coupe
+Subaru Crosstrek Hybrid,PHEV,Subaru,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD,Crosstrek Hybrid AWD
+Tesla Model 3,BEV,Tesla,Model 3 Long Range,Model 3 Long Range,Model 3 Long Range,Model 3 Long Range,Model 3 Long Range,Model 3 Long Range,Model 3 Long Range,Model 3 Long Range AWD,Model 3 Long Range AWD
+Tesla Model S,BEV,Tesla,Model S,Model S (60 kW-hr battery pack),Model S (60 kW-hr battery pack),Model S (60 kW-hr battery pack),Model S (60 kW-hr battery pack),Model S AWD - P90D,Model S AWD - P90D,Model S P100D,Model S P100D
+Tesla Model X,BEV,Tesla,Model X AWD - P100D,Model X AWD - P100D,Model X AWD - P100D,Model X AWD - P100D,Model X AWD - P100D,Model X AWD - P100D,Model X AWD - P100D,Model X P100D,Model X P100D
+Toyota Prius Prime,PHEV,Toyota,Prius Plug-in Hybrid,Prius Plug-in Hybrid,Prius Plug-in Hybrid,Prius Plug-in Hybrid,Prius Plug-in Hybrid,Prius Plug-in Hybrid,Prius Prime,Prius Prime,Prius Prime
+Toyota RAV4 EV,BEV,Toyota,RAV4 EV,RAV4 EV,RAV4 EV,RAV4 EV,RAV4 EV,RAV4 EV,RAV4 EV,RAV4 EV,RAV4 EV
+Volvo S90 Plug In ,PHEV,Volvo,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV,S90 AWD PHEV
+Volvo XC60,PHEV,Volvo,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV,XC60 AWD PHEV
+Volvo XC90,PHEV,Volvo,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV,XC90 AWD PHEV
+VW e-Golf,BEV,Volkswagen,e-Golf,e-Golf,e-Golf,e-Golf,e-Golf,e-Golf,e-Golf,e-Golf,e-Golf

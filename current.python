@@ -1,0 +1,11 @@
+class test:
+    def __init__(self) -> None:
+        self.name = "tom"
+
+    def return_obj(self):
+        for attributes in dir(self):
+            if type(attributes) == str:
+                print(self.attributes)
+
+new = test()
+new.return_obj()

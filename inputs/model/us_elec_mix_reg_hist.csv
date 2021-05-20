@@ -1,0 +1,766 @@
+Year,Census,Source,Value
+2001,East North Central,Coal,0.698477505
+2001,East North Central,Natural Gas,0.037856245
+2001,East North Central,Nuclear,0.237583408
+2001,East North Central,Other,0.010576395
+2001,East North Central,Renewable,0.015506447
+2001,East South Central,Coal,0.653084329
+2001,East South Central,Natural Gas,0.076800132
+2001,East South Central,Nuclear,0.185884405
+2001,East South Central,Other,0.015091494
+2001,East South Central,Renewable,0.06913964
+2001,Middle Atlantic,Coal,0.361707731
+2001,Middle Atlantic,Natural Gas,0.146136274
+2001,Middle Atlantic,Nuclear,0.361566708
+2001,Middle Atlantic,Other,0.057341097
+2001,Middle Atlantic,Renewable,0.07324819
+2001,Mountain,Coal,0.677358316
+2001,Mountain,Natural Gas,0.132277269
+2001,Mountain,Nuclear,0.090189729
+2001,Mountain,Other,0.00727741
+2001,Mountain,Renewable,0.092897276
+2001,New England,Coal,0.163150857
+2001,New England,Natural Gas,0.285552301
+2001,New England,Nuclear,0.286777326
+2001,New England,Other,0.152408404
+2001,New England,Renewable,0.112111112
+2001,Pacific,Coal,0.052109851
+2001,Pacific,Natural Gas,0.395802192
+2001,Pacific,Nuclear,0.120526423
+2001,Pacific,Other,0.040498339
+2001,Pacific,Renewable,0.391063195
+2001,South Atlantic,Coal,0.552648323
+2001,South Atlantic,Natural Gas,0.079637373
+2001,South Atlantic,Nuclear,0.264282078
+2001,South Atlantic,Other,0.074178803
+2001,South Atlantic,Renewable,0.029253422
+2001,West North Central,Coal,0.769377955
+2001,West North Central,Natural Gas,0.029370103
+2001,West North Central,Nuclear,0.152998935
+2001,West North Central,Other,0.007997462
+2001,West North Central,Renewable,0.040255546
+2001,West South Central,Coal,0.384512707
+2001,West South Central,Natural Gas,0.446131396
+2001,West South Central,Nuclear,0.124849539
+2001,West South Central,Other,0.020606835
+2001,West South Central,Renewable,0.023899524
+2002,East North Central,Coal,0.696654471
+2002,East North Central,Natural Gas,0.051106623
+2002,East North Central,Nuclear,0.228021078
+2002,East North Central,Other,0.009401056
+2002,East North Central,Renewable,0.014816772
+2002,East South Central,Coal,0.631471239
+2002,East South Central,Natural Gas,0.095373198
+2002,East South Central,Nuclear,0.190891493
+2002,East South Central,Other,0.008997167
+2002,East South Central,Renewable,0.073266904
+2002,Middle Atlantic,Coal,0.36191471
+2002,Middle Atlantic,Natural Gas,0.158418315
+2002,Middle Atlantic,Nuclear,0.361474471
+2002,Middle Atlantic,Other,0.039304434
+2002,Middle Atlantic,Renewable,0.078888069
+2002,Mountain,Coal,0.656231017
+2002,Mountain,Natural Gas,0.139603657
+2002,Mountain,Nuclear,0.097008798
+2002,Mountain,Other,0.002929449
+2002,Mountain,Renewable,0.10422708
+2002,New England,Coal,0.153260176
+2002,New England,Natural Gas,0.360104815
+2002,New England,Nuclear,0.272995345
+2002,New England,Other,0.103431811
+2002,New England,Renewable,0.110207852
+2002,Pacific,Coal,0.04791247
+2002,Pacific,Natural Gas,0.300519014
+2002,Pacific,Nuclear,0.123121186
+2002,Pacific,Other,0.041027393
+2002,Pacific,Renewable,0.487419937
+2002,South Atlantic,Coal,0.542101727
+2002,South Atlantic,Natural Gas,0.111488822
+2002,South Atlantic,Nuclear,0.254519623
+2002,South Atlantic,Other,0.056873214
+2002,South Atlantic,Renewable,0.035016613
+2002,West North Central,Coal,0.764255911
+2002,West North Central,Natural Gas,0.027137344
+2002,West North Central,Nuclear,0.155663514
+2002,West North Central,Other,0.007154995
+2002,West North Central,Renewable,0.045788235
+2002,West South Central,Coal,0.379576706
+2002,West South Central,Natural Gas,0.459633557
+2002,West South Central,Nuclear,0.114883964
+2002,West South Central,Other,0.018584017
+2002,West South Central,Renewable,0.027321755
+2003,East North Central,Coal,0.711970089
+2003,East North Central,Natural Gas,0.035754094
+2003,East North Central,Nuclear,0.226844129
+2003,East North Central,Other,0.010552138
+2003,East North Central,Renewable,0.01487955
+2003,East South Central,Coal,0.643739506
+2003,East South Central,Natural Gas,0.063035759
+2003,East South Central,Nuclear,0.18455862
+2003,East South Central,Other,0.013414599
+2003,East South Central,Renewable,0.095251517
+2003,Middle Atlantic,Coal,0.372155982
+2003,Middle Atlantic,Natural Gas,0.120706036
+2003,Middle Atlantic,Nuclear,0.36061805
+2003,Middle Atlantic,Other,0.065816533
+2003,Middle Atlantic,Renewable,0.080703399
+2003,Mountain,Coal,0.662694392
+2003,Mountain,Natural Gas,0.147543474
+2003,Mountain,Nuclear,0.087864521
+2003,Mountain,Other,0.006628299
+2003,Mountain,Renewable,0.095269314
+2003,New England,Coal,0.149035184
+2003,New England,Natural Gas,0.357644895
+2003,New England,Nuclear,0.26720741
+2003,New England,Other,0.1167651
+2003,New England,Renewable,0.10934741
+2003,Pacific,Coal,0.05544744
+2003,Pacific,Natural Gas,0.312149367
+2003,Pacific,Nuclear,0.120302811
+2003,Pacific,Other,0.037833849
+2003,Pacific,Renewable,0.474266533
+2003,South Atlantic,Coal,0.535799891
+2003,South Atlantic,Natural Gas,0.10583973
+2003,South Atlantic,Nuclear,0.246372501
+2003,South Atlantic,Other,0.06754923
+2003,South Atlantic,Renewable,0.044438648
+2003,West North Central,Coal,0.78025863
+2003,West North Central,Natural Gas,0.021863646
+2003,West North Central,Nuclear,0.146293009
+2003,West North Central,Other,0.008223332
+2003,West North Central,Renewable,0.043361382
+2003,West South Central,Coal,0.393187392
+2003,West South Central,Natural Gas,0.443451508
+2003,West South Central,Nuclear,0.109813414
+2003,West South Central,Other,0.02714066
+2003,West South Central,Renewable,0.026407027
+2004,East North Central,Coal,0.701667896
+2004,East North Central,Natural Gas,0.037365321
+2004,East North Central,Nuclear,0.232528274
+2004,East North Central,Other,0.013127034
+2004,East North Central,Renewable,0.015311475
+2004,East South Central,Coal,0.633778926
+2004,East South Central,Natural Gas,0.076292461
+2004,East South Central,Nuclear,0.188884794
+2004,East South Central,Other,0.017029637
+2004,East South Central,Renewable,0.084014182
+2004,Middle Atlantic,Coal,0.368051154
+2004,Middle Atlantic,Natural Gas,0.129912252
+2004,Middle Atlantic,Nuclear,0.355394125
+2004,Middle Atlantic,Other,0.067878162
+2004,Middle Atlantic,Renewable,0.078764308
+2004,Mountain,Coal,0.641882186
+2004,Mountain,Natural Gas,0.17780652
+2004,Mountain,Nuclear,0.081790982
+2004,Mountain,Other,0.005899808
+2004,Mountain,Renewable,0.092620504
+2004,New England,Coal,0.143927161
+2004,New England,Natural Gas,0.367729274
+2004,New England,Nuclear,0.273470179
+2004,New England,Other,0.107216071
+2004,New England,Renewable,0.107657315
+2004,Pacific,Coal,0.050388629
+2004,Pacific,Natural Gas,0.343576533
+2004,Pacific,Nuclear,0.107161749
+2004,Pacific,Other,0.039243648
+2004,Pacific,Renewable,0.45962944
+2004,South Atlantic,Coal,0.522028903
+2004,South Atlantic,Natural Gas,0.12366898
+2004,South Atlantic,Nuclear,0.249637089
+2004,South Atlantic,Other,0.065025548
+2004,South Atlantic,Renewable,0.039639481
+2004,West North Central,Coal,0.771431708
+2004,West North Central,Natural Gas,0.0213617
+2004,West North Central,Nuclear,0.155030991
+2004,West North Central,Other,0.008733818
+2004,West North Central,Renewable,0.043441782
+2004,West South Central,Coal,0.385437329
+2004,West South Central,Natural Gas,0.43797372
+2004,West South Central,Nuclear,0.12138035
+2004,West South Central,Other,0.023824924
+2004,West South Central,Renewable,0.031383677
+2005,East North Central,Coal,0.697800947
+2005,East North Central,Natural Gas,0.050496675
+2005,East North Central,Nuclear,0.226884446
+2005,East North Central,Other,0.010895607
+2005,East North Central,Renewable,0.013922325
+2005,East South Central,Coal,0.642665218
+2005,East South Central,Natural Gas,0.08311752
+2005,East South Central,Nuclear,0.184082928
+2005,East South Central,Other,0.014010816
+2005,East South Central,Renewable,0.076123518
+2005,Middle Atlantic,Coal,0.35992054
+2005,Middle Atlantic,Natural Gas,0.136410762
+2005,Middle Atlantic,Nuclear,0.352795173
+2005,Middle Atlantic,Other,0.072762422
+2005,Middle Atlantic,Renewable,0.078111104
+2005,Mountain,Coal,0.634146791
+2005,Mountain,Natural Gas,0.191911677
+2005,Mountain,Nuclear,0.073959352
+2005,Mountain,Other,0.0028344
+2005,Mountain,Renewable,0.09714778
+2005,New England,Coal,0.1500067
+2005,New England,Natural Gas,0.370242104
+2005,New England,Nuclear,0.253872983
+2005,New England,Other,0.107836883
+2005,New England,Renewable,0.11804133
+2005,Pacific,Coal,0.049641171
+2005,Pacific,Natural Gas,0.321483467
+2005,Pacific,Nuclear,0.120095203
+2005,Pacific,Other,0.043172702
+2005,Pacific,Renewable,0.465607457
+2005,South Atlantic,Coal,0.521305944
+2005,South Atlantic,Natural Gas,0.138591885
+2005,South Atlantic,Nuclear,0.238323358
+2005,South Atlantic,Other,0.063162361
+2005,South Atlantic,Renewable,0.038616453
+2005,West North Central,Coal,0.76762632
+2005,West North Central,Natural Gas,0.037110243
+2005,West North Central,Nuclear,0.141636382
+2005,West North Central,Other,0.00895397
+2005,West North Central,Renewable,0.044673086
+2005,West South Central,Coal,0.381039598
+2005,West South Central,Natural Gas,0.456388554
+2005,West South Central,Nuclear,0.111606015
+2005,West South Central,Other,0.019676933
+2005,West South Central,Renewable,0.031288899
+2006,East North Central,Coal,0.699705548
+2006,East North Central,Natural Gas,0.041542391
+2006,East North Central,Nuclear,0.233394169
+2006,East North Central,Other,0.01044784
+2006,East North Central,Renewable,0.014910052
+2006,East South Central,Coal,0.65269207
+2006,East South Central,Natural Gas,0.097291511
+2006,East South Central,Nuclear,0.176418179
+2006,East South Central,Other,0.009655833
+2006,East South Central,Renewable,0.063942406
+2006,Middle Atlantic,Coal,0.36604084
+2006,Middle Atlantic,Natural Gas,0.169150884
+2006,Middle Atlantic,Nuclear,0.355850028
+2006,Middle Atlantic,Other,0.023105796
+2006,Middle Atlantic,Renewable,0.085852453
+2006,Mountain,Coal,0.597826052
+2006,Mountain,Natural Gas,0.218766133
+2006,Mountain,Nuclear,0.068117902
+2006,Mountain,Other,0.00307096
+2006,Mountain,Renewable,0.112218954
+2006,New England,Coal,0.148448206
+2006,New England,Natural Gas,0.39994813
+2006,New England,Nuclear,0.279275992
+2006,New England,Other,0.045688447
+2006,New England,Renewable,0.126639225
+2006,Pacific,Coal,0.033145753
+2006,Pacific,Natural Gas,0.323980592
+2006,Pacific,Nuclear,0.104108437
+2006,Pacific,Other,0.039185369
+2006,Pacific,Renewable,0.499579848
+2006,South Atlantic,Coal,0.527668389
+2006,South Atlantic,Natural Gas,0.15931499
+2006,South Atlantic,Nuclear,0.241720286
+2006,South Atlantic,Other,0.036458025
+2006,South Atlantic,Renewable,0.034838311
+2006,West North Central,Coal,0.756128861
+2006,West North Central,Natural Gas,0.037829754
+2006,West North Central,Nuclear,0.152965313
+2006,West North Central,Other,0.004433412
+2006,West North Central,Renewable,0.048642661
+2006,West South Central,Coal,0.37441967
+2006,West South Central,Natural Gas,0.459176331
+2006,West South Central,Nuclear,0.119214877
+2006,West South Central,Other,0.017785217
+2006,West South Central,Renewable,0.029403905
+2007,East North Central,Coal,0.690892005
+2007,East North Central,Natural Gas,0.052572308
+2007,East North Central,Nuclear,0.23314998
+2007,East North Central,Other,0.009183822
+2007,East North Central,Renewable,0.014201886
+2007,East South Central,Coal,0.637275866
+2007,East South Central,Natural Gas,0.121916277
+2007,East South Central,Nuclear,0.187422719
+2007,East South Central,Other,0.008139039
+2007,East South Central,Renewable,0.045246099
+2007,Middle Atlantic,Coal,0.355029266
+2007,Middle Atlantic,Natural Gas,0.192306034
+2007,Middle Atlantic,Nuclear,0.349346929
+2007,Middle Atlantic,Other,0.025841153
+2007,Middle Atlantic,Renewable,0.077476617
+2007,Mountain,Coal,0.573452665
+2007,Mountain,Natural Gas,0.25097073
+2007,Mountain,Nuclear,0.072911939
+2007,Mountain,Other,0.0032041
+2007,Mountain,Renewable,0.099460565
+2007,New England,Coal,0.151411866
+2007,New England,Natural Gas,0.408536655
+2007,New England,Nuclear,0.278990128
+2007,New England,Other,0.049885511
+2007,New England,Renewable,0.11117584
+2007,Pacific,Coal,0.04453976
+2007,Pacific,Natural Gas,0.362187111
+2007,Pacific,Nuclear,0.112201326
+2007,Pacific,Other,0.039697598
+2007,Pacific,Renewable,0.441374206
+2007,South Atlantic,Coal,0.529723102
+2007,South Atlantic,Natural Gas,0.170327418
+2007,South Atlantic,Nuclear,0.235537288
+2007,South Atlantic,Other,0.033450192
+2007,South Atlantic,Renewable,0.030962
+2007,West North Central,Coal,0.738742483
+2007,West North Central,Natural Gas,0.049225301
+2007,West North Central,Nuclear,0.15349669
+2007,West North Central,Other,0.00625733
+2007,West North Central,Renewable,0.052278197
+2007,West South Central,Coal,0.368532958
+2007,West South Central,Natural Gas,0.455572912
+2007,West South Central,Nuclear,0.117538537
+2007,West South Central,Other,0.017117367
+2007,West South Central,Renewable,0.041238225
+2008,East North Central,Coal,0.697471158
+2008,East North Central,Natural Gas,0.038171351
+2008,East North Central,Nuclear,0.236514291
+2008,East North Central,Other,0.008993559
+2008,East North Central,Renewable,0.01884964
+2008,East South Central,Coal,0.627196421
+2008,East South Central,Natural Gas,0.116089925
+2008,East South Central,Nuclear,0.197121282
+2008,East South Central,Other,0.007650023
+2008,East South Central,Renewable,0.051942347
+2008,Middle Atlantic,Coal,0.34189463
+2008,Middle Atlantic,Natural Gas,0.195471442
+2008,Middle Atlantic,Nuclear,0.361353001
+2008,Middle Atlantic,Other,0.0160794
+2008,Middle Atlantic,Renewable,0.085201527
+2008,Mountain,Coal,0.562948886
+2008,Mountain,Natural Gas,0.247240231
+2008,Mountain,Nuclear,0.077038348
+2008,Mountain,Other,0.00329018
+2008,Mountain,Renewable,0.109482356
+2008,New England,Coal,0.148062175
+2008,New England,Natural Gas,0.403145047
+2008,New England,Nuclear,0.279689488
+2008,New England,Other,0.034509539
+2008,New England,Renewable,0.13459375
+2008,Pacific,Coal,0.043852983
+2008,Pacific,Natural Gas,0.382101241
+2008,Pacific,Nuclear,0.105518954
+2008,Pacific,Other,0.036986858
+2008,Pacific,Renewable,0.431539964
+2008,South Atlantic,Coal,0.525836062
+2008,South Atlantic,Natural Gas,0.174130295
+2008,South Atlantic,Nuclear,0.247245751
+2008,South Atlantic,Other,0.021029528
+2008,South Atlantic,Renewable,0.031758364
+2008,West North Central,Coal,0.738157824
+2008,West North Central,Natural Gas,0.042310044
+2008,West North Central,Nuclear,0.143638221
+2008,West North Central,Other,0.005287923
+2008,West North Central,Renewable,0.070605988
+2008,West South Central,Coal,0.371705197
+2008,West South Central,Natural Gas,0.446734981
+2008,West South Central,Nuclear,0.111778831
+2008,West South Central,Other,0.014123048
+2008,West South Central,Renewable,0.055657943
+2009,East North Central,Coal,0.684645371
+2009,East North Central,Natural Gas,0.044223627
+2009,East North Central,Nuclear,0.238922973
+2009,East North Central,Other,0.007913336
+2009,East North Central,Renewable,0.024294694
+2009,East South Central,Coal,0.536116166
+2009,East South Central,Natural Gas,0.155041287
+2009,East South Central,Nuclear,0.214396319
+2009,East South Central,Other,0.006528117
+2009,East South Central,Renewable,0.087918111
+2009,Middle Atlantic,Coal,0.297577307
+2009,Middle Atlantic,Natural Gas,0.221058726
+2009,Middle Atlantic,Nuclear,0.37432087
+2009,Middle Atlantic,Other,0.012681723
+2009,Middle Atlantic,Renewable,0.094361374
+2009,Mountain,Coal,0.544742446
+2009,Mountain,Natural Gas,0.248499524
+2009,Mountain,Nuclear,0.083026559
+2009,Mountain,Other,0.004264465
+2009,Mountain,Renewable,0.119467006
+2009,New England,Coal,0.118680814
+2009,New England,Natural Gas,0.41942465
+2009,New England,Nuclear,0.297788034
+2009,New England,Other,0.026096171
+2009,New England,Renewable,0.138010331
+2009,Pacific,Coal,0.038721194
+2009,Pacific,Natural Gas,0.378327957
+2009,Pacific,Nuclear,0.10008559
+2009,Pacific,Other,0.037496143
+2009,Pacific,Renewable,0.445369116
+2009,South Atlantic,Coal,0.455475571
+2009,South Atlantic,Natural Gas,0.223828189
+2009,South Atlantic,Nuclear,0.260460455
+2009,South Atlantic,Other,0.019652374
+2009,South Atlantic,Renewable,0.040583411
+2009,West North Central,Coal,0.717930856
+2009,West North Central,Natural Gas,0.033328258
+2009,West North Central,Nuclear,0.144161743
+2009,West North Central,Other,0.004511646
+2009,West North Central,Renewable,0.100067497
+2009,West South Central,Coal,0.356553946
+2009,West South Central,Natural Gas,0.449377623
+2009,West South Central,Nuclear,0.118336235
+2009,West South Central,Other,0.014520024
+2009,West South Central,Renewable,0.061212172
+2010,East North Central,Coal,0.664926535
+2010,East North Central,Natural Gas,0.057388331
+2010,East North Central,Nuclear,0.239784482
+2010,East North Central,Other,0.00886952
+2010,East North Central,Renewable,0.029031131
+2010,East South Central,Coal,0.545974297
+2010,East South Central,Natural Gas,0.188523415
+2010,East South Central,Nuclear,0.194531235
+2010,East South Central,Other,0.0071004
+2010,East South Central,Renewable,0.063870652
+2010,Middle Atlantic,Coal,0.301505593
+2010,Middle Atlantic,Natural Gas,0.248696266
+2010,Middle Atlantic,Nuclear,0.352614335
+2010,Middle Atlantic,Other,0.009921773
+2010,Middle Atlantic,Renewable,0.087262034
+2010,Mountain,Coal,0.564273058
+2010,Mountain,Natural Gas,0.222902832
+2010,Mountain,Nuclear,0.085234602
+2010,Mountain,Other,0.004799958
+2010,Mountain,Renewable,0.12278955
+2010,New England,Coal,0.108537878
+2010,New England,Natural Gas,0.451899988
+2010,New England,Nuclear,0.295706392
+2010,New England,Other,0.020182296
+2010,New England,Renewable,0.123673446
+2010,Pacific,Coal,0.044487547
+2010,Pacific,Natural Gas,0.36096553
+2010,Pacific,Nuclear,0.108965577
+2010,Pacific,Other,0.035028917
+2010,Pacific,Renewable,0.450552429
+2010,South Atlantic,Coal,0.46437829
+2010,South Atlantic,Natural Gas,0.242735367
+2010,South Atlantic,Nuclear,0.237685538
+2010,South Atlantic,Other,0.01699335
+2010,South Atlantic,Renewable,0.038207454
+2010,West North Central,Coal,0.697165027
+2010,West North Central,Natural Gas,0.039528086
+2010,West North Central,Nuclear,0.142817867
+2010,West North Central,Other,0.005248972
+2010,West North Central,Renewable,0.115240048
+2010,West South Central,Coal,0.360779582
+2010,West South Central,Natural Gas,0.439369399
+2010,West South Central,Nuclear,0.115766742
+2010,West South Central,Other,0.014938333
+2010,West South Central,Renewable,0.069145944
+2011,East North Central,Coal,0.632688899
+2011,East North Central,Natural Gas,0.075567039
+2011,East North Central,Nuclear,0.246415998
+2011,East North Central,Other,0.011046242
+2011,East North Central,Renewable,0.034281821
+2011,East South Central,Coal,0.513633703
+2011,East South Central,Natural Gas,0.212852291
+2011,East South Central,Nuclear,0.197777519
+2011,East South Central,Other,0.005499645
+2011,East South Central,Renewable,0.070236843
+2011,Middle Atlantic,Coal,0.265870971
+2011,Middle Atlantic,Natural Gas,0.274285139
+2011,Middle Atlantic,Nuclear,0.354965643
+2011,Middle Atlantic,Other,0.00897251
+2011,Middle Atlantic,Renewable,0.095905737
+2011,Mountain,Coal,0.546649533
+2011,Mountain,Natural Gas,0.194849655
+2011,Mountain,Nuclear,0.08572873
+2011,Mountain,Other,0.004477011
+2011,Mountain,Renewable,0.168295071
+2011,New England,Coal,0.055522018
+2011,New England,Natural Gas,0.512707493
+2011,New England,Nuclear,0.277961164
+2011,New England,Other,0.01802533
+2011,New England,Renewable,0.135783996
+2011,Pacific,Coal,0.032094778
+2011,Pacific,Natural Gas,0.270053685
+2011,Pacific,Nuclear,0.10542466
+2011,Pacific,Other,0.033771181
+2011,Pacific,Renewable,0.558655697
+2011,South Atlantic,Coal,0.425721966
+2011,South Atlantic,Natural Gas,0.279004147
+2011,South Atlantic,Nuclear,0.246293225
+2011,South Atlantic,Other,0.009396144
+2011,South Atlantic,Renewable,0.039584518
+2011,West North Central,Coal,0.697260412
+2011,West North Central,Natural Gas,0.036047791
+2011,West North Central,Nuclear,0.122549979
+2011,West North Central,Other,0.00295345
+2011,West North Central,Renewable,0.141188367
+2011,West South Central,Coal,0.364064482
+2011,West South Central,Natural Gas,0.444117499
+2011,West South Central,Nuclear,0.104094984
+2011,West South Central,Other,0.016387309
+2011,West South Central,Renewable,0.071335727
+2012,East North Central,Coal,0.561594216
+2012,East North Central,Natural Gas,0.132942744
+2012,East North Central,Nuclear,0.253793202
+2012,East North Central,Other,0.011986766
+2012,East North Central,Renewable,0.039683073
+2012,East South Central,Coal,0.455848006
+2012,East South Central,Natural Gas,0.280649876
+2012,East South Central,Nuclear,0.195240241
+2012,East South Central,Other,0.005521248
+2012,East South Central,Renewable,0.062740629
+2012,Middle Atlantic,Coal,0.220512235
+2012,Middle Atlantic,Natural Gas,0.33174439
+2012,Middle Atlantic,Nuclear,0.35118085
+2012,Middle Atlantic,Other,0.007418219
+2012,Middle Atlantic,Renewable,0.089144306
+2012,Mountain,Coal,0.522314416
+2012,Mountain,Natural Gas,0.23048859
+2012,Mountain,Nuclear,0.086879334
+2012,Mountain,Other,0.004101483
+2012,Mountain,Renewable,0.156216176
+2012,New England,Coal,0.033939784
+2012,New England,Natural Gas,0.51694511
+2012,New England,Nuclear,0.298764856
+2012,New England,Other,0.018703959
+2012,New England,Renewable,0.131646292
+2012,Pacific,Coal,0.025327379
+2012,Pacific,Natural Gas,0.355625342
+2012,Pacific,Nuclear,0.070551827
+2012,Pacific,Other,0.032218123
+2012,Pacific,Renewable,0.516277329
+2012,South Atlantic,Coal,0.356400129
+2012,South Atlantic,Natural Gas,0.35175347
+2012,South Atlantic,Nuclear,0.247038796
+2012,South Atlantic,Other,0.006010346
+2012,South Atlantic,Renewable,0.038797259
+2012,West North Central,Coal,0.656429342
+2012,West North Central,Natural Gas,0.058208968
+2012,West North Central,Nuclear,0.125492492
+2012,West North Central,Other,0.00261388
+2012,West North Central,Renewable,0.157255318
+2012,West South Central,Coal,0.321306859
+2012,West South Central,Natural Gas,0.486016627
+2012,West South Central,Nuclear,0.102929995
+2012,West South Central,Other,0.013966995
+2012,West South Central,Renewable,0.075779524
+2013,East North Central,Coal,0.598160495
+2013,East North Central,Natural Gas,0.093233431
+2013,East North Central,Nuclear,0.247316085
+2013,East North Central,Other,0.01411985
+2013,East North Central,Renewable,0.047170139
+2013,East South Central,Coal,0.460171656
+2013,East South Central,Natural Gas,0.227478049
+2013,East South Central,Nuclear,0.215074186
+2013,East South Central,Other,0.005053094
+2013,East South Central,Renewable,0.092223015
+2013,Middle Atlantic,Coal,0.222529323
+2013,Middle Atlantic,Natural Gas,0.307196053
+2013,Middle Atlantic,Nuclear,0.366780848
+2013,Middle Atlantic,Other,0.008540852
+2013,Middle Atlantic,Renewable,0.094952923
+2013,Mountain,Coal,0.537376939
+2013,Mountain,Natural Gas,0.226492221
+2013,Mountain,Nuclear,0.083495999
+2013,Mountain,Other,0.003699429
+2013,Mountain,Renewable,0.148935413
+2013,New England,Coal,0.053430426
+2013,New England,Natural Gas,0.451909704
+2013,New England,Nuclear,0.322196758
+2013,New England,Other,0.023787399
+2013,New England,Renewable,0.148675713
+2013,Pacific,Coal,0.034153606
+2013,Pacific,Natural Gas,0.380474882
+2013,Pacific,Nuclear,0.06746533
+2013,Pacific,Other,0.029609579
+2013,Pacific,Renewable,0.488296603
+2013,South Atlantic,Coal,0.352975745
+2013,South Atlantic,Natural Gas,0.329674249
+2013,South Atlantic,Nuclear,0.259574507
+2013,South Atlantic,Other,0.008136259
+2013,South Atlantic,Renewable,0.04963924
+2013,West North Central,Coal,0.665410623
+2013,West North Central,Natural Gas,0.045727568
+2013,West North Central,Nuclear,0.116345831
+2013,West North Central,Other,0.003392926
+2013,West North Central,Renewable,0.169123052
+2013,West South Central,Coal,0.346790133
+2013,West South Central,Natural Gas,0.445936628
+2013,West South Central,Nuclear,0.100412311
+2013,West South Central,Other,0.017210483
+2013,West South Central,Renewable,0.089650445
+2014,East North Central,Coal,0.588740177
+2014,East North Central,Natural Gas,0.095554842
+2014,East North Central,Nuclear,0.249706706
+2014,East North Central,Other,0.014592663
+2014,East North Central,Renewable,0.051405612
+2014,East South Central,Coal,0.473454333
+2014,East South Central,Natural Gas,0.238900464
+2014,East South Central,Nuclear,0.21113831
+2014,East South Central,Other,0.003257623
+2014,East South Central,Renewable,0.073249269
+2014,Middle Atlantic,Coal,0.201088575
+2014,Middle Atlantic,Natural Gas,0.324209231
+2014,Middle Atlantic,Nuclear,0.357956629
+2014,Middle Atlantic,Other,0.012149504
+2014,Middle Atlantic,Renewable,0.10459606
+2014,Mountain,Coal,0.518722346
+2014,Mountain,Natural Gas,0.221651516
+2014,Mountain,Nuclear,0.086173651
+2014,Mountain,Other,0.003646217
+2014,Mountain,Renewable,0.169806269
+2014,New England,Coal,0.044846344
+2014,New England,Natural Gas,0.428593958
+2014,New England,Nuclear,0.329759948
+2014,New England,Other,0.032987834
+2014,New England,Renewable,0.163811916
+2014,Pacific,Coal,0.032220662
+2014,Pacific,Natural Gas,0.371607358
+2014,Pacific,Nuclear,0.066733844
+2014,Pacific,Other,0.026505447
+2014,Pacific,Renewable,0.502932689
+2014,South Atlantic,Coal,0.372117381
+2014,South Atlantic,Natural Gas,0.320143887
+2014,South Atlantic,Nuclear,0.252558799
+2014,South Atlantic,Other,0.008641622
+2014,South Atlantic,Renewable,0.046538311
+2014,West North Central,Coal,0.643660926
+2014,West North Central,Natural Gas,0.034992766
+2014,West North Central,Nuclear,0.132351272
+2014,West North Central,Other,0.002798574
+2014,West North Central,Renewable,0.186196462
+2014,West South Central,Coal,0.342080339
+2014,West South Central,Natural Gas,0.440874409
+2014,West South Central,Nuclear,0.105474154
+2014,West South Central,Other,0.015858017
+2014,West South Central,Renewable,0.095713081
+2015,East North Central,Coal,0.523459802
+2015,East North Central,Natural Gas,0.147813552
+2015,East North Central,Nuclear,0.256911327
+2015,East North Central,Other,0.015186916
+2015,East North Central,Renewable,0.056628403
+2015,East South Central,Coal,0.401580517
+2015,East South Central,Natural Gas,0.309089158
+2015,East South Central,Nuclear,0.209081693
+2015,East South Central,Other,0.002367406
+2015,East South Central,Renewable,0.077881226
+2015,Middle Atlantic,Coal,0.159910409
+2015,Middle Atlantic,Natural Gas,0.356556427
+2015,Middle Atlantic,Nuclear,0.368248906
+2015,Middle Atlantic,Other,0.011477983
+2015,Middle Atlantic,Renewable,0.103806275
+2015,Mountain,Coal,0.48394541
+2015,Mountain,Natural Gas,0.258452026
+2015,Mountain,Nuclear,0.086656022
+2015,Mountain,Other,0.004119924
+2015,Mountain,Renewable,0.166826619
+2015,New England,Coal,0.034844804
+2015,New England,Natural Gas,0.484389224
+2015,New England,Nuclear,0.28626613
+2015,New England,Other,0.030385703
+2015,New England,Renewable,0.164114139
+2015,Pacific,Coal,0.025143923
+2015,Pacific,Natural Gas,0.383697156
+2015,Pacific,Nuclear,0.068895166
+2015,Pacific,Other,0.029319929
+2015,Pacific,Renewable,0.492943826
+2015,South Atlantic,Coal,0.305778236
+2015,South Atlantic,Natural Gas,0.385023451
+2015,South Atlantic,Nuclear,0.252188074
+2015,South Atlantic,Other,0.008590569
+2015,South Atlantic,Renewable,0.04841967
+2015,West North Central,Coal,0.600081165
+2015,West North Central,Natural Gas,0.052979618
+2015,West North Central,Nuclear,0.141577728
+2015,West North Central,Other,0.003691087
+2015,West North Central,Renewable,0.201670401
+2015,West South Central,Coal,0.265798503
+2015,West South Central,Natural Gas,0.511940105
+2015,West South Central,Nuclear,0.099305944
+2015,West South Central,Other,0.01600824
+2015,West South Central,Renewable,0.106947209
+2016,East North Central,Coal,0.469045057
+2016,East North Central,Natural Gas,0.189969533
+2016,East North Central,Nuclear,0.268452789
+2016,East North Central,Other,0.013373302
+2016,East North Central,Renewable,0.059159319
+2016,East South Central,Coal,0.376958586
+2016,East South Central,Natural Gas,0.34916434
+2016,East South Central,Nuclear,0.206512619
+2016,East South Central,Other,0.002230413
+2016,East South Central,Renewable,0.065134042
+2016,Middle Atlantic,Coal,0.134430661
+2016,Middle Atlantic,Natural Gas,0.392536489
+2016,Middle Atlantic,Nuclear,0.359324399
+2016,Middle Atlantic,Other,0.006824492
+2016,Middle Atlantic,Renewable,0.106883958
+2016,Mountain,Coal,0.439237466
+2016,Mountain,Natural Gas,0.269890712
+2016,Mountain,Nuclear,0.088250068
+2016,Mountain,Other,0.004358377
+2016,Mountain,Renewable,0.198263376
+2016,New England,Coal,0.023237538
+2016,New England,Natural Gas,0.489848799
+2016,New England,Nuclear,0.29913892
+2016,New England,Other,0.01885099
+2016,New England,Renewable,0.168923753
+2016,Pacific,Coal,0.022458411
+2016,Pacific,Natural Gas,0.318597965
+2016,Pacific,Nuclear,0.071917746
+2016,Pacific,Other,0.026156727
+2016,Pacific,Renewable,0.560869152
+2016,South Atlantic,Coal,0.29216444
+2016,South Atlantic,Natural Gas,0.395541701
+2016,South Atlantic,Nuclear,0.253910801
+2016,South Atlantic,Other,0.007580412
+2016,South Atlantic,Renewable,0.050802647
+2016,West North Central,Coal,0.559005636
+2016,West North Central,Natural Gas,0.068887118
+2016,West North Central,Nuclear,0.139734427
+2016,West North Central,Other,0.003445638
+2016,West North Central,Renewable,0.228927181
+2016,West South Central,Coal,0.251355667
+2016,West South Central,Natural Gas,0.495222537
+2016,West South Central,Nuclear,0.103639536
+2016,West South Central,Other,0.015925458
+2016,West South Central,Renewable,0.133856802
+2017,East North Central,Coal,0.478434141
+2017,East North Central,Natural Gas,0.173319052
+2017,East North Central,Nuclear,0.270875132
+2017,East North Central,Other,0.014121022
+2017,East North Central,Renewable,0.063250653
+2017,East South Central,Coal,0.345791833
+2017,East South Central,Natural Gas,0.340016664
+2017,East South Central,Nuclear,0.233796325
+2017,East South Central,Other,0.000220806
+2017,East South Central,Renewable,0.080174371
+2017,Middle Atlantic,Coal,0.12234627
+2017,Middle Atlantic,Natural Gas,0.355176579
+2017,Middle Atlantic,Nuclear,0.392893776
+2017,Middle Atlantic,Other,0.007526197
+2017,Middle Atlantic,Renewable,0.122057178
+2017,Mountain,Coal,0.446410072
+2017,Mountain,Natural Gas,0.24303098
+2017,Mountain,Nuclear,0.089284407
+2017,Mountain,Other,0.003689917
+2017,Mountain,Renewable,0.217584624
+2017,New England,Coal,0.016536791
+2017,New England,Natural Gas,0.451041788
+2017,New England,Nuclear,0.309377589
+2017,New England,Other,0.019807367
+2017,New England,Renewable,0.203236465
+2017,Pacific,Coal,0.021943999
+2017,Pacific,Natural Gas,0.27415838
+2017,Pacific,Nuclear,0.063920746
+2017,Pacific,Other,0.02738657
+2017,Pacific,Renewable,0.612590304
+2017,South Atlantic,Coal,0.262841151
+2017,South Atlantic,Natural Gas,0.414200394
+2017,South Atlantic,Nuclear,0.25619232
+2017,South Atlantic,Other,0.004844874
+2017,South Atlantic,Renewable,0.061921261
+2017,West North Central,Coal,0.5498044
+2017,West North Central,Natural Gas,0.057525332
+2017,West North Central,Nuclear,0.13291801
+2017,West North Central,Other,0.003163749
+2017,West North Central,Renewable,0.256588509
+2017,West South Central,Coal,0.276744667
+2017,West South Central,Natural Gas,0.450847264
+2017,West South Central,Nuclear,0.096821322
+2017,West South Central,Other,0.015368824
+2017,West South Central,Renewable,0.160217923

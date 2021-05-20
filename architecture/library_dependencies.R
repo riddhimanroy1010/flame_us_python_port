@@ -1,0 +1,19 @@
+###>Script: List and install the set of libraries used at some point in the model
+install.packages(c("cowplot", 
+                   "ggplot2", 
+                   "ggrepel", 
+                   "ggthemes", 
+                   "RColorBrewer", 
+                   "readxl", 
+                   "reshape2", 
+                   "scales", 
+                   "tidyr",
+                   "knitr",
+                   "devtools",
+                   "digest",
+                   "foreach",
+                   "doParallel",
+                   "DiagrammeR",
+                   "DiagrammeRsvg",
+                   "rsvg"))
+devtools::install_github('JGCRI/rgcam')

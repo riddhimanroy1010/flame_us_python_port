@@ -1,0 +1,57 @@
+Vehicle,Type,Make,Unit,Value
+Audi A3 Plug In,PHEV,Audi,kWh,8.8
+Audi e-Tron,BEV,Audi,kWh,95
+BMW Active E,BEV,BMW,kWh,32
+BMW i3,BEV,BMW,kWh,42
+BMW i8,PHEV,BMW,kWh,7.1
+BMW X5,PHEV,BMW,kWh,24
+BMW 3 Series Plug In,PHEV,BMW,kWh,12
+BMW 5 Series Plug In,PHEV,BMW,kWh,12
+BMW 7 Series Plug In,PHEV,BMW,kWh,9
+Cadillac CT6,PHEV,Cadillac,kWh,18.4
+Cadillac ELR,PHEV,Cadillac,kWh,17.1
+Chevrolet Bolt,BEV,Chevrolet,kWh,60
+Chevrolet Spark,BEV,Chevrolet,kWh,21
+Chevrolet Volt,PHEV,Chevrolet,kWh,16
+Chrysler Pacifica,PHEV,Chrysler,kWh,16
+Fiat 500E,BEV,Fiat,kWh,24
+Ford C-MAX Energi,PHEV,Ford,kWh,7.6
+Ford Focus EV,BEV,Ford,kWh,33.5
+Ford Fusion Energi,PHEV,Ford,kWh,7.6
+Jaguar I-Pace,BEV,Jaguar,kWh,90
+Honda Accord,PHEV,Honda,kWh,6.7
+Honda Clarity BEV,BEV,Honda,kWh,25.5
+Honda Clarity Plug-in,PHEV,Honda,kWh,7
+Honda Fit EV,BEV,Honda,kWh,20
+Hyundai Kona,BEV,Hyundai,kWh,64
+Hyundai Sonata Plug-in,PHEV,Hyundai,kWh,9.8
+Hyundai Ioniq EV,BEV,Hyundai,kWh,28
+Hyundai Ioniq Plug-in,PHEV,Hyundai,kWh,9
+Kia Niro Plug-in,PHEV,Kia,kWh,9
+Kia Niro EV,BEV,Kia,kWh,64
+Kia Optima Plug-in,PHEV,Kia,kWh,10
+Kia Soul EV,BEV,Kia,kWh,64
+Mercedes B-Class Electric,BEV,Mercedes-Benz,kWh,31.5
+Mercedes C350We Plug-in Hybrid,PHEV,Mercedes-Benz,kWh,13
+Mercedes GLC 350e,PHEV,Mercedes-Benz,kWh,8.7
+Mercedes GLE 550e Hybrid,PHEV,Mercedes-Benz,kWh,8.7
+Mercedes S550 Plug In,PHEV,Mercedes-Benz,kWh,13.5
+Mini Cooper Countryman Plug In,PHEV,MINI,kWh,10
+Mitsubishi i-MiEV,BEV,Mitsubishi,kWh,16
+Mitsubishi Outlander,PHEV,Mitsubishi,kWh,12
+Nissan LEAF,BEV,Nissan,kWh,40
+Porsche Cayenne S E-Hybrid,PHEV,Porsche,kWh,14
+Porsche Panamera S E-Hybrid,PHEV,Porsche,kWh,14
+Porsche Taycan,BEV,Porsche,kWh,95
+Smart ED,BEV,smart,kWh,16.5
+Smart for Two EV,BEV,smart,kWh,16.5
+Subaru Crosstrek Hybrid,PHEV,Subaru,kWh,9
+Tesla Model 3,BEV,Tesla,kWh,80.5
+Tesla Model S,BEV,Tesla,kWh,100
+Tesla Model X,BEV,Tesla,kWh,100
+Toyota Prius Prime,PHEV,Toyota,kWh,8.8
+Toyota RAV4 EV,BEV,Toyota,kWh,27
+Volvo S90 Plug In ,PHEV,Volvo,kWh,12
+Volvo XC60,PHEV,Volvo,kWh,10
+Volvo XC90,PHEV,Volvo,kWh,12
+VW e-Golf,BEV,Volkswagen,kWh,35.8

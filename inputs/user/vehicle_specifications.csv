@@ -1,0 +1,22 @@
+Source,Constant,Description,Unit,Size,Technology,Fuel,Parameter,Value
+Kim,n,Transmission efficiency,,Glo,Glo,Glo,eta_t,
+Kim,n,Thermodynamic Engine efficiency,,Glo,"ICEV-G,ICEV-D,FFV,HEV,PHEV,CNG,FCV",Glo,eta_i,
+Kim,n,Electric motor Conversion efficiency,,Glo,"BEV,HEV,PHEV",Glo,eta_e,
+Kim,y,Power demand from access,W,Glo,Glo,Glo,alpha,750
+Kim,y,Regenerative braking efficiency,,Glo,Glo,Glo,mu,0.8
+Kim,n,Rolling resistance,,Glo,Glo,Glo,rol_resistance,
+Kim,n,Aerodynamic drag coefficient,,Glo,Glo,Glo,drag_coef,
+Kim,n,Frontal area,m2,Compact,Glo,Glo,front_area,2.33
+Kim,n,Frontal area,m2,Car,Glo,Glo,front_area,2.37
+Kim,n,Frontal area,m2,Small SUV,Glo,Glo,front_area,2.84
+Kim,n,Frontal area,m2,Light truck,Glo,Glo,front_area,2.93
+Kim,n,Frontal area,m2,Pickup,Glo,Glo,front_area,3.27
+Moawad,y,Engine Displacement,L,Car,"ICEV-G,ICEV-D,FFV,CNG",Glo,disp,2.5
+Moawad,y,Engine Displacement,L,Car,"HEV,PHEV",Glo,disp,1
+Moawad,y,Engine Displacement,L,Light truck,"ICEV-G,ICEV-D,FFV,CNG",Glo,disp,3
+Moawad,y,Engine Displacement,L,Light truck,"HEV,PHEV",Glo,disp,1
+,y,Gear Ratio,r/m,Car,"ICEV-G,ICEV-D,FFV,HEV,PHEV,CNG",Glo,gear_ratio,1.33
+,y,Gear Ratio,r/m,Light truck,"ICEV-G,ICEV-D,FFV,HEV,PHEV,CNG",Glo,gear_ratio,1.33
+Kim,y,Friction mean effective pressure,kPa,Glo,Glo,Glo,fmep,150
+MacKenzie,y,Time to accelerate from 0 to 97 km/h (0 to 60 mph),s,Glo,Glo,Glo,z97,8.8
+MacKenzie,y,Number of transmission speeds [defined as zero for continuously variable transmissions (CVT)],,Glo,Glo,Glo,tspd,6

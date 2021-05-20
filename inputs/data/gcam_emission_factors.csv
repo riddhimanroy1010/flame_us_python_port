@@ -1,0 +1,5 @@
+Fuel,Gcam_modes,Final_input,Unit,Value_carbon,Value_co2
+coal,coal,regional coal;coal,kg C or CO2/GJ,27.3,100.1
+liquids,refined liquids;refined liquids enduse,regional oil,kg C or CO2/GJ,19.6,71.9
+gas,gas,wholesale gas;regional natural gas;gas;delivered gas,kg C or CO2/GJ,14.2,52.1
+biomass,biomass,regional biomass;regional biomassOil;regional corn for ethanol;biomass;solar;geothermal;wind;hydro;nuclear,kg C or CO2/GJ,0,0

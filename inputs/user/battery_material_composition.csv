@@ -1,0 +1,5 @@
+Subcomponent,Battery type,Data,Unit,Metal,low,def,high
+EV Battery,all,Metal content,kg/kg,Lithium,0.0198,0.0222,0.0233
+EV Battery,all,Metal content,kg/kg,Nickel,0.092,0.103,0.109
+EV Battery,all,Metal content,kg/kg,Cobalt,0.0287,0.0323,0.0339
+EV Battery,all,Metal content,kg/kg,Manganese,0.0308,0.0346,0.0364

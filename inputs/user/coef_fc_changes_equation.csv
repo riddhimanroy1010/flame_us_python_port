@@ -1,0 +1,45 @@
+Source,Data,Constant,Description,Unit,Size,Technology,Fuel,Parameter,Value
+EPA,City,y,,s,Glo,Glo,Glo,I1,1874
+EPA,Highway,y,,s,Glo,Glo,Glo,I1,765
+EPA,City,y,,m,Glo,Glo,Glo,I2,17769
+EPA,Highway,y,,m,Glo,Glo,Glo,I2,16507
+EPA,City,y,,m2/s,Glo,Glo,Glo,I3,263361
+EPA,Highway,y,,m2/s,Glo,Glo,Glo,I3,371739
+EPA,City,y,,m3/s2,Glo,Glo,Glo,I4,4549907
+EPA,Highway,y,,m3/s2,Glo,Glo,Glo,I4,8540124
+EPA,City,y,,m2/s2,Glo,Glo,Glo,I5,3090
+EPA,Highway,y,,m2/s2,Glo,Glo,Glo,I5,1165
+Kim,Glo,y,LHV,J/L,Glo,Glo,Gasoline,Hf,31270165.8
+GREET,Glo,y,LHV,J/L,Glo,Glo,Diesel,Hf,35801112.19
+GREET,Glo,y,LHV,J/L,Glo,Glo,Ethanol,Hf,21274417.23
+GREET,Glo,y,LHV,J/L,Glo,Glo,Hydrogen,Hf,8500847.97
+GREET,Glo,y,LHV,J/L,Glo,Glo,CNG & LPG,Hf,23676951.97
+GREET,Glo,y,LHV,J/kWh,Glo,Glo,Electricity,Hf,3600000
+Kim,City,y,Ratio of braking to kinetic energy,,Glo,"BEV,HEV,PHEV,FCV",Glo,theta,0.74
+Kim,Highway,y,Ratio of braking to kinetic energy,,Glo,"BEV,HEV,PHEV,FCV",Glo,theta,0.41
+Kim,Glo,y,Ratio of braking to kinetic energy,,Glo,"ICEV-G,ICEV-D,FFV,CNG",Glo,theta,0
+Kim,Glo,y,Fraction of electric motor,,Glo,"ICEV-G,ICEV-D,FFV,FCV",Glo,theta_elec,0
+Kim,Glo,y,Fraction of electric motor,,Glo,"BEV,PHEV",Electricity,theta_elec,1
+Kim,City,y,Fraction of electric motor,,Glo,"HEV,PHEV",Gasoline,theta_elec,0.3
+Kim,Highway,y,Fraction of electric motor,,Glo,"HEV,PHEV",Gasoline,theta_elec,0.09
+Kim,Glo,y,Rotational mass factor,,Glo,Glo,Glo,rot_mass_factor,0.1
+Kim,Glo,y,Gravitational Acceleration,m/s2,Glo,Glo,Glo,grav_acc,9.8
+Kim,Glo,y,Air density,kg/m3,Glo,Glo,Glo,air_density,1.2
+VISION,Glo,y,On-road degradation factor,,Car,ICEV-G,Gasoline,on_road_deg,0.817
+VISION,Glo,y,On-road degradation factor,,Car,BEV,Electricity,on_road_deg,0.7
+VISION,Glo,y,On-road degradation factor,,Car,FFV,Ethanol,on_road_deg,0.817
+VISION,Glo,y,On-road degradation factor,,Car,ICEV-D,Diesel,on_road_deg,0.817
+VISION,Glo,y,On-road degradation factor,,Car,CNG,CNG & LPG,on_road_deg,0.817
+VISION,Glo,y,On-road degradation factor,,Car,HEV,Gasoline,on_road_deg,0.85
+VISION,Glo,y,On-road degradation factor,,Car,PHEV,Gasoline,on_road_deg,0.817
+VISION,Glo,y,On-road degradation factor,,Car,PHEV,Electricity,on_road_deg,1
+VISION,Glo,y,On-road degradation factor,,Car,FCV,Hydrogen,on_road_deg,0.85
+VISION,Glo,y,On-road degradation factor,,Light truck,ICEV-G,Gasoline,on_road_deg,0.8
+VISION,Glo,y,On-road degradation factor,,Light truck,BEV,Electricity,on_road_deg,0.7
+VISION,Glo,y,On-road degradation factor,,Light truck,FFV,Ethanol,on_road_deg,0.8
+VISION,Glo,y,On-road degradation factor,,Light truck,ICEV-D,Diesel,on_road_deg,0.8
+VISION,Glo,y,On-road degradation factor,,Light truck,CNG,CNG & LPG,on_road_deg,0.8
+VISION,Glo,y,On-road degradation factor,,Light truck,HEV,Gasoline,on_road_deg,0.85
+VISION,Glo,y,On-road degradation factor,,Light truck,PHEV,Gasoline,on_road_deg,0.8
+VISION,Glo,y,On-road degradation factor,,Light truck,PHEV,Electricity,on_road_deg,1
+VISION,Glo,y,On-road degradation factor,,Light truck,FCV,Hydrogen,on_road_deg,0.85

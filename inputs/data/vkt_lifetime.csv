@@ -1,0 +1,7 @@
+Data,Unit,Size,Model,Technology,Value
+Lifetime VKMT,km per vehicle,Car,def,all,278659.5
+Lifetime VKMT,km per vehicle,Light truck,def,all,295094.1
+Lifetime VKMT,km per vehicle,Car,low,all,250793.55
+Lifetime VKMT,km per vehicle,Light truck,low,all,225714.195
+Lifetime VKMT,km per vehicle,Car,high,all,306525.45
+Lifetime VKMT,km per vehicle,Light truck,high,all,324603.51

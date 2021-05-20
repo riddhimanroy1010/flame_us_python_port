@@ -1,0 +1,9 @@
+Source,GHG,Time_horizon,cc_fb,Value,Unit
+IPCC 5th AR,CH4,20,n,84,kg CO2 eq / kg GHG
+IPCC 5th AR,CH4,100,n,28,kg CO2 eq / kg GHG
+IPCC 5th AR,CH4,20,y,86,kg CO2 eq / kg GHG
+IPCC 5th AR,CH4,100,y,34,kg CO2 eq / kg GHG
+IPCC 5th AR,N2O,20,n,264,kg CO2 eq / kg GHG
+IPCC 5th AR,N2O,100,n,265,kg CO2 eq / kg GHG
+IPCC 5th AR,N2O,20,y,268,kg CO2 eq / kg GHG
+IPCC 5th AR,N2O,100,y,298,kg CO2 eq / kg GHG

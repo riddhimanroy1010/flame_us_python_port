@@ -1,0 +1,32 @@
+Unit,Sector,Phase,Process,Source,GREET
+kg / kg prim mat,Manufacturing,Primary Material Production,HSS/AHSS,GREET,Virgin High-Strength Steel
+kg / kg prim mat,Manufacturing,Primary Material Production,Cast Iron,GREET,Cast Iron
+kg / kg prim mat,Manufacturing,Primary Material Production,Mild steel and other steels,GREET,Virgin Steel
+kg / kg prim mat,Manufacturing,Primary Material Production,Wrought Aluminum,GREET,Virgin Wrought Aluminum
+kg / kg prim mat,Manufacturing,Primary Material Production,Cast Aluminum,GREET,Virgin Cast Aluminum
+kg / kg sec mat,Manufacturing,Secondary Material Production,HSS/AHSS,GREET,Recycled Steel
+kg / kg sec mat,Manufacturing,Secondary Material Production,Cast Iron,GREET,Cast Iron
+kg / kg sec mat,Manufacturing,Secondary Material Production,Mild steel and other steels,GREET,Recycled Steel
+kg / kg sec mat,Manufacturing,Secondary Material Production,Wrought Aluminum,GREET,Recycled Wrought Aluminum
+kg / kg sec mat,Manufacturing,Secondary Material Production,Cast Aluminum,GREET,Recycled Cast Aluminum
+kg / vehicle,Manufacturing,Manufacturing,Vehicle Assembly,GREET,"Paint Production,Vehicle Assembly - Painting,Vehicle Assembly - HVAC & Lighting,Vehicle Assembly - Heating,Vehicle Assembly - Material Handling,Vehicle Assembly - Welding,Vehicle Assembly - Compressed Air"
+kg / kg mat,Manufacturing,Manufacturing,HSS/AHSS,GREET,"Virgin Hot Rolled Stamped Steel,Virgin Cold Rolled Stamped Steel,Virgin Galvanized Stamped Steel"
+kg / kg mat,Manufacturing,Manufacturing,Cast Iron,GREET,"Cast Iron,Forged Iron"
+kg / kg mat,Manufacturing,Manufacturing,Mild steel and other steels,GREET,"Virgin Hot Rolled Stamped Steel,Virgin Cold Rolled Stamped Steel,Virgin Galvanized Stamped Steel"
+kg / kg mat,Manufacturing,Manufacturing,Wrought Aluminum,GREET,"Virgin Wrought Hot Rolled Stamped Aluminum,Virgin Wrought Cold Rolled Stamped Aluminum,Virgin Wrought Extruded Aluminum"
+kg / kg mat,Manufacturing,Manufacturing,Cast Aluminum,GREET,"Virgin Cast Aluminum,Recycled Cast Aluminum"
+kg / kg bat,Manufacturing,Battery production and assembly,Battery production,lit,
+kg / kg bat,Manufacturing,Battery production and assembly,Battery Assembly,lit,Battery Assembly:
+kg / L,Energy,Fuel Production,Gasoline,GREET,Baseline Gasoline
+kg / kWh,Energy,Fuel Production,Electricity,ecoInvent,Electricity  (U.S. Mix)
+kg / L,Energy,Fuel Production,Ethanol,GREET,"E85 for FFV, Corn"
+kg / L,Energy,Fuel Production,Diesel,GREET,Baseline Conventional and LS Diesel
+kg / L,Energy,Fuel Production,CNG & LPG,GREET,"Compressed Natural Gas, NA NG"
+kg / L,Energy,Fuel Production,Hydrogen,GREET,"FCV: G.H2, Central Plants, NA NG"
+kg / L,Transportation,Fuel Use,Gasoline,GREET,Baseline Gasoline
+kg / kWh,Transportation,Fuel Use,Electricity,ecoInvent,Electricity  (U.S. Mix)
+kg / L,Transportation,Fuel Use,Ethanol,GREET,"E85 for FFV, Corn"
+kg / L,Transportation,Fuel Use,Diesel,GREET,Baseline Conventional and LS Diesel
+kg / L,Transportation,Fuel Use,CNG & LPG,GREET,"Compressed Natural Gas, NA NG"
+kg / L,Transportation,Fuel Use,Hydrogen,GREET,"FCV: G.H2, Central Plants, NA NG"
+kg / vehicle,Manufacturing,End of Life,Vehicle Disposal,GREET,Vehicle Disposal
