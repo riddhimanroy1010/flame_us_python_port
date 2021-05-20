@@ -17,7 +17,7 @@ class vehicleClass():
         material_component_composition: type pandas dataframe
     Functions:
         __init__: initializes the function and it's fields
-        get_data_frame: converts the existig fields into dataframes and returns dataframe
+        get_data_frame: converts the existing fields into dataframes and returns dataframe
     '''
     technology: str = field(default_factory=str)
     size: str = field(default_factory=str)
@@ -42,19 +42,20 @@ class vehicleClass():
     '''
         Returns the existing attributes of the vehicle as a dataframe
     '''
-    def get_data_frame(self):
+    def get_data_frame(self, field_name):
         out = pd.DataFrame()
-        for attribute in vars(self):
-            if type(attribute) == 'numpy.matrix':
-                temp = pd.DataFrame(vars(self)[attribute])
-                # cbind(Data=rownames(field_values),stringsAsFactors = FALSE) What does this line do?
-                temp.concat(temp, self.technology, self.size)
-                out.concat(temp[['Technology', 'Size', 'Model_year', 'Data', 'Value']])
-                replace = {"fuel_consumption": "Fuel", "utility_factor" : "Fuel", "specifications" : "Attribute", "material_composition" : "Material"}
-                out.rename(columns = replace, inplace = True)
-            elif type(attribute) == 'pandas.core.frame.DataFrame':
-                out.concat(attribute, self.technology, self.size)
-
+        if type(vars(self)[str(field_name)]) == 'numpy.matrix':
+            temp = pd.DataFrame(vars(self)[field_name])
+            # cbind(Data=rownames(field_values),stringsAsFactors = FALSE) What does this line do?
+            temp.concat(temp, self.technology, self.size)
+            out.concat(temp[['Technology', 'Size', 'Model_year', 'Data', 'Value']])
+            replace = {"fuel_consumption": "Fuel", 
+                        "utility_factor" : "Fuel", 
+                        "specifications" : "Attribute", 
+                        "material_composition" : "Material"}
+            out.rename(columns = replace, inplace = True)
+        elif type(vars(self)[str(field_name)]) == 'pandas.core.frame.DataFrame':
+            out.concat(field_name, self.technology, self.size)
         return out
 
 class fleetClass():
@@ -65,11 +66,37 @@ class fleetClass():
     ldv_on_road_stock: np.matrix = field(default_factory=np.matrx)
     ldv_on_road_stock_tot: np.matrix = field(default_factory=np.matrx)
 
-    def get_data_frame(self):
-        out = pd.DataFrame()
-        for attribute in vars(self):
-            if type(attribute) == "numpy.matrix":
-                temp = pd.DataFrame(vars(self)[attribute])
+    def get_data_frame(self, field_name):
+        out = pd.DataFrame(vars(self)[field_name])
+        if type(vars(self)[str(field_name)]) == "numpy.matrix":
+            temp = pd.DataFrame(vars(self)[str(field_name)])
+            ##same problem: what does the cbind line do?
+            temp.concat(temp, self.technology, self.size)
+            out.concat(temp[["Year", "Value"]])
+            for row, data in out.iterrows():
+                str = out['Type'][row]
+                val = float(re.findall('_', out['Type'][row]))
+                out['Size'][row] = str[:val - 1]
+                out['Technology'][row] = str[:val + 1200]
+                out['Type'][row] = None
+        elif type(vars(self)[str(field_name)]) == list:
+            for i in range(len(vars(self)[str(field_name)])):
+                tmp_stock_dt = pd.DataFrame(vars(self)[str(field_name)][i])
+                tmp_stock_dt.concat(tmp_stock_dt, {'Year' : int(vars(self)[str(field_name)]['year'][i])})
+                str = tmp_stock_dt['Type'][i]
+                val = float(re.findall('_', tmp_stock_dt['Type'][i]))
+                tmp_stock_dt['Size'][i] = str[:val - 1]
+                tmp_stock_dt['Technology'][i] = str[:val + 1200]
+                tmp_stock_dt['Type'][i] = None
+
+                out = pd.DataFrame()
+                out.concat(tmp_stock_dt)
+                return out
+
+
+            
+
+
 
                 
 
