@@ -9,12 +9,12 @@ class vehicleClass():
         technology: type str
         size: type str
         fuel_type: type str
-        fuel_consumption: type numpy matrix
-        utility_factor: type numpy matrix
-        specifications: type numpy matrix
+        fuel_consumption: type numpy.matrixs
+        utility_factor: type numpy.matrix
+        specifications: type numpy.matrix
         battery_type: type str
-        material_composition: type numpy matrix
-        material_component_composition: type pandas dataframe
+        material_composition: type numpy.matrix
+        material_component_composition: type pandas.core.frame.DataFrame
     Functions:
         __init__: initializes the function and it's fields
         get_data_frame: converts the existing fields into dataframes and returns dataframe
@@ -40,7 +40,7 @@ class vehicleClass():
         self.fuel_type = 0
 
     '''
-        Returns the existing attributes of the vehicle as a dataframe
+    Returns the existing attributes of the vehicle as a dataframe
     '''
     def get_data_frame(self, field_name):
         out = pd.DataFrame()
@@ -59,6 +59,19 @@ class vehicleClass():
         return out
 
 class fleetClass():
+    '''
+    Data fields:
+        vint_stock: type list
+        vint_scrap: type list
+        technology_market_share: type numpy.matrix
+        fuel_consumption: type numpy.matrix
+        ldv_sales: type numpy.matrix
+        ldv_on_road_stock: type numpy.matrix
+        ldv_on_road_stock_tot: type numpy.matrix
+    Functions:
+        __init__: initializes the function and it's fields
+        get_data_frame: converts the existing fields into dataframes and returns dataframe
+    '''
     vint_stock: list = field(default_factory=list)
     vint_scrap: list = field(default_factory=list)
     technology_market_share: np.matrix = field(default_factory=np.matrx)
@@ -66,10 +79,13 @@ class fleetClass():
     ldv_on_road_stock: np.matrix = field(default_factory=np.matrx)
     ldv_on_road_stock_tot: np.matrix = field(default_factory=np.matrx)
 
+    '''
+    Returns the fields of the class as a pandas.core.frame.DataFrame
+    '''
     def get_data_frame(self, field_name):
         out = pd.DataFrame(vars(self)[field_name])
-        if type(vars(self)[str(field_name)]) == "numpy.matrix":
-            temp = pd.DataFrame(vars(self)[str(field_name)])
+        if type(vars(self)[field_name]) == "numpy.matrix":
+            temp = pd.DataFrame(vars(self)[field_name])
             ##same problem: what does the cbind line do?
             temp.concat(temp, self.technology, self.size)
             out.concat(temp[["Year", "Value"]])
@@ -79,10 +95,10 @@ class fleetClass():
                 out['Size'][row] = str[:val - 1]
                 out['Technology'][row] = str[:val + 1200]
                 out['Type'][row] = None
-        elif type(vars(self)[str(field_name)]) == list:
-            for i in range(len(vars(self)[str(field_name)])):
-                tmp_stock_dt = pd.DataFrame(vars(self)[str(field_name)][i])
-                tmp_stock_dt.concat(tmp_stock_dt, {'Year' : int(vars(self)[str(field_name)]['year'][i])})
+        elif type(vars(self)[field_name]) == list:
+            for i in range(len(vars(self)[field_name])):
+                tmp_stock_dt = pd.DataFrame(vars(self)[field_name][i])
+                tmp_stock_dt.concat(tmp_stock_dt, {'Year' : int(vars(self)[field_name]['year'][i])})
                 str = tmp_stock_dt['Type'][i]
                 val = float(re.findall('_', tmp_stock_dt['Type'][i]))
                 tmp_stock_dt['Size'][i] = str[:val - 1]
@@ -92,6 +108,9 @@ class fleetClass():
                 out = pd.DataFrame()
                 out.concat(tmp_stock_dt)
                 return out
+    '''
+    Return all fields into a list of pandas.core.frame.DataFrame
+    '''
     def get_list_dataframe(self):
         return [self.get_data_frame('vint_stock'), self.get_data_frame('vint_scrap')]
 
