@@ -69,8 +69,9 @@ class fleetClass():
         ldv_on_road_stock: type numpy.matrix
         ldv_on_road_stock_tot: type numpy.matrix
     Functions:
-        __init__: initializes the function and it's fields
-        get_data_frame: converts the existing fields into dataframes and returns dataframe
+        __init__: initializes the function and its fields
+        get_data_frame: converts the existing fields into dataframes and returns pandas.core.frame.DataFrame
+        get_list_dataframe: Return all fields into a list of pandas.core.frame.DataFrame
     '''
     vint_stock: list = field(default_factory=list)
     vint_scrap: list = field(default_factory=list)
