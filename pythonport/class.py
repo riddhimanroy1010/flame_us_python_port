@@ -6,54 +6,84 @@ import re
 class vehicleClass():
     '''
     Data fields:
-        technology: type str
-        size: type str
-        fuel_type: type str
-        fuel_consumption: type numpy.matrixs
-        utility_factor: type numpy.matrix
-        specifications: type numpy.matrix
-        battery_type: type str
-        material_composition: type numpy.matrix
-        material_component_composition: type pandas.core.frame.DataFrame
+        technology                          :            type str
+        size                                :            type str
+        fuel_type                           :            type str
+        fuel_consumption                    :            type numpy.matrixs
+        utility_factor                      :            type pandas.core.frame.DataFrame
+        specifications                      :            type numpy.matrix
+        battery_type                        :            type str
+        material_composition                :            type numpy.matrix
+        material_component_composition      :            type pandas.core.frame.DataFrame
     Functions:
-        __init__: initializes the function and it's fields
+        __init__: initializes the function and its fields
         get_data_frame: converts the existing fields into dataframes and returns dataframe
     '''
-    technology: str = field(default_factory=str)
-    size: str = field(default_factory=str)
-    fuel_type: str = field(default_factory=str)
-    fuel_consumption: np.matrix = field(default_factory=np.matrix)
-    utility_factor: np.matrix = field(default_factory=np.matrix)
-    specifications: np.matrix = field(default_factory=np.matrix)
-    battery_type: str = field(default_factory=str)
-    material_composition: np.matrix = field(default=np.matrix)
-    material_component_composition: pd.DataFrame = field(default_factory=pd.DataFrame)
+    technology:                                 str                         = field(default_factory=str)
+    size:                                       str                         = field(default_factory=str)
+    fuel_type:                                  list                        = field(default_factory=list)
+    fuel_consumption:                           np.matrix                   = field(default_factory=np.matrix)
+    utility_factor:                             pd.DataFrame                = field(default_factory=pd.DataFrame)
+    specifications:                             np.matrix                   = field(default_factory=np.matrix)
+    battery_type:                               str                         = field(default_factory=str)
+    material_composition:                       np.matrix                   = field(default=np.matrix)
+    material_component_composition:             pd.DataFrame                = field(default_factory=pd.DataFrame)
 
     '''
     Initializing the vehicle class with get_input to get data from environment class.
+    This is called when a vehicle object is made. 
+    This __init__ function incorporated vehicle_initialize_f.r into the class itself, reflecting python best practices.
     '''
-    def __init__(self) -> None:
-        vh_techno = get_input("model_matching_technology") 
-        #implement get_input later
+    def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
+        vh_techno                               = get_input("model_matching_technology") 
 
-        '''.self$technology and .self$size from the R code need not be manually changed; they can be assigned at creation of the vehicle class.'''
-        self.fuel_type = 0
+        self.technology                         = technology                                                            
+        self.size                               = size
 
+        ''' bat_type dict
+            Depending on the type of technology inputed, battery type is accordingly updated. 
+            To add more battery types, update the dict mappings. 
+            None case does not need to be included.
+        '''
+        bat_type                                = {"HEV": HEV_bat_t,                      
+                                                   "BEV100" : BEV_bat_t,
+                                                   "BEV300" : BEV_bat_t,
+                                                   "PHEV20" : PHEV_bat_t,
+                                                   "PHEV40" : PHEV_bat_t,}
+        self.battery_type                       = bat_type.get(technology, None)
+        
+        #historical fuel consumption
+        self.vehicle_hist_fc_f(self)
+
+        #updating material composition and material component composition
+        self.vehicle_hist_material_composition_f(self)
+        
+        #utility factor
+        first_hist_yr                           = float(np.min(self.fuel_consumption[:, 'Year']))
+        last_hist_yr                            = float(pd.max(self.material_component_composition(level = "Model_year")))
+        self.utility_factor                     = pd.DataFrame(index = self.fuel_type, columns = self.fuel_consumption[0])
+        self.utility_factor.fillna(None)
+        self.vehicle_utility_factor_f(self, last_hist_yr)
+
+        
     '''
     Returns the existing attributes of the vehicle as a dataframe
     '''
     def get_data_frame(self, field_name):
-        out = pd.DataFrame()
+
+        out                                     = pd.DataFrame()
+
         if type(vars(self)[str(field_name)]) == 'numpy.matrix':
-            temp = pd.DataFrame(vars(self)[field_name])
+            temp                                = pd.DataFrame(vars(self)[field_name])
             # cbind(Data=rownames(field_values),stringsAsFactors = FALSE) What does this line do?
             temp.concat(temp, self.technology, self.size)
             out.concat(temp[['Technology', 'Size', 'Model_year', 'Data', 'Value']])
-            replace = {"fuel_consumption": "Fuel", 
-                        "utility_factor" : "Fuel", 
-                        "specifications" : "Attribute", 
-                        "material_composition" : "Material"}
+            replace                             = {"fuel_consumption": "Fuel", 
+                                                   "utility_factor" : "Fuel", 
+                                                   "specifications" : "Attribute", 
+                                                   "material_composition" : "Material"}
             out.rename(columns = replace, inplace = True)
+
         elif type(vars(self)[str(field_name)]) == 'pandas.core.frame.DataFrame':
             out.concat(field_name, self.technology, self.size)
         return out
