@@ -2,7 +2,6 @@ from dataclasses import dataclass, field
 import numpy as np
 import pandas as pd
 import re
-
 from pandas.core.indexes.range import RangeIndex
 
 class vehicleClass():
@@ -37,7 +36,7 @@ class vehicleClass():
     This __init__ function incorporated vehicle_initialize_f.r into the class itself, reflecting python best practices.
     '''
     def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
-        vh_techno                               = get_input("model_matching_technology") 
+        self.vh_techno                                  = pd.read_csv("inputs/data_input_management.csv")
 
         self.technology                         = technology                                                            
         self.size                               = size
@@ -66,7 +65,7 @@ class vehicleClass():
         self.utility_factor                     = pd.DataFrame(index = self.fuel_type, columns = self.fuel_consumption[0])
         self.utility_factor.fillna(None)
         self.vehicle_utility_factor_f(self, last_hist_yr)
-        
+           
     def vehicle_hist_fc_f(self, first_yr = None, last_yr = None, fc_ev_mdl = None, fc_conv_mdl = None):
         ## Configure environment ##
 
@@ -75,7 +74,7 @@ class vehicleClass():
         last_hist_yr                            = 2019
         self.fuel_consumption                   = pd.DataFrame(index = self.fuel_type, columns = RangeIndex(first__hist_yr, last_yr))
         if self.technology == "ICEV-G" or "ICEV-D":
-            epa_fc                              = pd.read_csv("inputs/model/epa_fleet_fc_hist.csv")   
+            epa_fc                              = pd.read_csv(self.vh_techno.loc['epa_fleet_fc_hist', 'File'])   
             tmp_mat_hist_fc                     = epa_fc[(epa_fc["Model_year"] > first__hist_yr) & (epa_fc["Size"] == self.size) & (epa_fc["Technology"] == self.technology) & (epa_fc["Fuel_type"] == self.fuel_type)] 
             def_fac_matr                        = {'def' : 1,
                                                    'low' : 0.9,
@@ -83,15 +82,16 @@ class vehicleClass():
             def_fac                             = def_fac_matr.get(fc_conv_mdl)
             tmp_mat_hist_fc                     = tmp_mat_hist_fc * def_fac
         elif self.technology == "BEV100" or "BEV100" or "PHEV20" or "PHEV40":
-            fc_ev_hist_fc                       = pd.read_csv("inputs/model/fc_ev_hist.csv")        
-            tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > first__hist_yr)]         
+            fc_ev_hist_fc                       = pd.read_csv(self.vh_techno.loc['fc_ev_hist', 'File'])        
+            tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > first__hist_yr) & (fc_ev_hist_fc["Size"] == self.size) & (fc_ev_hist_fc["Technology"] == self.technology) & (fc_ev_hist_fc["Model"] == "Saled weighted") | (fc_ev_hist_fc["Model"] == fc_ev_mdl)]         
         
         else:
-            fe_vision                           = pd.read_csv("inputs/data/vision_fe_hist.csv")
-            degra_fc                            = pd.read_csv("inputs/data/fc_degra_factor_vision.csv")
-            vh_techno                           = pd.read_csv("inputs/data/model_matching_technology.csv")
-            fuel_conv                           = pd.read_csv("inputs/user/fuel_conversion.csv")
-            conv                                = pd.read_csv("inputs/user/conversion_units.csv")
+            fe_vision                           = pd.read_csv(self.vh_techno.loc['vision_fe_hist', 'File'])
+            degra_fc                            = pd.read_csv(self.vh_techno.loc['fc_degra_factor_vision', 'File'])
+            vh_techno                           = pd.read_csv(self.vh_techno.loc['model_matching_technology', 'File'])
+            fuel_conv                           = pd.read_csv(self.vh_techno.loc['fuel_conversion', 'File'])
+            conv                                = pd.read_csv(self.vh_techno.loc['conversion_units', 'File'])
+
 
 
         
