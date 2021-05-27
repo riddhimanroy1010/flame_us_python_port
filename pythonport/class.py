@@ -36,7 +36,7 @@ class vehicleClass():
     This __init__ function incorporated vehicle_initialize_f.r into the class itself, reflecting python best practices.
     '''
     def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
-        self.vh_techno                                  = pd.read_csv("inputs/data_input_management.csv")
+        self.vh_techno                          = pd.read_csv("inputs/data_input_management.csv")
 
         self.technology                         = technology                                                            
         self.size                               = size
@@ -84,7 +84,7 @@ class vehicleClass():
         elif self.technology == "BEV100" or "BEV100" or "PHEV20" or "PHEV40":
             fc_ev_hist_fc                       = pd.read_csv(self.vh_techno.loc['fc_ev_hist', 'File'])        
             tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > first__hist_yr) & (fc_ev_hist_fc["Size"] == self.size) & (fc_ev_hist_fc["Technology"] == self.technology) & (fc_ev_hist_fc["Model"] == "Saled weighted") | (fc_ev_hist_fc["Model"] == fc_ev_mdl)]         
-        
+            tmp_mat_hist_fc['Electricity']      = tmp_mat_hist_fc['Electricity'] / (0.90*0.95)
         else:
             fe_vision                           = pd.read_csv(self.vh_techno.loc['vision_fe_hist', 'File'])
             degra_fc                            = pd.read_csv(self.vh_techno.loc['fc_degra_factor_vision', 'File'])
