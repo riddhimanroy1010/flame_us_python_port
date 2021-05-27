@@ -11,7 +11,12 @@ technology = 'ICEV-G'
 size = 'Car'
 fuel_type = 'Gasoline'
 
-mask = degra_fac["Technology"] == technology, degra_fac["Size"] == size, degra_fac['Fuel type'] == fuel_type,
 degra_fc = (degra_fac.loc[(degra_fac["Technology"] == technology) & (degra_fac["Size"] == size), 'Degradation factor']).array[0]
 
+fc_ev_hist_fc                       = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'fc_ev_hist', 'File'].array[0])      
+            #Get the historical values
+tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > 2011) & (fc_ev_hist_fc["Size"] == size) & (fc_ev_hist_fc["Technology"] == "BEV100") & (fc_ev_hist_fc["Model"] == "Sales weighted")]
+
 print(degra_fc)
+print(fc_ev_hist_fc)
+print(tmp_mat_hist_fc)
