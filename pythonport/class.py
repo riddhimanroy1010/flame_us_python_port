@@ -74,6 +74,7 @@ class vehicleClass():
         first__hist_yr                          = first_yr - age_tbc
         last_hist_yr                            = 2019
         self.fuel_consumption                   = pd.DataFrame(index = self.fuel_type, columns = RangeIndex(first__hist_yr, last_yr))
+        tmp_mat_hist_fc                         = pd.DataFrame()
         if self.technology == "ICEV-G" or "ICEV-D":
             epa_fc                              = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'epa_fleet_fc_hist', 'File'].array[0])    
             tmp_mat_hist_fc                     = epa_fc[(epa_fc["Model_year"] > first__hist_yr) & (epa_fc["Size"] == self.size) & (epa_fc["Technology"] == self.technology) & (epa_fc["Fuel_type"] == self.fuel_type)] 
@@ -107,6 +108,16 @@ class vehicleClass():
             fuel_conv_fact                      = (fuel_conv.loc[(fuel_conv["Fuel"] == 'Gasoline') & (fuel_conv["Data"] == "Conversion Factor")]).array[0] \
                                                   / (fuel_conv.loc[(fuel_conv["Fuel"] == self.fuel_type) & (fuel_conv["Data"] == "Conversion Factor")]).array[0]
             
+            #Get data from VISION
+            tmp_mat_hist_fc                     = fe_vision[(fe_vision["Size"] == self.size) & (fe_vision["Fuel type"] == self.fuel_type) & (fe_vision["Data"] == "Unadjusted Fuel Economy") & (fe_vision["Technology"].isin(vision_techno))]
+            for col in tmp_mat_hist_fc.columns:
+                if re.findall('[0-9]+', col) != []:
+                    if int(re.findall('[0-9]+', col)[0]) < first__hist_yr:
+                        del tmp_mat_hist_fc[col]
+            
+        self.fuel_consumption                   = tmp_mat_hist_fc
+        
+                    
 
 
 
