@@ -2,6 +2,7 @@ from dataclasses import dataclass, field
 import numpy as np
 import pandas as pd
 import re
+import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
 class vehicleClass():
@@ -76,6 +77,7 @@ class vehicleClass():
         if self.technology == "ICEV-G" or "ICEV-D":
             epa_fc                              = pd.read_csv(self.vh_techno.loc['epa_fleet_fc_hist', 'File'])   
             tmp_mat_hist_fc                     = epa_fc[(epa_fc["Model_year"] > first__hist_yr) & (epa_fc["Size"] == self.size) & (epa_fc["Technology"] == self.technology) & (epa_fc["Fuel_type"] == self.fuel_type)] 
+            #Add degradation factors
             def_fac_matr                        = {'def' : 1,
                                                    'low' : 0.9,
                                                    'high' : 1.1}
@@ -83,14 +85,27 @@ class vehicleClass():
             tmp_mat_hist_fc                     = tmp_mat_hist_fc * def_fac
         elif self.technology == "BEV100" or "BEV100" or "PHEV20" or "PHEV40":
             fc_ev_hist_fc                       = pd.read_csv(self.vh_techno.loc['fc_ev_hist', 'File'])        
+            #Get the historical values
             tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > first__hist_yr) & (fc_ev_hist_fc["Size"] == self.size) & (fc_ev_hist_fc["Technology"] == self.technology) & (fc_ev_hist_fc["Model"] == "Saled weighted") | (fc_ev_hist_fc["Model"] == fc_ev_mdl)]         
+            #Add battery charging efficiency and transmission losses
             tmp_mat_hist_fc['Electricity']      = tmp_mat_hist_fc['Electricity'] / (0.90*0.95)
         else:
+            #Inputs
             fe_vision                           = pd.read_csv(self.vh_techno.loc['vision_fe_hist', 'File'])
-            degra_fc                            = pd.read_csv(self.vh_techno.loc['fc_degra_factor_vision', 'File'])
-            vh_techno                           = pd.read_csv(self.vh_techno.loc['model_matching_technology', 'File'])
+            degra_fac                           = pd.read_csv(self.vh_techno.loc['fc_degra_factor_vision', 'File'])
+            vh_techno                           = pd.read_excel(self.vh_techno.loc['model_matching_technology', 'File'], self.vh_techno.loc['model_matching_technology', 'Sheet_name'], engine="openpyxl")
             fuel_conv                           = pd.read_csv(self.vh_techno.loc['fuel_conversion', 'File'])
             conv                                = pd.read_csv(self.vh_techno.loc['conversion_units', 'File'])
+
+            #vision_techno contains the list of equivalent technologies in vision data
+            vision_techno                       = (vh_techno.loc(vh_techno['Own'] == self.technology, 'Vision')).array[0].split(';')
+
+            #VISION data are unadjusted and combined. We need to consider the degradation factor provided by VISION.
+            deg_fac                             = (degra_fac.loc[(degra_fac["Technology"] == self.technology) & (degra_fac["Size"] == self.size) & (degra_fac["Fuel type"] == self.fuel_type), 'Degradation factor']).array[0]
+            
+            #fuel_conv_fact is a conversion factor to convert from L equivalent gasoline to L of fuel (or kWh)
+
+
 
 
 
