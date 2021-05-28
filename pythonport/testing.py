@@ -13,7 +13,7 @@ conv = conv.set_index(conv['Unnamed: 0'])
 conv.index.names = [None]
 del conv['Unnamed: 0']
 print(conv)
-print(conv.loc["L", "1 gal"])
+print(conv.loc["mile", "1 km"])
 
 '''
 
