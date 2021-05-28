@@ -1,5 +1,5 @@
 ''' py file for testing kek '''
-
+from dataclasses import dataclass, field
 import pandas as pd
 import openpyxl
 import re
@@ -14,6 +14,17 @@ conv.index.names = [None]
 del conv['Unnamed: 0']
 print(conv)
 print(conv.loc["mile", "1 km"])
+
+@dataclass
+class test:
+     hello: str = field(default_factory=str)
+
+     def __init__(self) -> None:
+         print("bye")
+
+A = test()
+A.hello = "hello"
+print(A.hello)
 
 '''
 
