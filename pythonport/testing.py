@@ -5,6 +5,17 @@ import openpyxl
 import re
 
 vh_techno                          = pd.read_csv("inputs/data_input_management.csv")
+conv                                = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
+
+print(conv)
+print(conv['Unnamed: 0'])
+conv = conv.set_index(conv['Unnamed: 0'])
+conv.index.names = [None]
+del conv['Unnamed: 0']
+print(conv)
+print(conv.loc["L", "1 gal"])
+
+'''
 
 degra_fac                           = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'fc_degra_factor_vision', 'File'].array[0])
 fe_vision                           = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'vision_fe_hist', 'File'].array[0])
@@ -24,7 +35,7 @@ for col in tmp_mat_hist_fc.columns:
 print(tmp_mat_hist_fc)
 tmp_mat_hist_fc = tmp_mat_hist_fc * 2
 '''
-
+'''
 technology = 'ICEV-G'
 size = 'Car'
 fuel_type = 'Gasoline'
