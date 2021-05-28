@@ -12,7 +12,7 @@ class vehicleClass():
     Data fields:
         technology                          :            type str
         size                                :            type str
-        fuel_type                           :            type str
+        fuel_type                           :            type list
         fuel_consumption                    :            type pandas.core.frame.DataFrame
         utility_factor                      :            type pandas.core.frame.DataFrame
         specifications                      :            type pandas.core.frame.DataFrame
@@ -20,8 +20,10 @@ class vehicleClass():
         material_composition                :            type pandas.core.frame.DataFrame
         material_component_composition      :            type pandas.core.frame.DataFrame
     Functions:
-        __init__: initializes the function and its fields
-        get_data_frame: converts the existing fields into dataframes and returns dataframe
+        __init__                            :            initializes the function and its fields
+        vehicle_hist_fc_f                   :            initializes historical values for fuel consumption for the vehicle
+        vehicle_utility_factor_f            :            initializes the utility factor for the vehicle
+        get_data_frame                      :            combines all possible dataframes into one dataframe
     '''
     technology:                                 str                         = field(default_factory=str)
     size:                                       str                         = field(default_factory=str)
@@ -34,9 +36,14 @@ class vehicleClass():
     material_component_composition:             pd.DataFrame                = field(default_factory=pd.DataFrame)
 
     '''
-    Initializing the vehicle class with get_input to get data from environment class.
-    This is called when a vehicle object is made. 
-    This __init__ function incorporated vehicle_initialize_f.r into the class itself, reflecting python best practices.
+    __init__
+        Initializing the vehicle class with get_input to get data from environment class.
+        This is called when a vehicle object is made. 
+        This __init__ function initializes other aspects of the vehicle class. 
+        It also initializes the environment if there is none #TODO
+        It stores the main data-management CSV in the environment such that it can be used for future 
+        reference. This is done for processing optimization since indexing is faster then creation
+        and storage.
     '''
     def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
         self.vh_techno                          = pd.read_csv("inputs/data_input_management.csv")
@@ -44,11 +51,6 @@ class vehicleClass():
         self.technology                         = technology                                                            
         self.size                               = size
 
-        ''' bat_type dict
-            Depending on the type of technology inputed, battery type is accordingly updated. 
-            To add more battery types, update the dict mappings. 
-            None case does not need to be included.
-        '''
         bat_type                                = {"HEV": HEV_bat_t,                      
                                                    "BEV100" : BEV_bat_t,
                                                    "BEV300" : BEV_bat_t,
@@ -68,6 +70,13 @@ class vehicleClass():
         self.utility_factor                     = pd.DataFrame(index = self.fuel_type, columns = self.fuel_consumption[0])
         self.utility_factor.fillna(None)
         self.vehicle_utility_factor_f(self, last_hist_yr)
+
+    '''
+    vehicle_hist_fc_f
+        Sets a vehicle's historical fuel consumption.
+        Initializes (if non-existent in the inputs environment) multiple CSVs for 
+        future indexing. 
+    '''
            
     def vehicle_hist_fc_f(self, first_yr = None, last_yr = None, fc_ev_mdl = None, fc_conv_mdl = None):
         ## Configure environment ##
@@ -75,7 +84,7 @@ class vehicleClass():
         age_tbc                                 = 30
         first__hist_yr                          = first_yr - age_tbc
         last_hist_yr                            = 2019
-        self.fuel_consumption                   = pd.DataFrame(index = self.fuel_type, columns = RangeIndex(first__hist_yr, last_yr))
+        self.fuel_consumption                   = pd.DataFrame(index = self.fuel_type, columns = RangeIndex(first__hist_yr, last_yr + 1))
         tmp_mat_hist_fc                         = pd.DataFrame()
         if self.technology == "ICEV-G" or "ICEV-D":
             epa_fc                              = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'epa_fleet_fc_hist', 'File'].array[0])    
@@ -127,7 +136,10 @@ class vehicleClass():
             na_cols = [cols for cols in self.fuel_consumption.columns if self.fuel_consumption[col].isnull().values.any()]
 
             # revolve issue #4 from issuelist
-
+    '''
+    vehicle_utility_factor_f
+        Initializes and sets a vehicle's utility factor based on fuel
+    '''
     def vehicle_utility_factor_f(self, model_year):
         conv                                    = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
         conv                                    = conv.set_index(conv['Unnamed: 0'])
@@ -153,7 +165,27 @@ class vehicleClass():
                 else:
                     self.utility_factor.loc[fuel, str(model_year)]\
                                                 = 1 - uf_f(vehicle_range)
-                                
+
+    def vehicle_hist_material_composition_f(self, first_yr = None, last_yr = None):
+        #Parameter setup
+        age_tbc                                 = 30
+        first_hist_yr                           = first_yr - age_tbc
+        last_hist_yr                            = max(float(self.fuel_consumption.columns))
+
+        #Inputs
+        material_dt                             = pd.read_excel(self.vh_techno.loc['model_matching_material', 'File'], self.vh_techno.loc['model_matching_technology', 'Sheet_name'], engine="openpyxl")
+        hist_mc                                 = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fleet_mt_comp_hist', 'File'].array[0])
+
+        #Create dt of material composition with accurate fields
+        self.material_composition               = pd.DataFrame(index=pd.unique(material_dt["Own"]), columns=RangeIndex(first_hist_yr, last_yr + 1))
+        self.material_composition.fillna(None)
+
+        #Update historical material composition
+        #TODO
+
+
+
+
 
                                                   
 

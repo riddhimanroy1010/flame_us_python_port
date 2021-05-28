@@ -4,6 +4,8 @@ import pandas as pd
 import openpyxl
 import re
 
+from pandas.core.indexes.range import RangeIndex
+
 vh_techno                          = pd.read_csv("inputs/data_input_management.csv")
 conv                                = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
 
@@ -25,6 +27,13 @@ class test:
 A = test()
 A.hello = "hello"
 print(A.hello)
+ 
+test = ["a", "b"]
+
+test_dt = pd.DataFrame(index = test, columns= RangeIndex(1, 10))
+
+print(test_dt)
+
 
 '''
 
