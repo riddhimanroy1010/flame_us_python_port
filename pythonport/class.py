@@ -6,6 +6,7 @@ import re
 import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
+@dataclass
 class vehicleClass():
     '''
     Data fields:
