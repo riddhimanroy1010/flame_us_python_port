@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 import numpy as np
+import math
 import pandas as pd
 import re
 import openpyxl
@@ -13,9 +14,9 @@ class vehicleClass():
         fuel_type                           :            type str
         fuel_consumption                    :            type pandas.core.frame.DataFrame
         utility_factor                      :            type pandas.core.frame.DataFrame
-        specifications                      :            type numpy.matrix
+        specifications                      :            type pandas.core.frame.DataFrame
         battery_type                        :            type str
-        material_composition                :            type numpy.matrix
+        material_composition                :            type pandas.core.frame.DataFrame
         material_component_composition      :            type pandas.core.frame.DataFrame
     Functions:
         __init__: initializes the function and its fields
@@ -26,9 +27,9 @@ class vehicleClass():
     fuel_type:                                  list                        = field(default_factory=list)
     fuel_consumption:                           pd.DataFrame                = field(default_factory=pd.DataFrame)
     utility_factor:                             pd.DataFrame                = field(default_factory=pd.DataFrame)
-    specifications:                             np.matrix                   = field(default_factory=np.matrix)
+    specifications:                             pd.DataFrame                = field(default_factory=pd.DataFrame)
     battery_type:                               str                         = field(default_factory=str)
-    material_composition:                       np.matrix                   = field(default=np.matrix)
+    material_composition:                       pd.DataFrame                = field(default_factory=pd.DataFrame)
     material_component_composition:             pd.DataFrame                = field(default_factory=pd.DataFrame)
 
     '''
@@ -97,6 +98,9 @@ class vehicleClass():
             vh_techno                           = pd.read_excel(self.vh_techno.loc['model_matching_technology', 'File'], self.vh_techno.loc['model_matching_technology', 'Sheet_name'], engine="openpyxl")
             fuel_conv                           = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fuel_conversion', 'File'].array[0])
             conv                                = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
+            conv                                = conv.set_index(conv['Unnamed: 0'])
+            conv.index.names                    = [None]
+            del conv['Unnamed: 0']
 
             #vision_techno contains the list of equivalent technologies in vision data
             vision_techno                       = (vh_techno.loc(vh_techno['Own'] == self.technology, 'Vision')).array[0].split(';')
@@ -114,9 +118,47 @@ class vehicleClass():
                 if re.findall('[0-9]+', col) != []:
                     if int(re.findall('[0-9]+', col)[0]) < first__hist_yr:
                         del tmp_mat_hist_fc[col]
+                    else:
+                        tmp_mat_hist_fc[col]    = 1 / ((tmp_mat_hist_fc[col]  * deg_fac) * conv.loc["L", "1 gal"] * conv.loc["mile", "1 km"] * 100 * fuel_conv_fact)  
             
         self.fuel_consumption                   = tmp_mat_hist_fc
+        if self.fuel_consumption.isnull().values.any():
+            na_cols = [cols for cols in self.fuel_consumption.columns if self.fuel_consumption[col].isnull().values.any()]
+
+            # revolve issue #4 from issuelist
+
+    def vehicle_utility_factor_f(self, model_year):
+        conv                                    = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
+        conv                                    = conv.set_index(conv['Unnamed: 0'])
+        conv.index.names                        = [None]
+        del conv['Unnamed: 0']
+
+        def uf_f(range):
+            range_miles                         = conv.loc["mile", "1 km"]
+            uf                                  = (7.73 * math.pow(10, -9) * math.pow(range_miles, 4)) + (2.63 * math.pow(10, -6) * math.pow(range_miles, 3)) -   \
+                                                  (3.7 * math.pow(10, -4) * math.pow(range_miles, 2)) + (2.66 * math.pow(10, -2) * range_miles)
+
+            return uf 
         
+        if len(self.fuel_type) == 1:
+            self.utility_factor                 = 1
+
+        else:
+            vehicle_range                       = self.specifications.loc["range", str(model_year)]
+            for fuel in self.fuel_type:
+                if fuel == "Electricity":
+                    self.utility_factor.loc["Electricity", str(model_year)]\
+                                                = uf_f(vehicle_range)
+                else:
+                    self.utility_factor.loc[fuel, str(model_year)]\
+                                                = 1 - uf_f(vehicle_range)
+                                
+
+                                                  
+
+
+
+
                     
 
 
@@ -132,19 +174,9 @@ class vehicleClass():
 
         out                                     = pd.DataFrame()
 
-        if type(vars(self)[str(field_name)]) == 'numpy.matrix':
-            temp                                = pd.DataFrame(vars(self)[field_name])
-            # cbind(Data=rownames(field_values),stringsAsFactors = FALSE) What does this line do?
-            temp.concat(temp, self.technology, self.size)
-            out.concat(temp[['Technology', 'Size', 'Model_year', 'Data', 'Value']])
-            replace                             = {"fuel_consumption": "Fuel", 
-                                                   "utility_factor" : "Fuel", 
-                                                   "specifications" : "Attribute", 
-                                                   "material_composition" : "Material"}
-            out.rename(columns = replace, inplace = True)
-
-        elif type(vars(self)[str(field_name)]) == 'pandas.core.frame.DataFrame':
+        if type(vars(self)[str(field_name)]) == 'pandas.core.frame.DataFrame':
             out.concat(field_name, self.technology, self.size)
+
         return out
 
 class fleetClass():
