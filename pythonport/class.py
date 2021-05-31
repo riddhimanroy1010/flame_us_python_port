@@ -133,9 +133,17 @@ class vehicleClass():
             
         self.fuel_consumption                   = tmp_mat_hist_fc
         if self.fuel_consumption.isnull().values.any():
-            na_cols = [cols for cols in self.fuel_consumption.columns if self.fuel_consumption[col].isnull().values.any()]
+            na_cols                             = [cols for cols in self.fuel_consumption.columns if pd.isnull(self.fuel_consumption).values.any() if re.findall('[0-9]+', cols) != []]
+            if max(na_cols) < first_yr:
+                col_to_cpy                      = max(na_cols) + 1
+                for col in na_cols:
+                    self.fuel_consumption[col]  = self.fuel_consumption[col_to_cpy]
+            elif max(na_cols) < last_hist_yr:
+                col_to_cpy                      = min(na_cols) - 1
+                for col in na_cols:
+                    self.fuel_consumption[col]  = self.fuel_consumption[col_to_cpy]
 
-            # revolve issue #4 from issuelist
+        
     '''
     vehicle_utility_factor_f
         Initializes and sets a vehicle's utility factor based on fuel
@@ -173,7 +181,7 @@ class vehicleClass():
         last_hist_yr                            = max(float(self.fuel_consumption.columns))
 
         #Inputs
-        material_dt                             = pd.read_excel(self.vh_techno.loc['model_matching_material', 'File'], self.vh_techno.loc['model_matching_technology', 'Sheet_name'], engine="openpyxl")
+        material_dt                             = pd.read_excel(self.vh_techno.loc['model_matching_material', 'File'], self.vh_techno.loc['model_matching_material', 'Sheet_name'], engine="openpyxl")
         hist_mc                                 = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fleet_mt_comp_hist', 'File'].array[0])
 
         #Create dt of material composition with accurate fields
@@ -181,25 +189,16 @@ class vehicleClass():
         self.material_composition.fillna(None)
 
         #Update historical material composition
-        #TODO
-
-
-
-
-
-                                                  
-
-
-
-
-                    
-
-
-
-
-
-
+        mat_hist_mc                             = hist_mc[(hist_mc["Technology"] == self.technology) & (hist_mc["Size"] == self.size) & (hist_mc["Model_year"] >= first_hist_yr) & (hist_mc["Material"] != "Total")]
+        for year in pd.unique(mat_hist_mc["Model_year"]):
+            for material in pd.unique(mat_hist_mc["Material"]):
+                self.material_composition[year][material] = (mat_hist_mc.loc[(mat_hist_mc["Model_year"] == year) & (mat_hist_mc["Material"] == material)]["Value"]).array[0]
         
+        #Functions: Calculate material composition by subcomponent -> to be implemented in fleet class *discuss with prof*
+
+        #The rest of this function needs to be dealt with in fleetClass.
+
+      
     '''
     Returns the existing attributes of the vehicle as a dataframe
     '''
