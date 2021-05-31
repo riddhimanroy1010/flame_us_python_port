@@ -36,4 +36,7 @@ vignettes/*.pdf
 rsconnect/
 .Rproj.user
 
+#pyCache files
+*.pyc
+
 README.md
