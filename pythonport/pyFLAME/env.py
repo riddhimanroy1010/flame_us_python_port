@@ -1,7 +1,6 @@
 from dataclasses import dataclass, field
 import pandas as pd
 import numpy as np
-import __init__ as FLAME
 
 @dataclass
 class env:
@@ -33,7 +32,6 @@ def res_env_new_dt(env):
 
 def elec_source_ev_f(env):
     return pd.DataFrame(np.array([1, 2, 3]), columns=["col1"])
-
 
 
 

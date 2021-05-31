@@ -1,6 +1,6 @@
-from classes import *
-from utils import *
-from env import *
+from .classes import *
+from .utils import *
+from .env import *
 from dataclasses import dataclass, field
 import numpy as np
 import math

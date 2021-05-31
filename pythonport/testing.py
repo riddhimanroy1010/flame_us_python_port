@@ -2,15 +2,24 @@
 from dataclasses import dataclass, field
 from numpy import NaN, mat, newaxis
 import pandas as pd
-import openpyxl
 import re
-import pythonport as FLAME
-
-
+import time
+import pyFLAME as FLAME
 from pandas.core.indexes.range import RangeIndex
 
-vh_techno                          = pd.read_csv("inputs/data_input_management.csv")
+# */ timing block */ #
+start = time.time()
+conversion = FLAME.get_input("conversion_units")
+vh_techno = FLAME.get_input("fc_degra_factor_vision")
+fleet_comp = FLAME.get_input("fleet_mt_comp_hist")
+fuel_conv = FLAME.get_input("fuel_conversion")
+vision = FLAME.get_input("vision_fe_hist")
+excel = FLAME.get_input("model_matching_technology")
+excel2 = FLAME.get_input("model_matching_material")
+end = time.time()
 
+print("time taken:", end - start)
+# */ timing block */ #
 
 '''
 conv                                = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
@@ -63,6 +72,7 @@ print(new)
     
 
 '''
+'''
 
 degra_fac                           = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'fc_degra_factor_vision', 'File'].array[0])
 fe_vision                           = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'vision_fe_hist', 'File'].array[0])
@@ -89,6 +99,7 @@ df = pd.DataFrame([['a.1','b.1','c.1'],['a.2','b.2','c.2'],['a.3','b.3','c.3']],
 
 df['A'] = df['B']
 print(df)
+'''
 '''
 technology = 'ICEV-G'
 size = 'Car'
