@@ -30,7 +30,6 @@ def shelf_retrieve():
         except KeyError:
             raise Exception("An unknown error occured in utils/shelf_retrieve")
 
-
 def shelf_update(key, value):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
         env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db')
@@ -42,6 +41,13 @@ def shelf_update(key, value):
             env_store.close()
             return input_env
         
+def shelf_destroy():
+    if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
+        shelve.close()
+        os.remove('pythonport/pyFLAME/shelves/shelve.db.bak')
+        os.remove('pythonport/pyFLAME/shelves/shelve.db.dat')
+        os.remove('pythonport/pyFLAME/shelves/shelve.db.dir')
+  
 
 def get_input(inputvar = None, sheet = None):
 
@@ -64,8 +70,5 @@ def get_input(inputvar = None, sheet = None):
             input_env                           = shelf_update(inputvar, value)
     
     return input_env.objects[inputvar]
-
-if __name__ == '__main__':
-    print(get_input('model_matching_material'))
     
 
