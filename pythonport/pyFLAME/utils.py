@@ -55,14 +55,14 @@ def shelf_destroy():
 def get_input(inputvar = None, sheet = None):
 
     if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
-        input_env                           = shelf_make()
+        input_env                               = shelf_make()
     
     else:
         input_env = shelf_retrieve()
       
-    input_mgnt                              = input_env.objects['input_mgnt']
+    input_mgnt                                  = input_env.objects['input_mgnt']
 
-    file_type                               = input_mgnt.loc[input_mgnt['Variable_name'] == inputvar, 'File_format'].array[0]
+    file_type                                   = input_mgnt.loc[input_mgnt['Variable_name'] == inputvar, 'File_format'].array[0]
     
     if str(inputvar) not in input_env.objects:
         if file_type == '.csv':
