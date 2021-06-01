@@ -14,16 +14,16 @@ def shelf_make(env_input):
             cur_env                         = env_store[env_input]
         except KeyError:
             if env_input == 'input_env':
-                env_input                       = env.environment()
-                env_input.objects["input_mgnt"] = pd.read_csv("inputs/data_input_management.csv")
-                env_input.isNone                = False
-                env_store['input_env']          = env_input
+                cur_env                         = env.environment()
+                cur_env.objects["input_mgnt"]   = pd.read_csv("inputs/data_input_management.csv")
+                cur_env.isNone                  = False
+                env_store['input_env']          = cur_env
             else:
-                env_input                       = env.environment()
-                env_input.isNone                = False   
+                cur_env                         = env.environment()
+                cur_env.isNone                  = False   
         finally:
             env_store.close()
-            return env_input
+            return cur_env
 
 def shelf_retrieve(env_input):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
