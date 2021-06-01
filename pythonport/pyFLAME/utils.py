@@ -6,40 +6,43 @@ import os
 
 import env
 
-def shelf_make():
+def shelf_make(env_input):
 
     if 'input_env' not in locals():
         env_store = shelve.open('pythonport/pyFLAME/shelves/shelve.db', flag='n')
         try:
-            input_env                       = env_store['input_env']
+            cur_env                         = env_store[env_input]
         except KeyError:
-            input_env = env.environment()
-            input_env.objects["input_mgnt"] = pd.read_csv("inputs/data_input_management.csv")
-            input_env.isNone                = False
-            env_store['input_env']          = input_env   
+            if env_input == 'input_env':
+                env_input                       = env.environment()
+                env_input.objects["input_mgnt"] = pd.read_csv("inputs/data_input_management.csv")
+                env_input.isNone                = False
+                env_store['input_env']          = env_input
+            else:
+                env_input                       = env.environment()
+                env_input.isNone                = False   
         finally:
             env_store.close()
-            return input_env
+            return env_input
 
-
-def shelf_retrieve():
+def shelf_retrieve(env_input):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
         env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db')
         try:
-            return env_store['input_env']
+            return env_store[env_input]
         except KeyError:
             raise Exception("An unknown error occured in utils/shelf_retrieve")
 
-def shelf_update(key, value):
+def shelf_update(env_input, key, value):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
         env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db')
         try:
-            input_env                           = env_store['input_env']
-            input_env.objects[key]              = value
-            env_store['input_env']              = input_env
+            cur_env                             = env_store[env_input]
+            cur_env.objects[key]                = value
+            env_store[env_input]                = cur_env
         finally:
             env_store.close()
-            return input_env
+            return cur_env
         
 def shelf_destroy():
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
