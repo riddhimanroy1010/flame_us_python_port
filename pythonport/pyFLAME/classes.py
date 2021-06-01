@@ -6,6 +6,8 @@ import re
 import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
+import pyFLAME as FLAME
+
 @dataclass
 class vehicleClass():
     '''

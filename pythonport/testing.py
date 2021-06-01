@@ -9,11 +9,11 @@ from pandas.core.indexes.range import RangeIndex
 
 # */ timing block */ #
 start = time.time()
-conversion = FLAME.get_input("conversion_units")
-vh_techno = FLAME.get_input("fc_degra_factor_vision")
-fleet_comp = FLAME.get_input("fleet_mt_comp_hist")
-fuel_conv = FLAME.get_input("fuel_conversion")
-vision = FLAME.get_input("vision_fe_hist")
+conversion = FLAME.utils.get_input("conversion_units")
+vh_techno = FLAME.utils.get_input("fc_degra_factor_vision")
+fleet_comp = FLAME.utils.get_input("fleet_mt_comp_hist")
+fuel_conv = FLAME.utils.get_input("fuel_conversion")
+vision = FLAME.utils.get_input("vision_fe_hist")
 excel = FLAME.get_input("model_matching_technology")
 excel2 = FLAME.get_input("model_matching_material")
 end = time.time()

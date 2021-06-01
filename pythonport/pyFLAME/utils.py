@@ -1,5 +1,7 @@
 import pandas as pd
 
+import pyFLAME as FLAME
+
 def get_input(inputvar = None, sheet = None):
     input_mgnt                          = pd.read_csv("inputs/data_input_management.csv")
 

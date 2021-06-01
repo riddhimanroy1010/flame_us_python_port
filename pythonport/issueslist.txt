@@ -1,2 +1,3 @@
 1. investigate end of vehicle_hist_fc_r: getting the NA columns; check with prof
 2. verify if single line import is functional; deal with warnings about vars not being defined
+3. fix the goddamn linking else imma lessgoo out this window
