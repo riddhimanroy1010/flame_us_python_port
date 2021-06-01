@@ -52,7 +52,7 @@ def shelf_destroy():
         os.remove('pythonport/pyFLAME/shelves/shelve.db.dir')
   
 
-def get_input(inputvar = None, sheet = None):
+def get_input(inputvar = None):
 
     if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
         input_env                               = shelf_make()
