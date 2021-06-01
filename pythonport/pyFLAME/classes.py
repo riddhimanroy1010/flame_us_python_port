@@ -48,8 +48,6 @@ class vehicleClass():
         and storage.
     '''
     def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
-        self.vh_techno                          = pd.read_csv("inputs/data_input_management.csv")
-
         self.technology                         = technology                                                            
         self.size                               = size
 
@@ -89,7 +87,7 @@ class vehicleClass():
         self.fuel_consumption                   = pd.DataFrame(index = self.fuel_type, columns = RangeIndex(first__hist_yr, last_yr + 1))
         tmp_mat_hist_fc                         = pd.DataFrame()
         if self.technology == "ICEV-G" or "ICEV-D":
-            epa_fc                              = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'epa_fleet_fc_hist', 'File'].array[0])    
+            epa_fc                              = FLAME.utils.get_input("epa_fleet_fc_hist")   
             tmp_mat_hist_fc                     = epa_fc[(epa_fc["Model_year"] > first__hist_yr) & (epa_fc["Size"] == self.size) & (epa_fc["Technology"] == self.technology) & (epa_fc["Fuel_type"] == self.fuel_type)] 
             #Add degradation factors
             def_fac_matr                        = {'def' : 1,
@@ -98,18 +96,18 @@ class vehicleClass():
             def_fac                             = def_fac_matr.get(fc_conv_mdl)
             tmp_mat_hist_fc                     = tmp_mat_hist_fc * def_fac
         elif self.technology == "BEV100" or "BEV100" or "PHEV20" or "PHEV40":
-            fc_ev_hist_fc                       = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fc_ev_hist', 'File'].array[0])      
+            fc_ev_hist_fc                       = FLAME.utils.get_input("fc_ev_hist")     
             #Get the historical values
             tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > first__hist_yr) & (fc_ev_hist_fc["Size"] == self.size) & (fc_ev_hist_fc["Technology"] == self.technology) & (fc_ev_hist_fc["Model"] == "Saled weighted") | (fc_ev_hist_fc["Model"] == fc_ev_mdl)]         
             #Add battery charging efficiency and transmission losses
             tmp_mat_hist_fc['Electricity']      = tmp_mat_hist_fc['Electricity'] / (0.90*0.95)
         else:
             #Inputs
-            fe_vision                           = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'vision_fe_hist', 'File'].array[0])
-            degra_fac                           = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fc_degra_factor_vision', 'File'].array[0])
-            vh_techno                           = pd.read_excel(self.vh_techno.loc['model_matching_technology', 'File'], self.vh_techno.loc['model_matching_technology', 'Sheet_name'], engine="openpyxl")
-            fuel_conv                           = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fuel_conversion', 'File'].array[0])
-            conv                                = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
+            fe_vision                           = FLAME.utils.get_input("vision_fe_hist")
+            degra_fac                           = FLAME.utils.get_input("fc_degra_factor_vision'")
+            vh_techno                           = FLAME.utils.get_input("model_matching_technology")
+            fuel_conv                           = FLAME.utils.get_input("fuel_conversion")
+            conv                                = FLAME.utils.get_input("conversion_units")
             conv                                = conv.set_index(conv['Unnamed: 0'])
             conv.index.names                    = [None]
             del conv['Unnamed: 0']
@@ -151,7 +149,7 @@ class vehicleClass():
         Initializes and sets a vehicle's utility factor based on fuel
     '''
     def vehicle_utility_factor_f(self, model_year):
-        conv                                    = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
+        conv                                    = FLAME.utils.get_input("conversion_units")
         conv                                    = conv.set_index(conv['Unnamed: 0'])
         conv.index.names                        = [None]
         del conv['Unnamed: 0']
@@ -183,8 +181,8 @@ class vehicleClass():
         last_hist_yr                            = max(float(self.fuel_consumption.columns))
 
         #Inputs
-        material_dt                             = pd.read_excel(self.vh_techno.loc['model_matching_material', 'File'], self.vh_techno.loc['model_matching_material', 'Sheet_name'], engine="openpyxl")
-        hist_mc                                 = pd.read_csv(self.vh_techno.loc[self.vh_techno['Variable_name'] == 'fleet_mt_comp_hist', 'File'].array[0])
+        material_dt                             = FLAME.utils.get_input("model_matching_material")
+        hist_mc                                 = FLAME.utils.get_input("fleet_mt_comp_hist")
 
         #Create dt of material composition with accurate fields
         self.material_composition               = pd.DataFrame(index=pd.unique(material_dt["Own"]), columns=RangeIndex(first_hist_yr, last_yr + 1))
