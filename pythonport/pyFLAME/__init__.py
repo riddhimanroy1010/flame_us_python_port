@@ -1,5 +1,6 @@
 #Internal imports from within pyFLAME : new files go here
-from .classes import *
+from .vehicleClass import *
+from .fleetClass import *
 from .utils import *
 from .env import *
 

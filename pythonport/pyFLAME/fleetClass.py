@@ -6,7 +6,7 @@ import re
 import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
-import utils
+from . import utils
 
 @dataclass
 class fleetClass():
@@ -31,6 +31,19 @@ class fleetClass():
     ldv_sales:                                  pd.DataFrame                = field(default_factory=pd.DataFrame)
     ldv_on_road_stock:                          pd.DataFrame                = field(default_factory=pd.DataFrame)
     ldv_on_road_stock_tot:                      pd.DataFrame                = field(default_factory=pd.DataFrame)
+
+
+    def __init__(self, first_yr = None, last_yr = None) -> None:
+        #Inputs
+        hist_stock_dt                           = utils.get_input("fleet_stock_hist")
+        hist_sales_dt                           = utils.get_input("ffleet_sales_hist")
+
+        #Create historical matrix stock and sales
+        i_year                                  = 1979
+        first_proj_yr                           = max(hist_stock_dt["Year"]) + 1
+        dataframe_stock_hist                    = pd.DataFrame(index = pd.Series(data = hist_stock_dt["Size"] & hist_stock_dt["Technology"]))
+
+
 
     '''
     Returns the fields of the class as a pandas.core.frame.DataFrame

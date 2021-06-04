@@ -3,8 +3,11 @@ import pandas as pd
 import numpy as np
 import shelve
 import os
+import sys
 
-import env
+sys.path.insert(1, '/pythonport/pyFLAME')
+
+from . import env
 
 def shelf_make(env_input):
 
@@ -55,10 +58,10 @@ def shelf_destroy():
 def get_input(inputvar = None):
 
     if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
-        input_env                               = shelf_make()
+        input_env                               = shelf_make("input_env")
     
     else:
-        input_env = shelf_retrieve()
+        input_env = shelf_retrieve("input_env")
       
     input_mgnt                                  = input_env.objects['input_mgnt']
 
@@ -67,10 +70,10 @@ def get_input(inputvar = None):
     if str(inputvar) not in input_env.objects:
         if file_type == '.csv':
             value                               = pd.read_csv(input_mgnt.loc[input_mgnt['Variable_name'] == inputvar, 'File'].array[0])
-            input_env                           = shelf_update(inputvar, value)
+            input_env                           = shelf_update("input_env", inputvar, value)
         elif file_type == '.xlsx':
             value                               = pd.read_excel((input_mgnt.loc[(input_mgnt["Variable_name"] == inputvar)]["File"]).array[0], (input_mgnt.loc[(input_mgnt["Variable_name"] == inputvar)]["Sheet_name"]).array[0], engine="openpyxl")
-            input_env                           = shelf_update(inputvar, value)
+            input_env                           = shelf_update("input_env", inputvar, value)
     
     return input_env.objects[inputvar]
     
