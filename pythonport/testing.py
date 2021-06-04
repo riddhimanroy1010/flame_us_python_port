@@ -27,21 +27,29 @@ print(hist_stock_dt["Year"])
 new = pd.DataFrame(columns= RangeIndex(min(hist_stock_dt["Year"]), max(hist_stock_dt["Year"]) + 1))
 new.insert(0, "Technology", pd.unique(hist_stock_dt["Technology"]))
 new2 = new.append(new[:], ignore_index=True)
-print(new2)
 new2.insert(0, 'Size', pd.unique(hist_stock_dt["Size"])[0])
 for index, rows in new2.iterrows():
     if index >= len(new2.index)//2:
-        new2['Size'][index] = 'Light truck'   
-print(new2)
-print(new2['Size'])
+        new2['Size'][index] = 'Light truck' 
+
+print(new2)  
 for year in pd.unique(hist_stock_dt["Year"]):
     for tech in pd.unique(hist_stock_dt["Technology"]):
         for size in pd.unique(hist_stock_dt["Size"]):
             try:
-                new2[size][year][tech] = (hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech) & (hist_stock_dt["Size"] == size)]["Value"]).array[0]
-            except Exception:
-                continue
+                print(year, tech, size)
+                value = (hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech) & (hist_stock_dt["Size"] == size)]["Value"]).array[0]
+                index = (new2[(new2['Size'] == size) & (new2['Technology'] == tech)].index)
+                new2.at[index, year] = value
+                # (new2.loc[(new2['Size'] == size) & (new2['Technology'] == tech)][year]).array[0] = value
+                # print(value)
+                # print((new2.loc[(new2['Size'] == size) & (new2['Technology'] == tech)][year]).array[0])
+                # print((new2.loc[(new2['Size'] == size) & (new2['Technology'] == tech)][year]).shape)
+            except IndexError:
+                print("error at ", year, tech, size)
+                pass
         # try:
+        #(hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech) & (hist_stock_dt["Size"] == size)]["Value"]).array[0]
         #     print((hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech)]["Value"]).array[0])
         #     new[year][tech] = (hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech)]["Value"]).array[0]
         # except Exception:
