@@ -3,9 +3,6 @@ import pandas as pd
 import numpy as np
 import shelve
 import os
-import sys
-
-sys.path.insert(1, '/pythonport/pyFLAME')
 
 from . import env
 
@@ -14,7 +11,7 @@ def shelf_make(env_input):
     if 'input_env' not in locals():
         env_store = shelve.open('pythonport/pyFLAME/shelves/shelve.db', flag='n')
         try:
-            cur_env                         = env_store[env_input]
+            cur_env                             = env_store[env_input]
         except KeyError:
             if env_input == 'input_env':
                 cur_env                         = env.environment()
