@@ -12,24 +12,25 @@ import utils
 class fleetClass():
     '''
     Data fields:
-        vint_stock: type list
-        vint_scrap: type list
-        technology_market_share: type numpy.matrix
-        fuel_consumption: type numpy.matrix
-        ldv_sales: type numpy.matrix
-        ldv_on_road_stock: type numpy.matrix
-        ldv_on_road_stock_tot: type numpy.matrix
+        vint_stock                          :            type list
+        vint_scrap                          :            type list
+        technology_market_share             :            type pandas.core.frame.DataFrame
+        fuel_consumption                    :            type pandas.core.frame.DataFrame
+        ldv_sales                           :            type pandas.core.frame.DataFrame
+        ldv_on_road_stock                   :            type pandas.core.frame.DataFrame
+        ldv_on_road_stock_tot               :            type pandas.core.frame.DataFrame
     Functions:
         __init__: initializes the function and its fields
         get_data_frame: converts the existing fields into dataframes and returns pandas.core.frame.DataFrame
         get_list_dataframe: Return all fields into a list of pandas.core.frame.DataFrame
     '''
-    vint_stock: list = field(default_factory=list)
-    vint_scrap: list = field(default_factory=list)
-    technology_market_share: np.matrix = field(default_factory=np.matrix)
-    ldv_sales: np.matrix = field(default_factory=np.matrix)
-    ldv_on_road_stock: np.matrix = field(default_factory=np.matrix)
-    ldv_on_road_stock_tot: np.matrix = field(default_factory=np.matrix)
+    vint_stock:                                 list                        = field(default_factory=list)
+    vint_scrap:                                 list                        = field(default_factory=list)
+    fuel_consumption:                           pd.DataFrame                = field(default_factory=pd.DataFrame)
+    technology_market_share:                    pd.DataFrame                = field(default_factory=pd.DataFrame)
+    ldv_sales:                                  pd.DataFrame                = field(default_factory=pd.DataFrame)
+    ldv_on_road_stock:                          pd.DataFrame                = field(default_factory=pd.DataFrame)
+    ldv_on_road_stock_tot:                      pd.DataFrame                = field(default_factory=pd.DataFrame)
 
     '''
     Returns the fields of the class as a pandas.core.frame.DataFrame
