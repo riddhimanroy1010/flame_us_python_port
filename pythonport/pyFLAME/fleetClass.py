@@ -41,7 +41,46 @@ class fleetClass():
         #Create historical matrix stock and sales
         i_year                                  = 1979
         first_proj_yr                           = max(hist_stock_dt["Year"]) + 1
-        dataframe_stock_hist                    = pd.DataFrame(index = pd.Series(data = hist_stock_dt["Size"] & hist_stock_dt["Technology"]))
+
+        dataframe_stock_hist_temp               = pd.DataFrame(columns= RangeIndex(min(hist_stock_dt["Year"]), max(hist_stock_dt["Year"]) + 1))
+        dataframe_stock_hist_temp.insert(0, "Technology", pd.unique(hist_stock_dt["Technology"]))
+        dataframe_stock_hist                    = dataframe_stock_hist_temp.append(dataframe_stock_hist_temp[:], ignore_index=True)
+        dataframe_stock_hist.insert(0, 'Size', pd.unique(hist_stock_dt["Size"])[0])
+
+        for index, rows in dataframe_stock_hist.iterrows:
+            if index >= len(dataframe_stock_hist.index)//2:
+                dataframe_stock_hist['Size'][index]\
+                                                = 'Light truck'
+        for year in pd.unique(hist_stock_dt["Year"]):
+            for tech in pd.unique(hist_stock_dt["Technology"]):
+                for size in pd.unique(hist_stock_dt["Size"]):
+                    try:
+                        value                   = (hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech) & (hist_stock_dt["Size"] == size)]["Value"]).array[0]
+                        index                   = (dataframe_stock_hist[(dataframe_stock_hist['Size'] == size) & (dataframe_stock_hist['Technology'] == tech)].index)
+                        dataframe_stock_hist_temp.at[index, year] \
+                                                = value
+                    except IndexError:
+                        pass
+        
+        dataframe_sales_hist_temp               = pd.DataFrame(columns= RangeIndex(min(hist_sales_dt["Year"]), max(hist_sales_dt["Year"]) + 1))
+        dataframe_sales_hist_temp.insert(0, "Technology", pd.unique(hist_sales_dt["Technology"]))
+        dataframe_sales_hist                    = dataframe_sales_hist_temp.append(dataframe_sales_hist_temp[:], ignore_index=True)
+        dataframe_sales_hist.insert(0, 'Size', pd.unique(hist_sales_dt["Size"])[0])
+
+        for index, rows in dataframe_sales_hist.iterrows:
+            if index >= len(dataframe_sales_hist.index)//2:
+                dataframe_sales_hist['Size'][index]\
+                                                = 'Light truck'
+        for year in pd.unique(hist_sales_dt["Year"]):
+            for tech in pd.unique(hist_sales_dt["Technology"]):
+                for size in pd.unique(hist_sales_dt["Size"]):
+                    try:
+                        value                   = (hist_sales_dt.loc[(hist_sales_dt["Year"] == year) & (hist_sales_dt["Technology"] == tech) & (hist_sales_dt["Size"] == size)]["Value"]).array[0]
+                        index                   = (dataframe_sales_hist[(dataframe_sales_hist['Size'] == size) & (dataframe_sales_hist['Technology'] == tech)].index)
+                        dataframe_sales_hist_temp.at[index, year] \
+                                                = value
+                    except IndexError:
+                        pass
 
 
 
