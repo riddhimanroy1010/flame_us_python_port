@@ -1,6 +1,6 @@
 ''' py file for testing kek '''
 from dataclasses import dataclass, field
-from numpy import NaN, mat, newaxis
+import numpy as np
 import pandas as pd
 import re
 import time
@@ -37,7 +37,6 @@ for year in pd.unique(hist_stock_dt["Year"]):
     for tech in pd.unique(hist_stock_dt["Technology"]):
         for size in pd.unique(hist_stock_dt["Size"]):
             try:
-                print(year, tech, size)
                 value = (hist_stock_dt.loc[(hist_stock_dt["Year"] == year) & (hist_stock_dt["Technology"] == tech) & (hist_stock_dt["Size"] == size)]["Value"]).array[0]
                 index = (new2[(new2['Size'] == size) & (new2['Technology'] == tech)].index)
                 new2.at[index, year] = value
@@ -56,6 +55,28 @@ for year in pd.unique(hist_stock_dt["Year"]):
         #     pass
 
 print(new2)
+
+new3 = pd.DataFrame(index=['Total'], columns=RangeIndex(1970, 2020 + 1))
+print(new3)
+for cols in new3.columns:
+    new3[cols] = new2[cols].sum()
+print(new3)
+newx = new2
+del newx['Size']
+del newx['Technology']
+new_mat1 = newx.to_numpy()
+new_mat2 = new3.columns.to_numpy()
+print("new_mat1")
+print(new_mat1)
+print("#############")
+print("new_mat2")
+print(1/new_mat2)
+print("#############")
+print("new_mat2 diag")
+print(np.diag(1/new_mat2))
+print("#############")
+print("final prod")
+print(np.matmul(new_mat1, np.diag(1/new_mat2)))
 '''
 conv                                = pd.read_csv(vh_techno.loc[vh_techno['Variable_name'] == 'conversion_units', 'File'].array[0])
 
