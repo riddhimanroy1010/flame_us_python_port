@@ -85,6 +85,16 @@ class fleetClass():
         self.ldv_on_road_stock                  = dataframe_stock_hist
         self.ldv_sales                          = dataframe_sales_hist
 
+        self.ldv_on_road_stock_tot              = pd.DataFrame(index=['Total'], columns= RangeIndex(i_year, last_yr + 1))
+        for cols in self.ldv_on_road_stock.columns:
+            self.ldv_on_road_stock_tot[cols]    = self.ldv_on_road_stock[cols].sum()
+
+        ldv_temp_stock                          = self.ldv_on_road_stock
+        del ldv_temp_stock['Size']
+        del ldv_temp_stock['Technology']
+        ldv_temp_stock_mat                      = ldv_temp_stock.to_numpy()
+        ldv_temp_stock_tot_mat                  = self.ldv_on_road_stock_tot.columns.to_numpy()
+        self.technology_market_share            = np.matmul(ldv_temp_stock_mat, np.diag(1/ldv_temp_stock_tot_mat))
 
     '''
     Returns the fields of the class as a pandas.core.frame.DataFrame
