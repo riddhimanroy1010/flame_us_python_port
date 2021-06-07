@@ -199,6 +199,19 @@ class vehicleClass():
 
         #The rest of this function needs to be dealt with in fleetClass.
 
+    def vehicle_specifications_f(self, fc_impro = None, first_yr = None, last_yr = None):
+        tmp_techno                              = ''
+
+        if 'BEV' or 'PHEV' in self.technology:
+            tmp_techno                          =  re.findall('[0-9]+', self.technology)
+        else:
+            tmp_techno                          = self.technology
+        
+        vehicle_specs_dt                        = utils.get_input('vehicle_specifications')
+        bat_fc_dt                               = utils.get_input('greet_battery')
+
+        
+            
       
     '''
     Returns the existing attributes of the vehicle as a dataframe
