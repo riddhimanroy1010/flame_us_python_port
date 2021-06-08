@@ -9,7 +9,7 @@ from . import env
 def shelf_make(env_input):
 
     if 'input_env' not in locals():
-        env_store = shelve.open('pythonport/pyFLAME/shelves/shelve.db', flag='n')
+        env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db', flag='n')
         try:
             cur_env                             = env_store[env_input]
         except KeyError:
@@ -36,13 +36,23 @@ def shelf_retrieve(env_input):
 def shelf_update(env_input, key, value):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
         env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db')
-        try:
-            cur_env                             = env_store[env_input]
-            cur_env.objects[key]                = value
-            env_store[env_input]                = cur_env
-        finally:
-            env_store.close()
-            return cur_env
+        if env_input == 'input_env':
+            try:
+                cur_env                             = env_store[env_input]
+                cur_env.objects[key]                = value
+                env_store[env_input]                = cur_env
+            finally:
+                env_store.close()
+                return cur_env
+        elif env_input == 'attr_env':
+            try:
+                cur_env                             = env_store[env_input]
+                cur_env.objects[key]                = value
+                env_store[env_input]                = cur_env
+            finally:
+                env_store.close()
+    else:
+        pass
         
 def shelf_destroy():
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
@@ -73,5 +83,19 @@ def get_input(inputvar = None):
             input_env                           = shelf_update("input_env", inputvar, value)
     
     return input_env.objects[inputvar]
+
+
+# Every time a new object of type class is initiated, it will be stored here at the end of runtime and initialization. 
+def add_attributes(inputvar = None, attr_set = None):
+    if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
+        attr_env                               = shelf_make("attr_env")
+    
+    else:
+        input_env                              = shelf_retrieve("attr_env")
+
+    if str(inputvar) not in attr_env.objects:
+        attr_env                               = shelf_update("attr_env", str(inputvar), inputvar)
+
+
     
 
