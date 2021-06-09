@@ -35,7 +35,7 @@ def shelf_retrieve(env_input):
 
 def shelf_update(env_input, key, value):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
-        env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db')
+        env_store                                   = shelve.open('pythonport/pyFLAME/shelves/shelve.db')
         if env_input == 'input_env':
             try:
                 cur_env                             = env_store[env_input]
