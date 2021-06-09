@@ -96,6 +96,7 @@ class fleetClass():
         ldv_temp_stock_tot_mat                  = self.ldv_on_road_stock_tot.columns.to_numpy()
         self.technology_market_share            = np.matmul(ldv_temp_stock_mat, np.diag(1/ldv_temp_stock_tot_mat))
 
+        utils.add_attributes(self)
     '''
     Returns the fields of the class as a pandas.core.frame.DataFrame
     '''

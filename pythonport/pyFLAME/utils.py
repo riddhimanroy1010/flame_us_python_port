@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import shelve
 import os
-
 from . import env
 
 def shelf_make(env_input):
@@ -86,15 +85,32 @@ def get_input(inputvar = None):
 
 
 # Every time a new object of type class is initiated, it will be stored here at the end of runtime and initialization. 
-def add_attributes(inputvar = None, attr_set = None):
+def add_attributes(inputvar = None):
     if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
         attr_env                               = shelf_make("attr_env")
     
     else:
-        input_env                              = shelf_retrieve("attr_env")
+        attr_env                               = shelf_retrieve("attr_env")
 
     if str(inputvar) not in attr_env.objects:
         attr_env                               = shelf_update("attr_env", str(inputvar), inputvar)
+    
+    else:
+        attr_env                               = shelf_update("attr_env", str(inputvar), inputvar)
+
+def get_attributes(inputvar = None, class_to_get = None, attr_to_get = None):
+    if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
+        attr_env                               = shelf_make("attr_env")
+    
+    else:
+        attr_env                               = shelf_retrieve("attr_env")
+
+    return get_attr(attr_env.objects[class_to_get], attr_to_get)
+
+    
+      
+    
+
 
 
     

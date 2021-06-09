@@ -71,6 +71,8 @@ class vehicleClass():
         self.utility_factor.fillna(None)
         self.vehicle_utility_factor_f(self, last_hist_yr)
 
+        utils.add_attributes(self)
+
     '''
     vehicle_hist_fc_f
         Sets a vehicle's historical fuel consumption.
