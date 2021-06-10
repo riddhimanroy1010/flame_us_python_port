@@ -216,8 +216,12 @@ class vehicleClass():
         vehicle_specs_dt                        = utils.get_input('vehicle_specifications')
         bat_fc_dt                               = utils.get_input('greet_battery')
 
-        vehicle_specs_tmp                       = vehicle_specs_dt.loc[(vehicle_specs_dt['Technology'].str.split(',').isin(tmp_techno)) | (vehicle_specs_dt['Technology'] == 'Glo') & (vehicle_specs_dt['Size'].strsplit(',').isin(self.size)) | (vehicle_specs_dt['Size'] == 'Glo')]
-        
+        vehicle_specs                           = vehicle_specs_dt.loc[((tmp_techno in vehicle_specs_dt['Technology'].str.split(',')) | (vehicle_specs_dt['Technology'] == 'Glo') & ((vehicle_specs_dt['Size'] == self.size)) | (vehicle_specs_dt['Size'] == 'Glo'))]
+
+        vehicle_specs_dyn_dt                   = utils.get_input('vehicle_specifications_dyn')
+        vehicle_specs_dyn                      = vehicle_specs_dyn_dt.loc[((tmp_techno in vehicle_specs_dyn_dt['Technology'].str.split(',')) | (vehicle_specs_dyn_dt['Technology'] == 'Glo') & ((vehicle_specs_dyn_dt['Size'] == self.size)) | (vehicle_specs_dyn_dt['Size'] == 'Glo')) & (fc_impro in vehicle_specs_dyn_dt['Improvement Scenario'].str.split(','))]
+
+        last_hist_yr                           = self.fuel_consumption
             
       
     '''
