@@ -55,7 +55,6 @@ def shelf_update(env_input, key, value):
         
 def shelf_destroy():
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
-        shelve.close()
         os.remove('pythonport/pyFLAME/shelves/shelve.db.bak')
         os.remove('pythonport/pyFLAME/shelves/shelve.db.dat')
         os.remove('pythonport/pyFLAME/shelves/shelve.db.dir')
@@ -107,7 +106,7 @@ def get_attributes(inputvar = None, class_to_get = None, attr_to_get = None):
 
     return get_attr(attr_env.objects[class_to_get], attr_to_get)
 
-    
+
       
     
 
