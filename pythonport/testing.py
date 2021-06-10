@@ -11,14 +11,19 @@ FLAME.utils.shelf_destroy()
 print(FLAME.utils.get_input("vehicle_specifications"))
 vehicle_specs_dt = FLAME.utils.get_input("vehicle_specifications")
 tmp_techno = 'HEV'
+size = 'Car'
+tech_ok = []
 for index, rows in vehicle_specs_dt.iterrows():
     try:
         if tmp_techno in vehicle_specs_dt.at[index, 'Technology'].split(','):
-            print(vehicle_specs_dt.loc[rows])
+            print(vehicle_specs_dt.at[index, 'Technology'].split(','))
+            print("found in row" + str(index))
+            tech_ok.append(index)           
     except ValueError:
         print(rows)
         continue
-#vehicle_specs_tmp                       = vehicle_specs_dt.loc[(vehicle_specs_dt['Technology'].str.split(pat=',').isin(tmp_techno)) | (vehicle_specs_dt['Technology'] == 'Glo') & (vehicle_specs_dt['Size'].strsplit(',').isin(self.size)) | (vehicle_specs_dt['Size'] == 'Glo')]
+vehicle_specs_tmp                       = vehicle_specs_dt.loc[((tmp_techno in vehicle_specs_dt['Technology'].str.split(',')) | (vehicle_specs_dt['Technology'] == 'Glo') & ((vehicle_specs_dt['Size'] == size)) | (vehicle_specs_dt['Size'] == 'Glo'))]
+print(vehicle_specs_tmp)
 print(FLAME.utils.get_input("vehicle_specifications_dyn"))
 '''
 # */ timing block */ #
