@@ -230,6 +230,17 @@ class vehicleClass():
             specs_list                         = [vehicle_specs['Parameter'], 'range', 'battery_density', 'peak_power']
         else:
             specs_list                         = [vehicle_specs['Parameter'], 'peak_power']
+        
+        self.specifications                    = pd.DataFrame(columns=vehicle_specs_dyn.columns)
+
+        for par in pd.unique(vehicle_specs['Parameter']):
+            indices                            = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
+            for index in indices:
+                if vehicle_specs.loc[index, 'Constant'] != 'n':
+                    self.specifications        = self.specifications.append(vehicle_specs_dyn.loc[index].to_dict(), ignore_index=True)
+                else:
+                    self.specifications        = 0
+                    
 
 
 
