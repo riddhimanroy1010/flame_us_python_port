@@ -27,14 +27,17 @@ print(vehicle_specs_tmp)
 print(FLAME.utils.get_input("vehicle_specifications_dyn"))
 
 vehicle_specs_dyn                   = FLAME.utils.get_input('vehicle_specifications_dyn') 
-specifications = pd.DataFrame(columns=vehicle_specs_dyn.columns)
+specifications = pd.DataFrame(columns=vehicle_specs_tmp.columns)
 vehicle_specs = vehicle_specs_tmp
 for par in pd.unique(vehicle_specs['Parameter']):
-    indices = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
-    for index in indices:
-        if vehicle_specs_dyn.loc[vehi, 'Constant'] != 'n':
-            print(vehicle_specs_dyn.loc[index].to_dict())
-            specifications = specifications.append(vehicle_specs_dyn.loc[index].to_dict(), ignore_index=True)
+    dyn_indices = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
+    norm_indices = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
+    print(dyn_indices, norm_indices)
+    print("##############")
+    for index in norm_indices:
+        if vehicle_specs.loc[index, 'Constant'] != 'n':
+            print(norm_indices[index])
+            #specifications = specifications.append(vehicle_specs_dyn.loc[dyn_indices.index(norm_indices[index])].to_dict(), ignore_index=True)
 print(specifications)
 '''
 # */ timing block */ #
