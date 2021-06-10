@@ -221,7 +221,19 @@ class vehicleClass():
         vehicle_specs_dyn_dt                   = utils.get_input('vehicle_specifications_dyn')
         vehicle_specs_dyn                      = vehicle_specs_dyn_dt.loc[((tmp_techno in vehicle_specs_dyn_dt['Technology'].str.split(',')) | (vehicle_specs_dyn_dt['Technology'] == 'Glo') & ((vehicle_specs_dyn_dt['Size'] == self.size)) | (vehicle_specs_dyn_dt['Size'] == 'Glo')) & (fc_impro in vehicle_specs_dyn_dt['Improvement Scenario'].str.split(','))]
 
-        last_hist_yr                           = self.fuel_consumption
+        last_hist_yr                           = 2050                        
+        for cols in self.fuel_consumption.columns:
+            if len(re.findall('[0-9]+', cols)) != 0 and re.findall('[0-9]+', cols)[0] < last_hist_yr and not pd.isna(self.fuel_consumption[cols]).values.any:
+                last_hist_yr                   = re.findall('[0-9]+', cols)[0]
+        
+        if "Electricity" in self.fuel_type:
+            specs_list                         = [vehicle_specs['Parameter'], 'range', 'battery_density', 'peak_power']
+        else:
+            specs_list                         = [vehicle_specs['Parameter'], 'peak_power']
+
+
+
+
             
       
     '''
