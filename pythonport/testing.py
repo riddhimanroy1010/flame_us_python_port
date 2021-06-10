@@ -25,6 +25,17 @@ for index, rows in vehicle_specs_dt.iterrows():
 vehicle_specs_tmp                       = vehicle_specs_dt.loc[((tmp_techno in vehicle_specs_dt['Technology'].str.split(',')) | (vehicle_specs_dt['Technology'] == 'Glo') & ((vehicle_specs_dt['Size'] == size)) | (vehicle_specs_dt['Size'] == 'Glo'))]
 print(vehicle_specs_tmp)
 print(FLAME.utils.get_input("vehicle_specifications_dyn"))
+
+vehicle_specs_dyn                   = FLAME.utils.get_input('vehicle_specifications_dyn') 
+specifications = pd.DataFrame(columns=vehicle_specs_dyn.columns)
+vehicle_specs = vehicle_specs_tmp
+for par in pd.unique(vehicle_specs['Parameter']):
+    indices = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
+    for index in indices:
+        if vehicle_specs_dyn.loc[vehi, 'Constant'] != 'n':
+            print(vehicle_specs_dyn.loc[index].to_dict())
+            specifications = specifications.append(vehicle_specs_dyn.loc[index].to_dict(), ignore_index=True)
+print(specifications)
 '''
 # */ timing block */ #
 start = time.time()
