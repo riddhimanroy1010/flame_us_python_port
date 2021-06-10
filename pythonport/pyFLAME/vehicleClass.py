@@ -201,6 +201,10 @@ class vehicleClass():
 
         #The rest of this function needs to be dealt with in fleetClass.
 
+    def spec_selector(data):
+        pass
+
+
     def vehicle_specifications_f(self, fc_impro = None, first_yr = None, last_yr = None):
         tmp_techno                              = ''
 
@@ -212,6 +216,7 @@ class vehicleClass():
         vehicle_specs_dt                        = utils.get_input('vehicle_specifications')
         bat_fc_dt                               = utils.get_input('greet_battery')
 
+        vehicle_specs_tmp                       = vehicle_specs_dt.loc[(vehicle_specs_dt['Technology'].str.split(',').isin(tmp_techno)) | (vehicle_specs_dt['Technology'] == 'Glo') & (vehicle_specs_dt['Size'].strsplit(',').isin(self.size)) | (vehicle_specs_dt['Size'] == 'Glo')]
         
             
       
