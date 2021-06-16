@@ -219,38 +219,39 @@ class vehicleClass():
 
         vehicle_specs                           = vehicle_specs_dt.loc[((tmp_techno in vehicle_specs_dt['Technology'].str.split(',')) | (vehicle_specs_dt['Technology'] == 'Glo') & ((vehicle_specs_dt['Size'] == self.size)) | (vehicle_specs_dt['Size'] == 'Glo'))]
 
-        vehicle_specs_dyn_dt                   = utils.get_input('vehicle_specifications_dyn')
-        vehicle_specs_dyn                      = vehicle_specs_dyn_dt.loc[((tmp_techno in vehicle_specs_dyn_dt['Technology'].str.split(',')) | (vehicle_specs_dyn_dt['Technology'] == 'Glo') & ((vehicle_specs_dyn_dt['Size'] == self.size)) | (vehicle_specs_dyn_dt['Size'] == 'Glo')) & (fc_impro in vehicle_specs_dyn_dt['Improvement Scenario'].str.split(','))]
+        vehicle_specs_dyn_dt                    = utils.get_input('vehicle_specifications_dyn')
+        vehicle_specs_dyn                       = vehicle_specs_dyn_dt.loc[((tmp_techno in vehicle_specs_dyn_dt['Technology'].str.split(',')) | (vehicle_specs_dyn_dt['Technology'] == 'Glo') & ((vehicle_specs_dyn_dt['Size'] == self.size)) | (vehicle_specs_dyn_dt['Size'] == 'Glo')) & (fc_impro in vehicle_specs_dyn_dt['Improvement Scenario'].str.split(','))]
 
-        last_hist_yr                           = 2050                        
+        last_hist_yr                            = 2050                        
         for cols in self.fuel_consumption.columns:
             if len(re.findall('[0-9]+', cols)) != 0 and re.findall('[0-9]+', cols)[0] < last_hist_yr and not pd.isna(self.fuel_consumption[cols]).values.any:
-                last_hist_yr                   = re.findall('[0-9]+', cols)[0]
+                last_hist_yr                    = re.findall('[0-9]+', cols)[0]
         
         if "Electricity" in self.fuel_type:
-            specs_list                         = [vehicle_specs['Parameter'], 'range', 'battery_density', 'peak_power']
+            specs_list                          = [vehicle_specs['Parameter'], 'range', 'battery_density', 'peak_power']
         else:
-            specs_list                         = [vehicle_specs['Parameter'], 'peak_power']
+            specs_list                          = [vehicle_specs['Parameter'], 'peak_power']
         
-        self.specifications                    = pd.DataFrame(index = specs_list.index, columns= RangeIndex(first_yr, last_yr + 1)) 
+        self.specifications                     = pd.DataFrame(index = specs_list.index, columns= RangeIndex(first_yr, last_yr + 1)) 
 
-        size                                   = [self.size, 'Glo']      
+        size                                    = [self.size, 'Glo']      
 
         for par in pd.unique(vehicle_specs['Parameter']):
-            dyn_indices = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
-            norm_indices = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
+            dyn_indices                         = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
+            norm_indices                        = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
             for index in norm_indices:
                 if vehicle_specs.loc[index, 'Constant'] == 'n' and vehicle_specs.loc[index, 'Size'] in size:
                     if pd.isna(vehicle_specs.loc[index, 'Value']):
-                        line = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
+                        line                    = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
                         for key in line.index:
                             try:
                                 if len(re.findall('[0-9]+',key)) > 0:
-                                    self.specifications.loc[par, int(key)] = line.loc[key]
+                                    self.specifications.loc[par, int(key)]\
+                                                = line.loc[key]
                             except ValueError:
                                 continue
-                else:
-                    self.specifications        = 0
+                    else:
+                        line                    = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
                     
 
 
