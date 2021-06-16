@@ -279,8 +279,9 @@ class vehicleClass():
             usable_en                           = bat_fc_dt.loc[((tmp_techno in bat_fc_dt['Technology'].str.split(',')) & ((bat_fc_dt['Subcomponent'] == 'EV Battery')) & (bat_fc_dt['Data'] == 'Usable Energy')), '2015']
 
             for year in range(first_cpt_composition_yr, last_hist_yr + 1):
-                
-
+                self.specifications["range", year]\
+                                                = self.specifications["battery_density", year] * wgt_bat/self.fuel_consumption["Electricity", year]* 100*usable_en
+                                                
 
 
                     
