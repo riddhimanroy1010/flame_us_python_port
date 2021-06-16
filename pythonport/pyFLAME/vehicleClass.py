@@ -269,7 +269,7 @@ class vehicleClass():
             
             wgt_bat                             = self.material_component_composition.sum(self.material_component_composition.loc['EV Battery', first_cpt_composition_yr])
 
-            for year in range(first_cpt_composition_yr, last_yr):
+            for year in range(first_cpt_composition_yr, last_yr + 1):
                 self.specifications["battery_density", year]\
                                                 = battery_density_f(["peak_power", year])
                 
@@ -277,6 +277,11 @@ class vehicleClass():
             tmp_techno                          = " ".join(re.findall("[a-zA-Z]+", self.technology)) 
             
             usable_en                           = bat_fc_dt.loc[((tmp_techno in bat_fc_dt['Technology'].str.split(',')) & ((bat_fc_dt['Subcomponent'] == 'EV Battery')) & (bat_fc_dt['Data'] == 'Usable Energy')), '2015']
+
+            for year in range(first_cpt_composition_yr, last_hist_yr + 1):
+                
+
+
 
                     
 
