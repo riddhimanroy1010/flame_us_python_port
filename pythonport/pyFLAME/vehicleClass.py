@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from typing import Sized
 import numpy as np
 import math
 import pandas as pd
@@ -231,13 +232,23 @@ class vehicleClass():
         else:
             specs_list                         = [vehicle_specs['Parameter'], 'peak_power']
         
-        self.specifications                    = pd.DataFrame(columns=vehicle_specs_dyn.columns)
+        self.specifications                    = pd.DataFrame(index = specs_list.index, columns= RangeIndex(first_yr, last_yr + 1)) 
+
+        size                                   = [self.size, 'Glo']      
 
         for par in pd.unique(vehicle_specs['Parameter']):
-            indices                            = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
-            for index in indices:
-                if vehicle_specs.loc[index, 'Constant'] != 'n':
-                    self.specifications        = self.specifications.append(vehicle_specs_dyn.loc[index].to_dict(), ignore_index=True)
+            dyn_indices = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
+            norm_indices = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
+            for index in norm_indices:
+                if vehicle_specs.loc[index, 'Constant'] == 'n' and vehicle_specs.loc[index, 'Size'] in size:
+                    if pd.isna(vehicle_specs.loc[index, 'Value']):
+                        line = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
+                        for key in line.index:
+                            try:
+                                if len(re.findall('[0-9]+',key)) > 0:
+                                    self.specifications.loc[par, int(key)] = line.loc[key]
+                            except ValueError:
+                                continue
                 else:
                     self.specifications        = 0
                     
