@@ -271,7 +271,7 @@ class vehicleClass():
 
             for year in range(first_cpt_composition_yr, last_yr + 1):
                 self.specifications["battery_density", year]\
-                                                = battery_density_f(["peak_power", year])
+                                                = battery_density_f("peak_power", year)
                 
             
             tmp_techno                          = " ".join(re.findall("[a-zA-Z]+", self.technology)) 
@@ -282,6 +282,15 @@ class vehicleClass():
                 self.specifications["range", year]\
                                                 = self.specifications["battery_density", year] * wgt_bat/self.fuel_consumption["Electricity", year]* 100*usable_en         
     
+
+    def vehicle_peak_power_f(self, model_year):
+        #TODO
+        pass
+
+    def battery_density_f(self, param, yr):
+        #TODO
+        pass
+
     '''
     Returns the existing attributes of the vehicle as a dataframe
     '''
