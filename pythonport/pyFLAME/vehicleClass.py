@@ -245,13 +245,21 @@ class vehicleClass():
                         line                    = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
                         for key in line.index:
                             try:
-                                if len(re.findall('[0-9]+',key)) > 0:
+                                if len(re.findall('[0-9]+', key)) > 0:
                                     self.specifications.loc[par, int(key)]\
                                                 = line.loc[key]
                             except ValueError:
                                 continue
                     else:
-                        line                    = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
+                        line                    = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]] * vehicle_specs.loc[(vehicle_specs["Parameter"] == par), "Value"]
+                        for key in line.index:
+                            try:
+                                if len(re.findall('[0-9]+', key)) > 0:
+                                    self.specifications.loc[par, int(key)]\
+                                                = line.loc[key]
+                            except ValueError:
+                                continue
+
                     
 
 
