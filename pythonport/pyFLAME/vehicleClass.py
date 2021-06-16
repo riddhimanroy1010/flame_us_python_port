@@ -202,15 +202,11 @@ class vehicleClass():
 
         #The rest of this function needs to be dealt with in fleetClass.
 
-    def spec_selector(data):
-        pass
-
-
     def vehicle_specifications_f(self, fc_impro = None, first_yr = None, last_yr = None):
         tmp_techno                              = ''
 
         if 'BEV' or 'PHEV' in self.technology:
-            tmp_techno                          =  re.findall('[0-9]+', self.technology)
+            tmp_techno                          = re.findall('[0-9]+', self.technology)
         else:
             tmp_techno                          = self.technology
         
@@ -259,6 +255,25 @@ class vehicleClass():
                                                 = line.loc[key]
                             except ValueError:
                                 continue
+
+        first_cpt_composition_yr                = min(self.material_component_composition["Model Year"])   
+
+        #Update peak power from first material composition. Year=2016\
+        cpt_dt                                  = vehicle_peak_power_f(self, model_year=first_cpt_composition_yr)  
+
+        for year in self.specifications.columns:
+            self.specifications["peak_power", year]\
+                                                = sum(cpt_dt["peak_power", year])
+
+        if 'Electricity' in self.fuel_type:
+            
+            wgt_bat                             = pd.DataFrame(index = "EV Battery", columns= RangeIndex())
+            for year in range(first_cpt_composition_yr, last_yr):
+                self.specifications["battery_density", year]\
+                                                = battery_density_f(["peak_power", year])
+                
+            
+            tmp_techno                          = " ".join(re.findall("[a-zA-Z]+", self.technology)) 
 
                     
 
