@@ -24,20 +24,43 @@ for index, rows in vehicle_specs_dt.iterrows():
         continue
 vehicle_specs_tmp                       = vehicle_specs_dt.loc[((tmp_techno in vehicle_specs_dt['Technology'].str.split(',')) | (vehicle_specs_dt['Technology'] == 'Glo') & ((vehicle_specs_dt['Size'] == size)) | (vehicle_specs_dt['Size'] == 'Glo'))]
 print(vehicle_specs_tmp)
+size = ['Car', 'Glo']
 print(FLAME.utils.get_input("vehicle_specifications_dyn"))
-
+specs_list                         = []
+for items in vehicle_specs_tmp['Parameter']:
+    specs_list.append(items)
 vehicle_specs_dyn                   = FLAME.utils.get_input('vehicle_specifications_dyn') 
-specifications = pd.DataFrame(columns=vehicle_specs_tmp.columns)
+specifications = pd.DataFrame(index= specs_list, columns=RangeIndex(2015, 2051))
 vehicle_specs = vehicle_specs_tmp
+years = [years for years in range(2015, 2051)]
 for par in pd.unique(vehicle_specs['Parameter']):
     dyn_indices = vehicle_specs_dyn.index[vehicle_specs_dyn['Parameter'] == par].tolist()
     norm_indices = vehicle_specs.index[vehicle_specs['Parameter'] == par].tolist()
-    print(dyn_indices, norm_indices)
-    print("##############")
-    for index in norm_indices:
-        if vehicle_specs.loc[index, 'Constant'] != 'n':
-            print(norm_indices[index])
-            #specifications = specifications.append(vehicle_specs_dyn.loc[dyn_indices.index(norm_indices[index])].to_dict(), ignore_index=True)
+    print("********************")
+    for index in norm_indices: 
+        if vehicle_specs.loc[index, 'Constant'] == 'n' and vehicle_specs.loc[index, 'Size'] in size:
+            print(par)
+            if pd.isna(vehicle_specs.loc[index, 'Value']):
+            #print(dyn_indices[norm_indices.index(index)])
+            #specifications = specifications.append(vehicle_specs_dyn.loc[dyn_indices.index(norm_indices[index])].to_dict(), ignore_index=True)\
+            # print("********************")
+            # print(vehicle_specs.loc[index, 'Constant'], vehicle_specs.loc[index, 'Value'], np.nan)
+            # print("dyn_indices", dyn_indices)
+            # print("norm_indices", norm_indices)
+            # print("dyn_index_correct", dyn_indices[norm_indices.index(index)])
+                line = vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]]
+                for key in line.index:
+                    try:
+                        if len(re.findall('[0-9]+',key)) > 0:
+                            print(key, line.loc[key])
+                            print(type(key))
+                            specifications.loc[par, int(key)] = line.loc[key]
+                    except ValueError:
+                        continue
+                    # if keys in years:
+                    #     print(keys)
+                print("********************")
+            #specifications = specifications.append(other = {k: v for k, v in vehicle_specs_dyn.loc[dyn_indices[norm_indices.index(index)]].to_dict().items() if k in years}, ignore_index=True) 
 print(specifications)
 '''
 # */ timing block */ #
