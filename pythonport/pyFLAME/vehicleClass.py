@@ -283,12 +283,12 @@ class vehicleClass():
                                                 = self.specifications["battery_density", year] * wgt_bat/self.fuel_consumption["Electricity", year]* 100*usable_en         
     
 
-    def vehicle_peak_power_f(self, model_year, bat_impro=None):
+    def vehicle_peak_power_f(self, param, yr):
         #TODO
         pass
 
 
-    def battery_density_f(self, param, yr):
+    def battery_density_f(self, model_year, bat_impro=None):
         bat_fc_dt                               = utils.get_input('greet_battery')
 
         techno                                  = self.technology
