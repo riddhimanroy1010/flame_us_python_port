@@ -284,8 +284,20 @@ class vehicleClass():
     
 
     def vehicle_peak_power_f(self, param, yr):
-        #TODO
-        pass
+        bat_fc_dt                               = utils.get_input('greet_battery')
+        pwt_compoments_dt                       = utils.get_input("mackenzie_pwt_components")
+
+        if 'BEV' or 'PHEV' in self.technology:
+            tmp_techno                          = " ".join(re.findall("[a-zA-Z]+", self.technology))
+        else:
+            tmp_techno                          = self.technology
+
+        pwt_compoments_dt                       = pwt_compoments_dt.loc[(tmp_techno in pwt_compoments_dt['Technology'].str.split(',')) & (pwt_compoments_dt['Size'] == self.size), 'Technology']
+        cpt_l                                   = pwt_compoments_dt.tolist()
+        cpt_dt                                  = pd.DataFrame(index = cpt_l)
+
+        for cpt in cpt_dt.index:
+            
 
 
     def battery_density_f(self, model_year, bat_impro=None):
