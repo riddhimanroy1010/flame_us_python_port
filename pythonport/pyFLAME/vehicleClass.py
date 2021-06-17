@@ -297,7 +297,8 @@ class vehicleClass():
         cpt_dt                                  = pd.DataFrame(index = cpt_l)
 
         for cpt in cpt_dt.index:
-            cpt_dt[cpt]                         = self.material_component_composition.loc[(self.material_component_composition['Model_year'] == model_year) & (self.material_component_composition['Subcomponent'] == cpt), 'Weight']
+            cpt_dt['wgt']                       = []  
+            cpt_dt[cpt, 'wgt']                  = self.material_component_composition.loc[(self.material_component_composition['Model_year'] == model_year) & (self.material_component_composition['Subcomponent'] == cpt), 'Weight']
 
             cpt_dt['fixed_mass']                = []
 
@@ -307,15 +308,23 @@ class vehicleClass():
                 cpt_dt[cpt, 'fixed_mass']       = 0
 
             cpt_dt['density']                   = []
+            cpt_dt['peak_power']                = []
 
             if (cpt in ("Engine","Traction Motor") and tmp_techno != 'HEV') or (cpt in ("Engine","EV Battery") and tmp_techno == 'HEV'):
                 cpt_dt[cpt, 'density']          = bat_fc_dt.loc[(bat_fc_dt['Subcomponent'] == cpt) & (tmp_techno in bat_fc_dt['Technology'].str.split(',')) & (bat_fc_dt['Data'] == 'Energy density'), '2015']
+                cpt_dt[cpt, 'peak_power']       = cpt_dt[cpt, 'wgt'] - cpt_dt[cpt, 'fixed_mass'] * cpt_dt[cpt, 'density']
+            else:
+                cpt_dt[cpt, 'density']          = 0
+                cpt_dt[cpt, 'peak_power']       = 0
 
-
-
+            cpt_dt['usable_e']                  = []
             
-
-
+            try:
+                cpt_dt[cpt, 'usable_e']         = bat_fc_dt.loc[(bat_fc_dt['Subcomponent'] == cpt) & (tmp_techno in bat_fc_dt['Technology'].str.split(',')) & (bat_fc_dt['Data'] == 'Usable Energy'), '2015']
+            except KeyError or ValueError:
+                cpt_dt[cpt, 'usable_e']         = 1
+        
+        return cpt_dt    
 
     def battery_density_f(self, model_year, bat_impro=None):
         bat_fc_dt                               = utils.get_input('greet_battery')
