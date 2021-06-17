@@ -283,7 +283,7 @@ class vehicleClass():
                                                 = self.specifications["battery_density", year] * wgt_bat/self.fuel_consumption["Electricity", year]* 100*usable_en         
     
 
-    def vehicle_peak_power_f(self, param, yr):
+    def vehicle_peak_power_f(self, model_year):
         bat_fc_dt                               = utils.get_input('greet_battery')
         pwt_compoments_dt                       = utils.get_input("mackenzie_pwt_components")
 
@@ -297,7 +297,24 @@ class vehicleClass():
         cpt_dt                                  = pd.DataFrame(index = cpt_l)
 
         for cpt in cpt_dt.index:
+            cpt_dt[cpt]                         = self.material_component_composition.loc[(self.material_component_composition['Model_year'] == model_year) & (self.material_component_composition['Subcomponent'] == cpt), 'Weight']
+
+            cpt_dt['fixed_mass']                = []
+
+            try:
+                cpt_dt[cpt, 'fixed_mass']       = bat_fc_dt.loc[(bat_fc_dt['Subcomponent'] == cpt) & (tmp_techno in bat_fc_dt['Technology'].str.split(',')) & (bat_fc_dt['Data'] == 'Fixed Mass'), '2015']
+            except KeyError or ValueError:
+                cpt_dt[cpt, 'fixed_mass']       = 0
+
+            cpt_dt['density']                   = []
+
+            if (cpt in ("Engine","Traction Motor") and tmp_techno != 'HEV') or (cpt in ("Engine","EV Battery") and tmp_techno == 'HEV'):
+                cpt_dt[cpt, 'density']          = bat_fc_dt.loc[(bat_fc_dt['Subcomponent'] == cpt) & (tmp_techno in bat_fc_dt['Technology'].str.split(',')) & (bat_fc_dt['Data'] == 'Energy density'), '2015']
+
+
+
             
+
 
 
     def battery_density_f(self, model_year, bat_impro=None):
