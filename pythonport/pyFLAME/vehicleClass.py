@@ -259,7 +259,7 @@ class vehicleClass():
         first_cpt_composition_yr                = min(self.material_component_composition["Model Year"])   
 
         #Update peak power from first material composition. Year=2016\
-        cpt_dt                                  = vehicle_peak_power_f(self, model_year=first_cpt_composition_yr)  
+        cpt_dt                                  = self.vehicle_peak_power_f(self, model_year=first_cpt_composition_yr)  
 
         for year in self.specifications.columns:
             self.specifications["peak_power", year]\
@@ -271,7 +271,7 @@ class vehicleClass():
 
             for year in range(first_cpt_composition_yr, last_yr + 1):
                 self.specifications["battery_density", year]\
-                                                = battery_density_f("peak_power", year)
+                                                = self.battery_density_f("peak_power", year)
                 
             
             tmp_techno                          = " ".join(re.findall("[a-zA-Z]+", self.technology)) 
@@ -283,13 +283,39 @@ class vehicleClass():
                                                 = self.specifications["battery_density", year] * wgt_bat/self.fuel_consumption["Electricity", year]* 100*usable_en         
     
 
-    def vehicle_peak_power_f(self, model_year):
+    def vehicle_peak_power_f(self, model_year, bat_impro=None):
         #TODO
         pass
 
+
     def battery_density_f(self, param, yr):
-        #TODO
-        pass
+        bat_fc_dt                               = utils.get_input('greet_battery')
+
+        techno                                  = self.technology
+         
+        if 'BEV' or 'PHEV' in techno:
+            tmp_techno                          = " ".join(re.findall("[a-zA-Z]+", self.technology))
+            bat_type                            = self.battery_type
+            i_year                              = 2015
+            i_dens                              = bat_fc_dt.loc[((tmp_techno in bat_fc_dt['Technology'].str.split(',')) & ((bat_fc_dt['Subcomponent'] == 'EV Battery')) & (bat_fc_dt['Data'] == 'Energy density') & (bat_type in bat_fc_dt['Battery Type'].str.split(','))), i_year] 
+
+            f_year                              = 2030
+            f_dens_dict                         = { 'n': i_dens,
+                                                    'y': bat_fc_dt.loc[((tmp_techno in bat_fc_dt['Technology'].str.split(',')) & ((bat_fc_dt['Subcomponent'] == 'EV Battery')) & (bat_fc_dt['Data'] == 'Energy density') & (bat_type in bat_fc_dt['Battery Type'].str.split(','))), f_year]
+                                                  }                              
+            f_dens                              = f_dens_dict.get(bat_impro, None)
+
+            if model_year <= i_year:
+                dens                            = i_dens
+            elif model_year < f_year:
+                dens                            = i_dens+(model_year-i_year)*(f_dens-i_dens)/(f_year-i_year)
+            else:
+                dens                            = f_dens
+            
+        else:
+            dens                                = np.nan
+
+        return dens
 
     '''
     Returns the existing attributes of the vehicle as a dataframe
