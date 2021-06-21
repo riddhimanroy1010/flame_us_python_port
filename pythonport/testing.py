@@ -11,6 +11,7 @@ FLAME.utils.shelf_destroy()
 print(FLAME.utils.get_input("model_matching_component"))
 test = FLAME.utils.get_input("model_matching_technology")
 print(test.loc[test["Own"] == "BEV100"]["Range"])
+print(test.loc[test["Own"] == "BEV100"]["Mode"])
 
 # print(FLAME.utils.get_input("vehicle_specifications"))
 # vehicle_specs_dt = FLAME.utils.get_input("vehicle_specifications")
