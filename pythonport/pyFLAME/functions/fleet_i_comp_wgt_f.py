@@ -74,7 +74,7 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
             tmp_subcompo_wgt                    = pd.DataFrame(index = subcomponents, columns=["Components", "Subcomponent", "Weight"])
 
             tmp_compo_wgt["Component"]          = components
-            tmp_compo_wgt["Subcomponent"]       = subcomponents
+            tmp_subcompo_wgt["Subcomponent"]    = subcomponents
 
             if len(wgt_dt.loc[(wgt_dt["Technology"] == tmp_techno) & (wgt_dt["Size"] == size) & (wgt_dt["Source"] == 'epa') & (wgt_dt["Model_year"] == '2016')].index) == 1:
                 CW_in_kg                        = wgt_dt.loc[(wgt_dt["Technology"] == tmp_techno) & (wgt_dt["Size"] == size) & (wgt_dt["Source"] == 'epa') & (wgt_dt["Model_year"] == '2016')]["Value"]
@@ -85,6 +85,25 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
                 CW                              = comp_wgt_dt.loc[comp_wgt_dt["Data"] == "Curb weight (w/o bat)"][techno_greet]
                 source_CW                       = "GREET"
             
+            for comp in ["Battery Lead-Acid","Fluids","Wheels"]:
+                tmp_compo_wgt                   = tmp_compo_wgt.append({"Component" : comp, "Weight": comp_wgt_dt.loc[(comp_wgt_dt["Data"] == comp)][techno_greet]})
+            
+            if len(fleet_i_ev_bat.loc[(fleet_i_ev_bat["Size"] == size) & (fleet_i_ev_bat["Technology"] == techno)].index) != 0:
+                tmp_compo_wgt["EV Battery", "Weight"]\
+                                                = fleet_i_ev_bat.loc[(fleet_i_ev_bat["Size"] == size) & (fleet_i_ev_bat["Technology"] == techno)]["Weight"]
+            
+            if techno == "FCV":
+                fuel_cell_stack_weight          = (comp_wgt_dt.loc["Fuel cell stack", techno] / bat_fc_dt.loc["Fuel cell stack", "2015"]) * conv.loc["lb", "1kg"]
+                tmp_subcompo_wgt.loc["Fuel cell", "Weight"]\
+                                                = fuel_cell_stack_weight
+                
+                tmp_subcompo_wgt.loc["Fuel cell auxiliaries", "Weight"]\
+                                                = comp_wgt_dt.loc["Fuel cell auxiliaries", techno_greet]
+                tmp_compo_wgt.loc["Powertrain", "Weight"]\
+                                                = tmp_subcompo_wgt.loc["Powertrain", "Weight"]
+
+            if source_CW == "GREET":
+                            
 
 
             
