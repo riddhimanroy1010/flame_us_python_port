@@ -103,7 +103,46 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
                                                 = tmp_subcompo_wgt.loc["Powertrain", "Weight"]
 
             if source_CW == "GREET":
-                            
+                for component in ["Battery Lead-Acid","EV Battery"]:
+                    CW                          += float(tmp_compo_wgt[component, "Weight"])
+
+            tmp_compo_wgt                       = tmp_compo_wgt.append({"Component" : "Total", "Weight" : CW})  
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.append({"Component" : "Total", "Weight" : CW})  
+
+            CW_rem                              = CW
+            for compo in ["Battery Lead-Acid","EV Battery", "Fluid", "Wheels"]:
+                CW_rem                          -= float(tmp_compo_wgt.loc[compo, "Weight"])
+            
+            for comp in tmp_compo_wgt["Component"]:
+                if pd.isna(tmp_compo_wgt[comp, "Weight"]) and comp != "Glider":
+                    tmp_compo_wgt[comp, "Weight"]\
+                                                = vh_comp.loc[(vh_comp["Vehicle Component"] in pd.unique(comp_dt.loc[comp, "GREET"]).tolist())][techno_greet] * CW_rem
+            
+            tmp_compo_wgt.loc["Glider", "Weight"]\
+                                                = CW - vh_comp.sum(tmp_compo_wgt["Component"] != "Total", skipna=True)
+            
+            for subcomp in tmp_subcompo_wgt["Subcomponent"]:
+                if pd.isna(tmp_compo_wgt.loc[subcomp, "Weight"]):
+                    tmp_subcompo_wgt.loc[subcomp, "Weight"]\
+                                                = tmp_compo_wgt.loc[(tmp_compo_wgt["Own subcomponent"] == subcomp)]["Weight"] * wt_subcomp.loc[(techno_greet in wt_subcomp["Technology"].str.split(",")) & (wt_subcomp["Subcomponent"] == subcomp)]["Subcomponent weight distribution"]
+
+            tmp_compo_wgt                       = tmp_compo_wgt.assign(Relative = pd.series(tmp_compo_wgt["Weight"]/CW).values)
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Relative = pd.series(tmp_subcompo_wgt["Weight"]/CW).values)
+            tmp_compo_wgt                       = tmp_compo_wgt.assign(Weight = pd.series(tmp_compo_wgt["Weight"] * conv.loc["kg", "1 lb"]).values)
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Weight = pd.series(tmp_subcompo_wgt["Weight"] * conv.loc["kg", "1 lb"]).values)
+            tmp_compo_wgt                       = tmp_compo_wgt.assign(Size = size)
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Size = size)
+            tmp_compo_wgt                       = tmp_compo_wgt.assign(Technology= techno)
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Technology = techno)
+
+            fleet_compo_wgt                     = pd.concat([fleet_compo_wgt, tmp_compo_wgt], ignore_index=True)
+            fleet_subcompo_wgt                  = pd.concat([fleet_subcompo_wgt, tmp_subcompo_wgt], ignore_index=True)
+
+    fleet_compo_wgt                             = fleet_compo_wgt.assign(Unit = "kg")
+    fleet_subcompo_wgt                          = fleet_subcompo_wgt.assign(Unit = "kg")
+    return [fleet_compo_wgt, fleet_subcompo_wgt]     
+
+
 
 
             
