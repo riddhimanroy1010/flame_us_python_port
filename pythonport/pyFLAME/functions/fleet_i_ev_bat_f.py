@@ -36,7 +36,7 @@ def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_
                     bat_type                    = FCV_bat_t
                 
                 if 'BEV' in techno or 'PHEV' in techno:
-                    bat_cap                     = ev_bat_size_dt.loc[(ev_bat_size_dt["Year"] == 2020) & (ev_bat_size_dt["Size"] == size) & (ev_bat_size_dt["Technology"] == techno) & (ev_bat_size_dt["Model"] == ev_bat_size_mdl), 'Value']
+                    bat_cap                     = ev_bat_size_dt.loc[(ev_bat_size_dt["Year"] == 2020) & (ev_bat_size_dt["Size"] == size) & (ev_bat_size_dt["Technology"] == techno) & (ev_bat_size_dt["Model"] == ev_bat_size_mdl)]["value"]
                     tmp_techno                  = " ".join(re.findall("[a-zA-Z]+", techno))
                 else:
                     if size == 'Light truck' and wgt_scen_GREET in [1, 4] or size == "Car" and wgt_scen_GREET in [3, 4]:
@@ -46,10 +46,10 @@ def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_
                     else:
                         size_greet              = "Car"
 
-                    bat_cap                     = greet_battery_size.loc[(greet_battery_size["Data"] == "Conventional") & (greet_battery_size["Size"] == size_greet) & (greet_battery_size["Technology"] == techno), "value"]
+                    bat_cap                     = greet_battery_size.loc[(greet_battery_size["Data"] == "Conventional") & (greet_battery_size["Size"] == size_greet) & (greet_battery_size["Technology"] == techno)]["value"]
                     tmp_techno                  = techno
 
-                    bat_wgt                     = bat_cap / bat_fc_dt.loc[(bat_fc_dt["Subcomponent"] == "EV Battery") & (tmp_techno in bat_fc_dt["Technology"].str.split(",")) & (bat_fc_dt["Battery type"] == bat_type), "2015"] * conv.loc["lb", "1 kg"]
+                    bat_wgt                     = bat_cap / bat_fc_dt.loc[(bat_fc_dt["Subcomponent"] == "EV Battery") & (tmp_techno in bat_fc_dt["Technology"].str.split(",")) & (bat_fc_dt["Battery type"] == bat_type)]["2015"] * conv.loc["lb", "1 kg"]
 
                     ev_bat_dt                   = ev_bat_dt.append(size, techno, bat_type, float(bat_cap), float(bat_wgt))
     
