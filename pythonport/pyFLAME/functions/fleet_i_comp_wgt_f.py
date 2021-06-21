@@ -42,6 +42,28 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
         else:
             size_greet                          = 'Car'
         
+        #Loop technology
+        for techno in pd.unique(vh_techno["Own"]):
+            if 'BEV' in techno or "PHEV" in techno:
+                range_i                         = vh_techno.loc[vh_techno["Own"] == techno]["Range"]
+                tmp_techno                      = " ".join(re.findall("[a-zA-Z]+", techno))
+
+            else:
+                range_i                         = np.nan
+                tmp_techno                      = techno
+            
+            techno_greet                        = vh_techno.loc[vh_techno["Own"] == techno]["GREET1"]
+
+            if 'BEV' in techno or "PHEV" in techno:
+                range_i                         = vh_techno.loc[vh_techno["Own"] == techno]["Range"]
+                tmp_techno                      = " ".join(re.findall("[a-zA-Z]+", techno))
+
+            else:
+                range                           = np.nan
+
+            comp_wgt_dt                     = wgt_greet_dt.loc[(mod_scen_GREET in wgt_greet_dt["Model"].str.split(',')) & (wgt_greet_dt['Size'] == size_greet) & (pd.isna(wgt_greet_dt.loc[wgt_greet_dt["Data"] == 'Range'])) | (wgt_greet_dt["Data"] == "Range")][techno_greet]
+            
+
 
 
 
