@@ -6,7 +6,7 @@ import re
 import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
-from . import utils
+from FLAMEstructure import utils
 
 
 def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None, wgt_scen_GREET = None, ev_bat_size_mdl = None):
