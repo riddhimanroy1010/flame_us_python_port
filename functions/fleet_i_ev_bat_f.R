@@ -23,7 +23,7 @@ fleet_i_ev_bat_f<-function(FCV_bat_t = NA,
     #Loop technology
     for (techno in unique(vh_techno$Own)){
       techno_greet <- subset(vh_techno,Own==techno)[,"GREET1"]
-      component <- unique(subset(wt_subcomp,sapply(1:nrow(wt_subcomp),function(x)techno_greet%in%unlist(strsplit(Technology,",")[x])))[,"Component"])
+       component <- unique(subset(wt_subcomp,sapply(1:nrow(wt_subcomp),function(x)techno_greet%in%unlist(strsplit(Technology,",")[x])))[,"Component"])
       #If EV battery included in vehicle's component
       if ("EV Battery"%in%component){
         #bat_type is the cathode type of eletric battery
