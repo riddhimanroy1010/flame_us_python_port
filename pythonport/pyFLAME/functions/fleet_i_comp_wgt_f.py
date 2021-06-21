@@ -61,14 +61,20 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
             else:
                 range                           = np.nan
 
-            comp_wgt_dt                     = wgt_greet_dt.loc[(mod_scen_GREET in wgt_greet_dt["Model"].str.split(',')) & (wgt_greet_dt['Size'] == size_greet) & (pd.isna(wgt_greet_dt.loc[wgt_greet_dt["Data"] == 'Range'])) | (wgt_greet_dt["Data"] == "Range")][techno_greet]
+            comp_wgt_dt                         = wgt_greet_dt.loc[(mod_scen_GREET in wgt_greet_dt["Model"].str.split(',')) & (wgt_greet_dt['Size'] == size_greet) & (pd.isna(wgt_greet_dt.loc[wgt_greet_dt["Data"] == 'Range'])) | (wgt_greet_dt["Data"] == "Range")][techno_greet]
 
-            vh_comp                         = vh_comp_wgt_dist.loc[(vh_comp_wgt_dist["Model"] == mod_scen_GREET) & (vh_comp_wgt_dist["Size"] == size_greet)][techno_greet]
-            vh_comp                         = pd.concat([pd.DataFrame(vh_comp_wgt_dist.loc["Range"][techno_greet]), vh_comp].reset_index(drop = True))
+            vh_comp                             = vh_comp_wgt_dist.loc[(vh_comp_wgt_dist["Model"] == mod_scen_GREET) & (vh_comp_wgt_dist["Size"] == size_greet)][techno_greet]
+            vh_comp                             = pd.concat([pd.DataFrame(vh_comp_wgt_dist.loc["Range"][techno_greet]), vh_comp].reset_index(drop = True))
 
-            component                       = pd.unique(wt_subcomp.loc[techno in wt_subcomp["Technology"]["Component"].str.split(',')]).tolist()
-            subcomponent                    = pd.unique(wt_subcomp.loc[techno in wt_subcomp["Technology"]["Subcomponent"].str.split(',')]).tolist()
+            components                          = pd.unique(wt_subcomp.loc[techno in wt_subcomp["Technology"]["Component"].str.split(',')]).tolist()
+            subcomponents                       = pd.unique(wt_subcomp.loc[techno in wt_subcomp["Technology"]["Subcomponent"].str.split(',')]).tolist()
+
+            tmp_compo_wgt                       = pd.DataFrame(index = components, columns=["Component", "Weight"])
+            tmp_subcompo_wgt                    = pd.DataFrame(index = subcomponents, columns=["Components", "Subcomponent", "Weight"])
+
             
+
+
 
 
 
