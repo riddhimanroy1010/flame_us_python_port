@@ -8,8 +8,10 @@ import pyFLAME as FLAME
 from pandas.core.indexes.range import RangeIndex
 
 FLAME.utils.shelf_destroy()
-print(FLAME.utils.get_input("fleet_mt_comp_hist"))
-print(FLAME.utils.get_input("model_matching_material"))
+print(FLAME.utils.get_input("model_matching_component"))
+test = FLAME.utils.get_input("model_matching_technology")
+print(test.loc[test["Own"] == "BEV100"]["Range"])
+
 # print(FLAME.utils.get_input("vehicle_specifications"))
 # vehicle_specs_dt = FLAME.utils.get_input("vehicle_specifications")
 # tmp_techno = 'HEV'
