@@ -1,3 +1,4 @@
+from numpy.lib.utils import source
 from pythonport.pyFLAME.functions.fleet_i_ev_bat_f import fleet_i_ev_bat_f
 from typing import Sized
 import numpy as np
@@ -71,6 +72,20 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
 
             tmp_compo_wgt                       = pd.DataFrame(index = components, columns=["Component", "Weight"])
             tmp_subcompo_wgt                    = pd.DataFrame(index = subcomponents, columns=["Components", "Subcomponent", "Weight"])
+
+            tmp_compo_wgt["Component"]          = components
+            tmp_compo_wgt["Subcomponent"]       = subcomponents
+
+            if len(wgt_dt.loc[(wgt_dt["Technology"] == tmp_techno) & (wgt_dt["Size"] == size) & (wgt_dt["Source"] == 'epa') & (wgt_dt["Model_year"] == '2016')].index) == 1:
+                CW_in_kg                        = wgt_dt.loc[(wgt_dt["Technology"] == tmp_techno) & (wgt_dt["Size"] == size) & (wgt_dt["Source"] == 'epa') & (wgt_dt["Model_year"] == '2016')]["Value"]
+                CW                              = CW_in_kg*conv.loc["lb", "1 kg"]
+                source_CW                       = 'EPA'
+
+            else:
+                CW                              = comp_wgt_dt.loc[comp_wgt_dt["Data"] == "Curb weight (w/o bat)"][techno_greet]
+                source_CW                       = "GREET"
+            
+
 
             
 
