@@ -20,4 +20,28 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
     wt_subcomp                                  = utils.get_input('c2g_rel_subcpt_wgt')
     bat_fc_dt                                   = utils.get_input('greet_battery')
 
-    fleet_i_ev_bat_f_res                        = fleet_i_ev_bat_f()
+    fleet_i_ev_bat                              = fleet_i_ev_bat_f()
+
+    #Creation output
+    #fleet_compo_wgt contains the weight of the components of the technology techno at size size
+    dt_col                                      = ["Size", "Technology", "Component", "Weight"]
+    fleet_compo_wgt                             = pd.DataFrame(columns=dt_col)
+
+    #fleet_subcompo_wgt cotnains the weight of the subcomponent of the technology techno at size size
+    dt_col                                      = ["Size", "Technology", "Subcomponent", "Weight"]
+    fleet_subcompo_wgt                          = pd.DataFrame(columns=dt_col)
+    
+    for size in ["Car", "Light truck"]:
+
+        #Size_GREET:Model size to use in GREET
+        if size == 'Light truck' and wgt_scen_GREET in [1, 4] or size == 'Car' and wgt_scen_GREET in [3, 4]:
+            size_greet                          = 'SUV'
+        
+        elif size == 'Light truck' and wgt_scen_GREET in [2, 3]:
+            size_greet                          = 'PUT'
+        else:
+            size_greet                          = 'Car'
+        
+
+
+
