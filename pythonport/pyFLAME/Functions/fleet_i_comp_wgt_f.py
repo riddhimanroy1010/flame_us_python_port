@@ -1,3 +1,4 @@
+from pythonport.pyFLAME.functions.fleet_i_ev_bat_f import fleet_i_ev_bat_f
 from typing import Sized
 import numpy as np
 import math
@@ -6,7 +7,7 @@ import re
 import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
-from FLAMEstructure import utils
+from architecture import utils
 
 def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
     #input files
@@ -18,3 +19,5 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
     conv                                        = utils.get_input('conversion_units')
     wt_subcomp                                  = utils.get_input('c2g_rel_subcpt_wgt')
     bat_fc_dt                                   = utils.get_input('greet_battery')
+
+    fleet_i_ev_bat_f_res                        = fleet_i_ev_bat_f()

@@ -1,8 +1,8 @@
 #Internal imports from within pyFLAME : new files go here
-from .FLAMEstructure.vehicleClass import *
-from .FLAMEstructure.fleetClass import *
-from .FLAMEstructure.utils import *
-from .FLAMEstructure.env import *
+from .architecture.vehicleClass import *
+from .architecture.fleetClass import *
+from .architecture.utils import *
+from .architecture.env import *
 
 #External imports
 from dataclasses import dataclass, field
