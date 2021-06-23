@@ -39,4 +39,6 @@ rsconnect/
 #pyCache files
 *.pyc
 
+#.vscode setup files
+.vscode/*
 README.md
