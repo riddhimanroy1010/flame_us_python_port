@@ -28,16 +28,16 @@ class vehicleClass():
         vehicle_hist_fc_f                   :            initializes historical values for fuel consumption for the vehicle
         vehicle_utility_factor_f            :            initializes the utility factor for the vehicle
         get_data_frame                      :            combines all possible dataframes into one dataframe
-    '''
-    technology:                                 str                         = field(default_factory=str)
-    size:                                       str                         = field(default_factory=str)
-    fuel_type:                                  list                        = field(default_factory=list)
-    fuel_consumption:                           pd.DataFrame                = field(default_factory=pd.DataFrame)
-    utility_factor:                             pd.DataFrame                = field(default_factory=pd.DataFrame)
-    specifications:                             pd.DataFrame                = field(default_factory=pd.DataFrame)
-    battery_type:                               str                         = field(default_factory=str)
-    material_composition:                       pd.DataFrame                = field(default_factory=pd.DataFrame)
-    material_component_composition:             pd.DataFrame                = field(default_factory=pd.DataFrame)
+    '''                                                                                                                         # Initialized?
+    technology:                                 str                         = field(default_factory=str)                        # Yes
+    size:                                       str                         = field(default_factory=str)                        # Yes
+    fuel_type:                                  list                        = field(default_factory=list)                       # Yes                    
+    fuel_consumption:                           pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    utility_factor:                             pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    specifications:                             pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    battery_type:                               str                         = field(default_factory=str)                        # Yes
+    material_composition:                       pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    material_component_composition:             pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
 
     '''
     __init__
@@ -50,6 +50,10 @@ class vehicleClass():
         and storage.
     '''
     def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
+        
+        vh_techno                               = utils.get_input("model_matching_technology")
+        self.fuel_type                          = (vh_techno.loc[vh_techno["Own"] == technology]["Fuel Type"]).str.split(';').tolist()
+
         self.technology                         = technology                                                            
         self.size                               = size
 
