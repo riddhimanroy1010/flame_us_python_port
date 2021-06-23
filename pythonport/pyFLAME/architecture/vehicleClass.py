@@ -1,5 +1,4 @@
 from dataclasses import dataclass, field
-from pythonport.pyFLAME.functions.fleet_i_mat_cont_f import fleet_i_mat_cont_f
 from typing import Sized
 import numpy as np
 import math
@@ -9,6 +8,7 @@ import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
 from . import utils
+from functions import *
 
 @dataclass
 class vehicleClass():
@@ -199,8 +199,8 @@ class vehicleClass():
 
         #Update historical material composition
         mat_hist_mc                             = hist_mc[(hist_mc["Technology"] == self.technology) & (hist_mc["Size"] == self.size) & (hist_mc["Model_year"] >= first_hist_yr) & (hist_mc["Material"] != "Total")]
-        fleet_i_mat_cont_f_res                  = fleet_i_mat_cont_f()
-        veh_mat_cont                            = fleet_i_mat_cont_f_res.loc[(fleet_i_mat_cont_f_res["Size"] == self.size) & (fleet_i_mat_cont_f["Technology"] == self.technology)]
+        fleet_i_mat_cont_f_res                  = functions.fleet_i_mat_cont_f()
+        veh_mat_cont                            = fleet_i_mat_cont_f_res.loc[(fleet_i_mat_cont_f_res["Size"] == self.size) & (fleet_i_mat_cont_f_res["Technology"] == self.technology)]
         del(veh_mat_cont["Size"])
         del(veh_mat_cont["Technology"])
 
