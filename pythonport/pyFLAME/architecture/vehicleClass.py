@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from pythonport.pyFLAME.functions.fleet_i_mat_cont_f import fleet_i_mat_cont_f
 from typing import Sized
 import numpy as np
 import math
@@ -191,16 +192,17 @@ class vehicleClass():
         self.material_composition               = pd.DataFrame(index=pd.unique(material_dt["Own"]), columns=RangeIndex(first_hist_yr, last_yr + 1))
         self.material_composition.fillna(None)
 
+
         #Update historical material composition
         mat_hist_mc                             = hist_mc[(hist_mc["Technology"] == self.technology) & (hist_mc["Size"] == self.size) & (hist_mc["Model_year"] >= first_hist_yr) & (hist_mc["Material"] != "Total")]
-        for year in pd.unique(mat_hist_mc["Model_year"]):
-            for material in pd.unique(mat_hist_mc["Material"]):
-                self.material_composition[year][material] \
-                                                = (mat_hist_mc.loc[(mat_hist_mc["Model_year"] == year) & (mat_hist_mc["Material"] == material)]["Value"]).array[0]
-        
-        #Functions: Calculate material composition by subcomponent -> to be implemented in fleet class *discuss with prof*
+        fleet_i_mat_cont_f_res                  = fleet_i_mat_cont_f()
+        veh_mat_cont                            = fleet_i_mat_cont_f_res.loc[(fleet_i_mat_cont_f_res["Size"] == self.size) & (fleet_i_mat_cont_f["Technology"] == self.technology)]
+        del(veh_mat_cont["Size"])
+        del(veh_mat_cont["Technology"])
 
-        #The rest of this function needs to be dealt with in fleetClass.
+        for year in pd.unique(mat_hist_mc["Model_year"]):
+            self.material_composition           = pd.concat[self.material_composition, (mat_hist_mc.loc[(mat_hist_mc["Model_year"] == year) & (mat_hist_mc["Material"] != "Total" )]["Value"])]
+            self.material_component_composition = pd.concat[self.material_component_composition, veh_mat_cont.loc[year]]
 
     def vehicle_specifications_f(self, fc_impro = None, first_yr = None, last_yr = None):
         tmp_techno                              = ''
