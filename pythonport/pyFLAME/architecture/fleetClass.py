@@ -23,13 +23,13 @@ class fleetClass():
         __init__: initializes the function and its fields
         get_data_frame: converts the existing fields into dataframes and returns pandas.core.frame.DataFrame
         get_list_dataframe: Return all fields into a list of pandas.core.frame.DataFrame
-    '''
-    vint_stock:                                 list                        = field(default_factory=list)
-    vint_scrap:                                 list                        = field(default_factory=list)
-    technology_market_share:                    pd.DataFrame                = field(default_factory=pd.DataFrame)
-    ldv_sales:                                  pd.DataFrame                = field(default_factory=pd.DataFrame)
-    ldv_on_road_stock:                          pd.DataFrame                = field(default_factory=pd.DataFrame)
-    ldv_on_road_stock_tot:                      pd.DataFrame                = field(default_factory=pd.DataFrame)
+    '''                                                                                                                         # Initialized?
+    vint_stock:                                 list                        = field(default_factory=list)                       # No
+    vint_scrap:                                 list                        = field(default_factory=list)                       # No
+    technology_market_share:                    pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    ldv_sales:                                  pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    ldv_on_road_stock:                          pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
+    ldv_on_road_stock_tot:                      pd.DataFrame                = field(default_factory=pd.DataFrame)               # Yes
 
 
     def __init__(self, first_yr = None, last_yr = None) -> None:
