@@ -1,4 +1,3 @@
-from pythonport.pyFLAME.functions.fleet_i_ev_bat_f import fleet_i_comp_wgt_f
 from typing import Sized
 import numpy as np
 import math
@@ -7,7 +6,8 @@ import re
 import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
-from architecture import utils
+from ..architecture import utils
+from . import fleet_i_comp_wgt_f
 
 def fleet_i_mat_cont_f(mat_cont_adj = None, rel_mat_cont = "n"):
 
