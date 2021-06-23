@@ -8,7 +8,7 @@ import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
 from . import utils
-from functions import *
+from ..functions import fleet_i_mat_cont_f
 
 @dataclass
 class vehicleClass():
