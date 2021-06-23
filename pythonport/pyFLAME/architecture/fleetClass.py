@@ -26,7 +26,6 @@ class fleetClass():
     '''
     vint_stock:                                 list                        = field(default_factory=list)
     vint_scrap:                                 list                        = field(default_factory=list)
-    fuel_consumption:                           pd.DataFrame                = field(default_factory=pd.DataFrame)
     technology_market_share:                    pd.DataFrame                = field(default_factory=pd.DataFrame)
     ldv_sales:                                  pd.DataFrame                = field(default_factory=pd.DataFrame)
     ldv_on_road_stock:                          pd.DataFrame                = field(default_factory=pd.DataFrame)
