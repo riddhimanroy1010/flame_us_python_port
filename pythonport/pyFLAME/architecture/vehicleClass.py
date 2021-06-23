@@ -199,7 +199,7 @@ class vehicleClass():
 
         #Update historical material composition
         mat_hist_mc                             = hist_mc[(hist_mc["Technology"] == self.technology) & (hist_mc["Size"] == self.size) & (hist_mc["Model_year"] >= first_hist_yr) & (hist_mc["Material"] != "Total")]
-        fleet_i_mat_cont_f_res                  = functions.fleet_i_mat_cont_f()
+        fleet_i_mat_cont_f_res                  = fleet_i_mat_cont_f()
         veh_mat_cont                            = fleet_i_mat_cont_f_res.loc[(fleet_i_mat_cont_f_res["Size"] == self.size) & (fleet_i_mat_cont_f_res["Technology"] == self.technology)]
         del(veh_mat_cont["Size"])
         del(veh_mat_cont["Technology"])
