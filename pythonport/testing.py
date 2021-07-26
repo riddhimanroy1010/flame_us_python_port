@@ -8,10 +8,34 @@ import pyFLAME as FLAME
 from pandas.core.indexes.range import RangeIndex
 
 FLAME.utils.shelf_destroy()
-print(FLAME.utils.get_input("model_matching_component"))
-test = FLAME.utils.get_input("model_matching_technology")
-print(test.loc[test["Own"] == "BEV100"]["Range"])
-print(test.loc[test["Own"] == "BEV100"]["Mode"])
+vh_techno = FLAME.get_input("model_matching_technology")
+print(FLAME.get_input("model_matching_technology"))
+print((vh_techno.loc[vh_techno["Own"] == "BEV100"]["Fuel type"]).str.split(';').tolist())
+fc = FLAME.utils.get_input("fc_ev_hist")
+print(type(fc["Year"][0]), fc["Year"][0])
+if 2012 > fc["Year"][0]:
+    print("yes") 
+print(fc.loc[(fc["Year"] > 1985) & (fc["Size"] == "Car") & (fc["Technology"] == "BEV100") & (fc["Model"] == "Sales weighted")])
+print(FLAME.utils.get_input("fc_ev_hist"))
+wt_subcomp                                  = FLAME.utils.get_input("c2g_rel_subcpt_wgt")
+print(wt_subcomp)
+print(wt_subcomp["Technology"].str.split(","))
+print(type(wt_subcomp["Technology"][0]))
+print(wt_subcomp["Technology"][0])
+print(re.findall("ICEV", wt_subcomp["Technology"][0]))
+FLAME.fleet_i_mat_cont_f()
+# for rows in wt_subcomp.index:
+#     if re.findall("ICEV", wt_subcomp["Technology"][rows]):
+#         print("found", rows)
+#car = FLAME.vehicleClass(technology="BEV100", size="Car")
+
+
+
+# FLAME.utils.shelf_destroy()
+# print(FLAME.utils.get_input("model_matching_component"))
+# test = FLAME.utils.get_input("model_matching_technology")
+# print(test.loc[test["Own"] == "BEV100"]["Range"])
+# print(test.loc[test["Own"] == "BEV100"]["Mode"])
 
 # print(FLAME.utils.get_input("vehicle_specifications"))
 # vehicle_specs_dt = FLAME.utils.get_input("vehicle_specifications")

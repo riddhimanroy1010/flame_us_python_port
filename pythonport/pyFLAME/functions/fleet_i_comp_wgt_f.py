@@ -20,7 +20,8 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
     wt_subcomp                                  = utils.get_input('c2g_rel_subcpt_wgt')
     bat_fc_dt                                   = utils.get_input('greet_battery')
 
-    fleet_i_ev_bat                              = fleet_i_ev_bat_f()
+
+    fleet_i_ev_bat                              = fleet_i_ev_bat_f.fleet_i_ev_bat_f()
 
     #Creation output
     #fleet_compo_wgt contains the weight of the components of the technology techno at size size

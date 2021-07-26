@@ -7,7 +7,7 @@ from . import env
 
 def shelf_make(env_input):
 
-    if 'input_env' not in locals():
+    if env_input not in locals():
         env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db', flag='n')
         try:
             cur_env                             = env_store[env_input]
@@ -17,6 +17,11 @@ def shelf_make(env_input):
                 cur_env.objects["input_mgnt"]   = pd.read_csv("inputs/data_input_management.csv")
                 cur_env.isNone                  = False
                 env_store['input_env']          = cur_env
+            elif env_input == "attr_env":
+                cur_env                         = env.environment()
+                cur_env.objects["attr_mgnt"]    = pd.read_excel("architecture/attribute_value.xlsx", engine='openpyxl')
+                cur_env.isNone                  = False
+                env_store['attr_env']           = cur_env
             else:
                 cur_env                         = env.environment()
                 cur_env.isNone                  = False   
@@ -43,7 +48,7 @@ def shelf_update(env_input, key, value):
             finally:
                 env_store.close()
                 return cur_env
-        elif env_input == 'attr_env':
+        elif env_input == 'obj_env':
             try:
                 cur_env                             = env_store[env_input]
                 cur_env.objects[key]                = value
@@ -84,27 +89,45 @@ def get_input(inputvar = None):
 
 
 # Every time a new object of type class is initiated, it will be stored here at the end of runtime and initialization. 
-def add_attributes(inputvar = None):
+def add_object(inputvar = None):
     if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
-        attr_env                               = shelf_make("attr_env")
+        obj_env                                 = shelf_make("obj_env")
     
     else:
-        attr_env                               = shelf_retrieve("attr_env")
+        obj_env                                 = shelf_retrieve("obj_env")
 
-    if str(inputvar) not in attr_env.objects:
-        attr_env                               = shelf_update("attr_env", str(inputvar), inputvar)
+    if str(inputvar) not in obj_env.objects:
+        obj_env                                 = shelf_update("obj_env", str(inputvar), inputvar)
     
     else:
-        attr_env                               = shelf_update("attr_env", str(inputvar), inputvar)
+        obj_env                                 = shelf_update("obj_env", str(inputvar), inputvar)
 
-def get_attributes(inputvar = None, class_to_get = None, attr_to_get = None):
+def get_object(inputvar = None, class_to_get = None, attr_to_get = None):
     if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
-        attr_env                               = shelf_make("attr_env")
+        obj_env                                 = shelf_make("obj_env")
     
     else:
-        attr_env                               = shelf_retrieve("attr_env")
+        obj_env                                 = shelf_retrieve("obj_env")
 
-    return get_attr(attr_env.objects[class_to_get], attr_to_get)
+    return get_attr(obj_env.objects[class_to_get], attr_to_get)
+
+def get_attributes(attr_to_get = None):
+    if len(os.listdir('pythonport/pyFLAME/shelves')) == 0:
+        attr_env                                = shelf_make("attr_env")
+
+    else:
+        attr_env                                = shelf_retrieve("attr_env")
+    
+    attr_mgnt                                   = attr_env.objects["attr_mgnt"]
+
+    if attr_to_get not in attr_env.objects:
+        value                                   = attr_mgnt.loc[attr_to_get]["Value"]
+        attr_env                                = shelf_update(attr_env, attr_to_get, value)
+
+    return attr_env.objects[attr_to_get]
+
+
+
 
 
       

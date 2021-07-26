@@ -9,7 +9,7 @@ from pandas.core.indexes.range import RangeIndex
 from ..architecture import utils
 
 
-def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None, wgt_scen_GREET = None, ev_bat_size_mdl = None):
+def fleet_i_ev_bat_f(FCV_bat_t = "Li_ion LMO", BEV_bat_t = "Li_ion LMO", PHEV_bat_t = "Li_ion LMO", HEV_bat_t = "Ni_MH", wgt_scen_GREET = "def", ev_bat_size_mdl = "def"):
     vh_techno                                   = utils.get_input("model_matching_technology") 
     wt_subcomp                                  = utils.get_input("c2g_rel_subcpt_wgt")
     ev_bat_size_dt                              = utils.get_input("ev_bat_size")  
@@ -21,11 +21,13 @@ def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_
     ev_bat_dt                                   = pd.DataFrame(columns=dt_col)
 
     for size in ("Car", "Light truck"):
+        init_size                               = 0
         for techno in pd.unique(vh_techno["Own"]):
-            techno_greet                        = vh_techno.loc[vh_techno["Own"] == techno]["GREET1"]
-            component                           = wt_subcomp.loc[techno_greet in wt_subcomp["Technology"].str.split(",")]["Component"]
+            techno_greet                        = vh_techno.loc[vh_techno["Own"] == techno]["GREET1"][init_size]
+            init_size                           += 1
+            component                           = wt_subcomp.loc[wt_subcomp["Technology"].str.contains(techno_greet, regex = True)]["Component"]
 
-            if "EV Battery" in component:
+            if component.str.contains("EV Battery").any():
                 if "BEV" in techno:
                     bat_type                    = BEV_bat_t
                 elif "PHEV" in techno:
@@ -36,7 +38,7 @@ def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_
                     bat_type                    = FCV_bat_t
                 
                 if 'BEV' in techno or 'PHEV' in techno:
-                    bat_cap                     = ev_bat_size_dt.loc[(ev_bat_size_dt["Year"] == 2020) & (ev_bat_size_dt["Size"] == size) & (ev_bat_size_dt["Technology"] == techno) & (ev_bat_size_dt["Model"] == ev_bat_size_mdl)]["value"]
+                    bat_cap                     = ev_bat_size_dt.loc[(ev_bat_size_dt["Year"] == 2020) & (ev_bat_size_dt["Size"] == size) & (ev_bat_size_dt["Technology"] == techno) & (ev_bat_size_dt["Model"] == ev_bat_size_mdl)]["Value"]
                     tmp_techno                  = " ".join(re.findall("[a-zA-Z]+", techno))
                 else:
                     if size == 'Light truck' and wgt_scen_GREET in [1, 4] or size == "Car" and wgt_scen_GREET in [3, 4]:
@@ -46,11 +48,12 @@ def fleet_i_ev_bat_f(FCV_bat_t = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_
                     else:
                         size_greet              = "Car"
 
-                    bat_cap                     = greet_battery_size.loc[(greet_battery_size["Data"] == "Conventional") & (greet_battery_size["Size"] == size_greet) & (greet_battery_size["Technology"] == techno)]["value"]
+                    bat_cap                     = greet_battery_size.loc[(greet_battery_size["Data"] == "Conventional") & (greet_battery_size["Size"] == size_greet) & (greet_battery_size["Technology"] == techno)]["value"].values[0]
                     tmp_techno                  = techno
 
-                    bat_wgt                     = bat_cap / bat_fc_dt.loc[(bat_fc_dt["Subcomponent"] == "EV Battery") & (tmp_techno in bat_fc_dt["Technology"].str.split(",")) & (bat_fc_dt["Battery type"] == bat_type)]["2015"] * conv.loc["lb", "1 kg"]
+                bat_wgt                     = bat_cap / (bat_fc_dt.loc[(bat_fc_dt["Subcomponent"] == "EV Battery") & (bat_fc_dt["Technology"].str.contains(tmp_techno)) & (bat_fc_dt["Battery type"] == bat_type)]["2015"] * conv["1 kg"][3]).values[0]
 
-                    ev_bat_dt                   = ev_bat_dt.append(size, techno, bat_type, float(bat_cap), float(bat_wgt))
+                ev_bat_dt                   = ev_bat_dt.append({"Size" : size, "Technology" : techno, "Bat_type" : bat_type, "Capacity" : bat_cap, "Weight" : bat_wgt}, ignore_index=True)
+                #ev_bat_dt                   = ev_bat_dt.append(size).append(techno).append(bat_type).append(float(bat_cap)).append(float(bat_wgt))
     
     return ev_bat_dt

@@ -17,7 +17,7 @@ def fleet_i_mat_cont_f(mat_cont_adj = None, rel_mat_cont = "n"):
     vh_techno                                   = utils.get_input('model_matching_technology')
     comp_dt                                     = utils.get_input('model_matching_component')
 
-    fleet_subcompo_wgt                          = fleet_i_comp_wgt_f()["fleet_subcompo_wgt"]
+    fleet_subcompo_wgt                          = fleet_i_comp_wgt_f.fleet_i_comp_wgt_f()["fleet_subcompo_wgt"]
 
     if mat_cont_adj == "y":
         mat_comp                                = adj_mat_comp
