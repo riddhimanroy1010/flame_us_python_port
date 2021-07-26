@@ -4,7 +4,6 @@ import numpy as np
 import math
 import pandas as pd
 import re
-import openpyxl
 from pandas.core.indexes.range import RangeIndex
 
 from . import utils
@@ -52,7 +51,7 @@ class vehicleClass():
     def __init__(self, technology, size, first_yr = None, last_yr = None, BEV_bat_t = None, PHEV_bat_t = None, HEV_bat_t = None) -> None:
         
         vh_techno                               = utils.get_input("model_matching_technology")
-        self.fuel_type                          = (vh_techno.loc[vh_techno["Own"] == technology]["Fuel Type"]).str.split(';').tolist()
+        self.fuel_type                          = (vh_techno.loc[vh_techno["Own"] == technology]["Fuel type"]).str.split(';').tolist()[0][0]
 
         self.technology                         = technology                                                            
         self.size                               = size
@@ -65,10 +64,10 @@ class vehicleClass():
         self.battery_type                       = bat_type.get(technology, None)
         
         #historical fuel consumption
-        self.vehicle_hist_fc_f(self)
+        self.vehicle_hist_fc_f(first_yr=2015, last_yr=2050)
 
-        #updating material composition and material component composition
-        self.vehicle_hist_material_composition_f(self)
+        #updating material composition and material component composition\
+        self.vehicle_hist_material_composition_f(first_yr=2015, last_yr=2050)
         
         #utility factor
         first_hist_yr                           = float(np.min(self.fuel_consumption[:, 'Year']))
@@ -92,23 +91,24 @@ class vehicleClass():
         age_tbc                                 = 30
         first__hist_yr                          = first_yr - age_tbc
         last_hist_yr                            = 2019
-        self.fuel_consumption                   = pd.DataFrame(index = self.fuel_type, columns = RangeIndex(first__hist_yr, last_yr + 1))
-        tmp_mat_hist_fc                         = pd.DataFrame()
-        if self.technology == "ICEV-G" or "ICEV-D":
+        self.fuel_consumption                   = pd.DataFrame(index = [self.fuel_type], columns = RangeIndex(first__hist_yr, last_yr + 1))
+        #tmp_mat_hist_fc                         = pd.DataFrame()
+        if self.technology in ["ICEV-G", "ICEV-D"]:
             epa_fc                              = utils.get_input("epa_fleet_fc_hist")   
-            tmp_mat_hist_fc                     = epa_fc[(epa_fc["Model_year"] > first__hist_yr) & (epa_fc["Size"] == self.size) & (epa_fc["Technology"] == self.technology) & (epa_fc["Fuel_type"] == self.fuel_type)] 
+            tmp_mat_hist_fc                     = epa_fc.loc[(epa_fc["Model_year"] > first__hist_yr) & (epa_fc["Size"] == self.size) & (epa_fc["Technology"] == self.technology) & (epa_fc["Fuel_type"] == self.fuel_type)] 
             #Add degradation factors
             def_fac_matr                        = {'def' : 1,
                                                    'low' : 0.9,
                                                    'high' : 1.1}
             def_fac                             = def_fac_matr.get(fc_conv_mdl)
             tmp_mat_hist_fc                     = tmp_mat_hist_fc * def_fac
-        elif self.technology == "BEV100" or "BEV100" or "PHEV20" or "PHEV40":
+        elif self.technology in ["BEV100", "BEV100", "PHEV20", "PHEV40"]:
             fc_ev_hist_fc                       = utils.get_input("fc_ev_hist")     
             #Get the historical values
-            tmp_mat_hist_fc                     = fc_ev_hist_fc[(fc_ev_hist_fc["Year"] > first__hist_yr) & (fc_ev_hist_fc["Size"] == self.size) & (fc_ev_hist_fc["Technology"] == self.technology) & (fc_ev_hist_fc["Model"] == "Saled weighted") | (fc_ev_hist_fc["Model"] == fc_ev_mdl)]         
+            tmp_mat_hist_fc                     = fc_ev_hist_fc.loc[(fc_ev_hist_fc["Year"] > first__hist_yr) & (fc_ev_hist_fc["Size"] == self.size) & (fc_ev_hist_fc["Technology"] == self.technology) & (fc_ev_hist_fc["Model"] == "Sales weighted") | (fc_ev_hist_fc["Model"] == fc_ev_mdl)]         
             #Add battery charging efficiency and transmission losses
-            tmp_mat_hist_fc['Electricity']      = tmp_mat_hist_fc['Electricity'] / (0.90*0.95)
+            tmp_mat_hist_fc.loc[tmp_mat_hist_fc["Fuel"] =='Electricity']["Value"]      \
+                                                = tmp_mat_hist_fc.loc[tmp_mat_hist_fc["Fuel"] =='Electricity']["Value"]  / (0.90*0.95)
         else:
             #Inputs
             fe_vision                           = utils.get_input("vision_fe_hist")
@@ -186,7 +186,8 @@ class vehicleClass():
         #Parameter setup
         age_tbc                                 = 30
         first_hist_yr                           = first_yr - age_tbc
-        last_hist_yr                            = max(float(self.fuel_consumption.columns))
+        print(self.fuel_consumption)
+        last_hist_yr                            = int(max(self.fuel_consumption["Year"]))
 
         #Inputs
         material_dt                             = utils.get_input("model_matching_material")
@@ -194,11 +195,10 @@ class vehicleClass():
 
         #Create dt of material composition with accurate fields
         self.material_composition               = pd.DataFrame(index=pd.unique(material_dt["Own"]), columns=RangeIndex(first_hist_yr, last_yr + 1))
-        self.material_composition.fillna(None)
 
 
         #Update historical material composition
-        mat_hist_mc                             = hist_mc[(hist_mc["Technology"] == self.technology) & (hist_mc["Size"] == self.size) & (hist_mc["Model_year"] >= first_hist_yr) & (hist_mc["Material"] != "Total")]
+        mat_hist_mc                             = hist_mc.loc[(hist_mc["Technology"] == self.technology) & (hist_mc["Size"] == self.size) & (hist_mc["Model_year"] >= first_hist_yr) & (hist_mc["Material"] != "Total")]
         fleet_i_mat_cont_f_res                  = fleet_i_mat_cont_f()
         veh_mat_cont                            = fleet_i_mat_cont_f_res.loc[(fleet_i_mat_cont_f_res["Size"] == self.size) & (fleet_i_mat_cont_f_res["Technology"] == self.technology)]
         del(veh_mat_cont["Size"])
