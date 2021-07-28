@@ -5,9 +5,9 @@ import shelve
 import os
 from . import env
 
-def shelf_make(env_input):
+def shelf_make(env_input, mode = None):
 
-    if env_input not in locals():
+    if env_input not in locals() or mode == 'Force':
         env_store                               = shelve.open('pythonport/pyFLAME/shelves/shelve.db', flag='n')
         try:
             cur_env                             = env_store[env_input]
@@ -19,7 +19,7 @@ def shelf_make(env_input):
                 env_store['input_env']          = cur_env
             elif env_input == "attr_env":
                 cur_env                         = env.environment()
-                cur_env.objects["attr_mgnt"]    = pd.read_excel("architecture/attribute_value.xlsx", engine='openpyxl')
+                cur_env.objects["attr_mgnt"]    = pd.read_csv("architecture/attribute_value.csv")
                 cur_env.isNone                  = False
                 env_store['attr_env']           = cur_env
             else:
@@ -35,7 +35,11 @@ def shelf_retrieve(env_input):
         try:
             return env_store[env_input]
         except KeyError:
-            raise Exception("An unknown error occured in utils/shelf_retrieve")
+            try:
+                env_store                       = shelf_make(env_input, mode="Force")
+                return env_store
+            except:  
+                raise Exception("An unknown error occured in utils/shelf_retrieve")
 
 def shelf_update(env_input, key, value):
     if len(os.listdir('pythonport/pyFLAME/shelves')) > 0:
@@ -55,6 +59,14 @@ def shelf_update(env_input, key, value):
                 env_store[env_input]                = cur_env
             finally:
                 env_store.close()
+        elif env_input == 'attr_env':
+            try:
+                cur_env                             = env_store[env_input]
+                cur_env.objects[key]                = value
+                env_store[env_input]                = cur_env
+            finally:
+                env_store.close()
+                return cur_env
     else:
         pass
         
@@ -121,8 +133,13 @@ def get_attributes(attr_to_get = None):
     attr_mgnt                                   = attr_env.objects["attr_mgnt"]
 
     if attr_to_get not in attr_env.objects:
-        value                                   = attr_mgnt.loc[attr_to_get]["Value"]
-        attr_env                                = shelf_update(attr_env, attr_to_get, value)
+        try:
+            value                                   = attr_mgnt.loc[(attr_mgnt["Attribute"] == attr_to_get)]["Value"].values[0]
+            attr_env                                = shelf_update('attr_env', attr_to_get, value)
+        except KeyError:
+            print(f"Warning: attribute {attr_to_get} was not found. Returning 'def'. This may cause errors.")
+            attr_env                                = shelf_update('attr_env', attr_to_get, 'def')                   
+            return "def"
 
     return attr_env.objects[attr_to_get]
 

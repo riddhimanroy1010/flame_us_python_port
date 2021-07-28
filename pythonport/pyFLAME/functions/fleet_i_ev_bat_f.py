@@ -38,7 +38,7 @@ def fleet_i_ev_bat_f(FCV_bat_t = "Li_ion LMO", BEV_bat_t = "Li_ion LMO", PHEV_ba
                     bat_type                    = FCV_bat_t
                 
                 if 'BEV' in techno or 'PHEV' in techno:
-                    bat_cap                     = ev_bat_size_dt.loc[(ev_bat_size_dt["Year"] == 2020) & (ev_bat_size_dt["Size"] == size) & (ev_bat_size_dt["Technology"] == techno) & (ev_bat_size_dt["Model"] == ev_bat_size_mdl)]["Value"]
+                    bat_cap                     = ev_bat_size_dt.loc[(ev_bat_size_dt["Year"] == 2020) & (ev_bat_size_dt["Size"] == size) & (ev_bat_size_dt["Technology"] == techno) & (ev_bat_size_dt["Model"] == ev_bat_size_mdl)]["Value"].values[0]
                     tmp_techno                  = " ".join(re.findall("[a-zA-Z]+", techno))
                 else:
                     if size == 'Light truck' and wgt_scen_GREET in [1, 4] or size == "Car" and wgt_scen_GREET in [3, 4]:
