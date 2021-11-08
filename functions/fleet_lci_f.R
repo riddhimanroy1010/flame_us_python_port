@@ -1,5 +1,5 @@
 #' fleet_lci_f
-#' Function: Calculate life cycle GHG emissions of the U.S. LDV fleet by life cycle processes, stages and GHGs.
+#' Function: el
 #' @import modelframework
 #' @import tidyr
 #' @export

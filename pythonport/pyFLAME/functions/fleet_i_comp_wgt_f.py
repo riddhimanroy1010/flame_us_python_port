@@ -143,14 +143,14 @@ def fleet_i_comp_wgt_f(wgt_scen_GREET = None, mod_scen_GREET = None):
                                                 = CW - tmp_compo_wgt.loc[tmp_compo_wgt["Component"] != "Total"]["Weight"].sum(skipna=True)
             
             for subcomp in tmp_subcompo_wgt["Subcomponent"]:
-                if pd.isna(tmp_compo_wgt.loc[subcomp, "Weight"]):
-                    tmp_subcompo_wgt.loc[subcomp, "Weight"]\
-                                                = tmp_compo_wgt.loc[(tmp_compo_wgt["Own subcomponent"] == subcomp)]["Weight"] * wt_subcomp.loc[(techno_greet in wt_subcomp["Technology"].str.split(",")) & (wt_subcomp["Subcomponent"] == subcomp)]["Subcomponent weight distribution"]
+                if str(subcomp) != 'nan' and str(tmp_subcompo_wgt.loc[tmp_subcompo_wgt["Subcomponent"] == subcomp]["Weight"].values[0]) == 'nan':
+                    tmp_subcompo_wgt.at[list(np.where(tmp_subcompo_wgt["Subcomponent"] == subcomp))[0], "Weight"]\
+                                                = tmp_compo_wgt.loc[(tmp_compo_wgt["Component"] == comp_dt.loc[comp_dt["Own subcomponent"] == subcomp]["Own component"].values[0])]["Weight"].values[0] * wt_subcomp.loc[(wt_subcomp["Technology"].str.contains(techno_greet.values[0])) & (wt_subcomp["Subcomponent"] == subcomp)]["Subcomponent weight distribution"].values[0]
 
-            tmp_compo_wgt                       = tmp_compo_wgt.assign(Relative = pd.series(tmp_compo_wgt["Weight"]/CW).values)
-            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Relative = pd.series(tmp_subcompo_wgt["Weight"]/CW).values)
-            tmp_compo_wgt                       = tmp_compo_wgt.assign(Weight = pd.series(tmp_compo_wgt["Weight"] * conv.loc["kg", "1 lb"]).values)
-            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Weight = pd.series(tmp_subcompo_wgt["Weight"] * conv.loc["kg", "1 lb"]).values)
+            tmp_compo_wgt                       = tmp_compo_wgt.assign(Relative = tmp_compo_wgt["Weight"]/CW)
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Relative = tmp_subcompo_wgt["Weight"]/CW)
+            tmp_compo_wgt                       = tmp_compo_wgt.assign(Weight = tmp_compo_wgt["Weight"] * 2.204623)
+            tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Weight = tmp_subcompo_wgt["Weight"] * 2.204623)
             tmp_compo_wgt                       = tmp_compo_wgt.assign(Size = size)
             tmp_subcompo_wgt                    = tmp_subcompo_wgt.assign(Size = size)
             tmp_compo_wgt                       = tmp_compo_wgt.assign(Technology= techno)
